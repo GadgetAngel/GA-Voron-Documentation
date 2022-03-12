@@ -232,6 +232,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 </script>
 
 <div>
+
 ## Color PIN Diagram for BTT Octopus Pro V1.0
 
 For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
