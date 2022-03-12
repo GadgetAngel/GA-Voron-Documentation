@@ -569,353 +569,353 @@
     "url": "http://localhost:4000/community/howto/amonkeybutler/igus_chain_ordering_guide.html",
     "relUrl": "/community/howto/amonkeybutler/igus_chain_ordering_guide.html"
   },"95": {
-    "doc": "Custom Macros",
-    "title": "Macros",
-    "content": "Macros are an essential tool for configuring and managing Klipper. A number of macros are pre-defined in the example configurations but a lot more is possible. Klipper macros are always in the following format: . [gcode_macro &lt;macro_name&gt;] gcode: &lt;gcode&gt; &lt;gcode&gt; . Important: The tab / spaces before the gcode is required. ",
-    "url": "http://localhost:4000/community/macros/#macros",
-    "relUrl": "/community/macros/#macros"
-  },"96": {
-    "doc": "Custom Macros",
-    "title": "Required / Pre-built",
-    "content": "To see examples of the macros themselves, look at the standard printer.cfg for the printer. Homing Override / Safe Z Home . By default, all printers are setup with a [homing_override] configuration section that includes a gcode macro for the home process. This macro is updating during thee setup process to define the Z endstop location. However the homing override method always homes X and Y before homing Z. The [safe_z_home] configuration allows for a Z homing process without requiring a repeat home of X and Y. To enable safe z homing disable homing override and provide a X,Y coordinate of your Z endstop pin. Be aware that enabling safe Z home will likely require a change in other processes / macros. [safe_z_home] home_xy_position: 175.5,253 z_hop: 5.0 . G32 . The G32 macro is included with the stock configuration for most printers. This is typically used as a “full home” process that will home and perform leveling / tilt adjustments. PRINT_START . The PRINT_START macro is called at the start of every print by slicers that are confgured to be aware of it. PRINT_END . The PRINT_END macro is called at the end of every print by slicers that are configured to be aware of it. ",
-    "url": "http://localhost:4000/community/macros/#required--pre-built",
-    "relUrl": "/community/macros/#required--pre-built"
-  },"97": {
-    "doc": "Custom Macros",
-    "title": "User Macros",
-    "content": "| Creator | Macros | Bed Size | . | 120decibell | CG28, G32, G141, PURGE_BUCKET, TEST_SPEED_FAST | 350mm | . Contributors - please make sure your macros are well documented! . ",
-    "url": "http://localhost:4000/community/macros/#user-macros",
-    "relUrl": "/community/macros/#user-macros"
-  },"98": {
-    "doc": "Custom Macros",
-    "title": "Custom Macros",
-    "content": " ",
-    "url": "http://localhost:4000/community/macros/",
-    "relUrl": "/community/macros/"
-  },"99": {
-    "doc": "Troubleshooting",
-    "title": "Troubleshooting",
-    "content": "| Guide Name / Link | Author | . | Blob of Death | 120decibell | . | Klipper Common Errors | eddie | . | printer.cfg Changes | shiftingtech | . | Rail Misalignment Causing Twist | badnoob | . | Twisted X Extrusion Diagnostics | Bryansj | . ",
-    "url": "http://localhost:4000/community/troubleshooting/",
-    "relUrl": "/community/troubleshooting/"
-  },"100": {
-    "doc": "How-To's",
-    "title": "How-To’s",
-    "content": "Community-generated documentation for the many items that the official guide may not cover. | Guide Name / Link | Author | . | Calculating Driver Current Settings | 120decibell | . | Chamber Temperature Exhaust Fan | alchemyEngine | . | IGUS Chain Ordering Guide | AMonkeyButler | . | Installing a Bed Heater with RTV | Fulg | . | Installing BetterBootLoader on a SKR | kage-chan | . | Z Endstop Configuration | 120decibell | . | I wish I had known | simonthecat | . | Automating Klipper MCU Updates | Drachenkatze | . | Switchwire Screws Adjust | DoubleT | . | Print Tuning Guide | Ellis | . | Multi-Colour Prints with a Single Nozzle | mikhail | . | Custom Raspberry Pi Boot screens | samwiseg0 | . | Klicky Probe as Endstop with constant Z Offset | Takuya &amp; Clee | . | Setting Up and Calibrating Sensorless XY Homing | clee | . External Links . | Assembling Limit Switches | Changing OctoPi Hostname | Cleaning and greasing Linear Rails Be sure to read the description first | Drill and Counterbore Voron Bed | Printed 80t pulley assembly | RAMPS 24V Conversion | . ",
-    "url": "http://localhost:4000/community/howto/#how-tos",
-    "relUrl": "/community/howto/#how-tos"
-  },"101": {
-    "doc": "How-To's",
-    "title": "How-To's",
-    "content": " ",
-    "url": "http://localhost:4000/community/howto/",
-    "relUrl": "/community/howto/"
-  },"102": {
-    "doc": "Community Documentation",
-    "title": "Community Documentation",
-    "content": "This is a repository of the tremendous amount of knowledge that has been put together by Voron owners. ",
-    "url": "http://localhost:4000/community/",
-    "relUrl": "/community/"
-  },"103": {
-    "doc": "Electrical Wiring",
-    "title": "Electrical Wiring",
-    "content": " ",
-    "url": "http://localhost:4000/build/electrical/",
-    "relUrl": "/build/electrical/"
-  },"104": {
-    "doc": "Electrical Wiring",
-    "title": "Safety Note",
-    "content": "When wiring your printer electronics, you will be working with line voltage wiring (120V / 220V AC). Always double check to make sure your printer is unplugged and the capacitors in the power supplies have discharged before touching any wire or terminal. The recommendations made in here are typically out of an abundance of caution to prevent fires. ",
-    "url": "http://localhost:4000/build/electrical/#safety-note",
-    "relUrl": "/build/electrical/#safety-note"
-  },"105": {
-    "doc": "Electrical Wiring",
-    "title": "Risk of Damage",
-    "content": "Never plug or unplug any device while the printer is powered. In addition to being a safety hazard, it is very easy to damage electronic components. In particular the stepper drivers can be easily damaged by connecting or disconnecting stepper motors while powered. ",
-    "url": "http://localhost:4000/build/electrical/#risk-of-damage",
-    "relUrl": "/build/electrical/#risk-of-damage"
-  },"106": {
-    "doc": "Electrical Wiring",
-    "title": "Tips",
-    "content": ". | Depending on your level of expertise it may be useful to practice crimping and soldering before wiring everything up. Bad crimps are a major source of problems later on and sometimes hard to identify! . | AC wiring should be properly dimensioned. Use at least 18 AWG (0.75 mm²) for mains AC wiring, even better would be 16 AWG (1.25 mm²) | Buy a quality SSR (see the official sourcing guide), cheap clones may overheat and fail closed causing a heater thermal runaway. Add a 115-125°C thermal fuse to your bed heater as an additional safety measure | Dont run your bed above 110°C, this reduces the lifespan of the adhesive holding it onto the build plate | If using an AC powered bed, be sure to ground the bed regardless of if the assembly manual specifies it or not. | Grounding the frame is recommended. | . ",
-    "url": "http://localhost:4000/build/electrical/#tips",
-    "relUrl": "/build/electrical/#tips"
-  },"107": {
-    "doc": "Electrical Wiring",
-    "title": "Connectors",
-    "content": "The recommended MicroFit 3.0 connectors are specified for up to 5A and should be used for all connections to the stepper motors, hotend and limit switches The JST connectors are used for connections to the MCU board(s). JST connnectors are not available as mid-wire connectors so they must be mixed. Adding Molex connectors to all stepper motors is useful. Use a 3pin MLX connector (see the official sourcing guide) to allow your bed to be removable without disconnecting from the SSR directly. The thermistor can use a 2pin Microfit connector. Microfit Pins . When assembling Microfit connectors, the male pins are inserted into the female housings and the female pins are inserted into the male housings. For larger wires, such as heater cartridge wiring, heatshrink tubing is helpful. ",
-    "url": "http://localhost:4000/build/electrical/#connectors",
-    "relUrl": "/build/electrical/#connectors"
-  },"108": {
-    "doc": "Electrical Wiring",
-    "title": "Cables",
-    "content": "Silicone wiring has been specified because it has a high strand count which means it has higher fatigue life. Silicone insulation withstands heat and is more flexible which is good in high movement applications. It is less prone to snagging on other wires or the walls inside the cable chain. Check your cable loom before installing the chains. PTFE or Heluflon wires are a premium option as they have a thinner insulation and a lower friction coefficient, which increases bending capabilities and decreases wear. But these advantages are most useful in printers that use cable chains. For printers with an umbilical cord cabling setup (V0 Toolhead, Legacy), they might be overkill. Automation cable such as IGUS can be used, but the minimum bend radius of the cable needs to be verified as the typical bend radius for Voron cable chains is very small. See the cable lengths and count section for specific counts. Do not downsize the hot end heater wires, they are oversized for safety reasons. You may add additional wires to your cable chains as a replacement in case of wire breaks. However, these cables will be heated/cooled and moved around as much as your live cables and may be broken already when you need them! So may be better to keep extra wires as spares outside of the printer. Buy some cable holders (e.g. with adhesive) to organize your cables in the electronics compartment. Keep in mind that the adhesive fails over time due to exposure to above room temperature. Cables can be hidden in the rails. Optionally print cable covers for the rails. ",
-    "url": "http://localhost:4000/build/electrical/#cables",
-    "relUrl": "/build/electrical/#cables"
-  },"109": {
-    "doc": "Electrical Wiring",
-    "title": "Stepper Motor Wiring",
-    "content": "There is no standard either for the color of wire on stepper motors, nor for the order of wires in the connector. As a result, it is often necessary to re-order stepper motor wires even on motors sold specifically for use in Vorons. If you are using the exact BOM motors, the colors shown in the wiring guides should work, however in any other case, you should verify your motor wiring. All control boards currently used with voron expect one winding to be connected on pins 1&amp;2, and the other on pins 3&amp;4. Note that other details, such as identifying winding A vs winding B is not critical. At worst, your motor will run backwards, which you can easily fix later, in software. Identifying Windings . There are 3 basic options for identifying windings: 1) Check the documentation. Many motors come with a card which tells you what wire colors are on the same winding. If there’s no card, the manufacturer’s website may have something. 2) Use a multimeter: put your meter in “continuity” mode. Pick one wire, and then find any other wire that shows continuity with it. Those two wires are on the same winding. By process of elimination, it should be safe to assume the other two represent the other winding. 3) If you don’t have a meter available, you can twist 2 wires together, and then try to spin the shaft of the motor. If the wires are on the same winding, it will become noticably harder to spin the shaft. Symptoms of miswired motors . Traditionally, trying to move a stepper that’s miswired, has either resulted in nothing happening, or a nasty buzzing sound. However, recent versions of klipper will generally detect the miswiring, and simply shutdown. If, during your motor checks, klipper immediately shuts down: check your logs. If there is a wiring issue with your stepper, it will report something like . TMC 'stepper_y' reports DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!) olb=1(OpenLoad_B!) CS_ACTUAL=25 Transition to shutdown state: TMC 'stepper_y' reports error: DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!) . ",
-    "url": "http://localhost:4000/build/electrical/#stepper-motor-wiring",
-    "relUrl": "/build/electrical/#stepper-motor-wiring"
-  },"110": {
-    "doc": "Electrical Wiring",
-    "title": "DC Power Supply Wiring",
-    "content": "Many of the latest generation of Voron printers spec the use of two or more independent power supplies. That can include 24V, 5V, and 12V power supplies depending on configuration. Important! Connect the DC 0V (typically labelled V-) on all of your DC power supplies together to ensure they all have the same voltage reference. If this is not done then it may be difficult to diagnose issues (devices may not turn on or may be damaged due to exceeding voltage limits). Smaller Printers (V0, Legacy) . Instead of multiple power supplies, the V0 uses a DC-DC converter to generate a 5V bus instead of a dedicated 5V power supply. Larger Printers (V1, Trident, V2, Switchwire) . Please see the associated assembly guides for power supply configurations. ",
-    "url": "http://localhost:4000/build/electrical/#dc-power-supply-wiring",
-    "relUrl": "/build/electrical/#dc-power-supply-wiring"
-  },"111": {
-    "doc": "Electrical Wiring",
-    "title": "Wiring Configuration / Setup",
-    "content": "Wire counts / lengths . The following are guides for each printer model for planning of wire counts and lengths. As always, these are recommendations and adding allowances is always a good idea. | V1 Gantry Wires | Trident Gantry Wires | V2 Gantry Wires | . Gantry Routing . While some extruder motors and inductive probes come with wire leads long enough to reach part or all of the way down the cable chain, resist the urge to use them. The wires typically found in them are not rated for the constant bending encountered in the cable chains and may break much sooner than desired. Terminate all connections to silicone or PTFE wire before entering the cable chain. Wire Terminals . Different controller boards use different terminal types. The RAMPS boards use Dupont terminals but the SKR boards use JST-XH terminals. If using an SKR board, a JST-XH connector kit is required with 2-pin, 3-pin, and 4-pin connectors (see the BOM). Unlike Dupont connectors, JST-XH connectors are keyed and will only fit one orientation so pay close attention when inserting pins. For wiring the stepper motors, keep the same wire color sequence that your stepper motors came with and use that same sequence for all stepper motors in the printer. If the BOM spec motors from StepperOnline are used, the wires should be in the color order as shown in the wiring diagrams. If the purchased steppers do not match the color order in the documentation, there is no need to rewire just to change colors. There is not a “standard” wire color order for these parts. If the builder decides to reterminate to change connector types or whatever, be sure to use the same order as before. The spec motors also come with a datasheet or card so you can double check the work. One can also use a multimeter to find wire pairs in the motor by measuring continuity between leads. Each lead should have continuity to the other lead in its pair. Important: If the motors are found later on to be going the wrong direction, repinning the connectors is not required. The direction can be inverted in the software configuration later. Inductive Probe Wiring (V1, Trident, V2, Switchwire) . The BOM spec PL-08N inductive probe (and the alterate Omron probe) that is used for Bed Mesh, Z Tilt Adjust (V1/Legacy) or Quad Gantry Leveling (V2) needs to be powered with 12-24V, not the typical 5V that is used for end stop switches. This is critical because if powered with 5V the sense distance is reduced enough to cause a nozzle crash. If not closely following the BOM spec, ensure that the inductive probe purchased is a normally closed (NC) version rather than normally open (NO). The configuration cannot be changed as that is built specifically from the factory. A normally open (NO) probe may cause crashes if a wire breaks. BAT85 Diode . Due to the switching used by the sensor the output voltage is approximately the same voltage as the sensor is powered with. If the sensor is powered with the common 24V, it will send 24V to an input on the MCU that is never intended to see more than 5V. The BAT85 diode is used to alleviate this issue. It is oriented so that when the probe signal wire is high (12-24V), not current will flow into the MCU input pin. As a result the MCU will read HIGH voltage due to the internal pull-up resistor. If the probe signal is LOW (0V), current will flow from the MCU input pin through the diode, through the probe, and to ground (V-). This will pull the MCU pin low and trigger appropriately. Important: The BAT85 diode should always be wired with the black band toward the probe, not toward the MCU. Below is a circuit diagram with more details. Endstop Wiring . Endstops can be wired one of two ways: normally closed (NC) or normally open (NO). For normally closed configurations, the endstop switch allows current to flow through when not triggered. For normally open configurations, the endstop switch only allows current to flow through whe triggered. While both of these configurations will work fine in an ideal world, normally closed (NC) configurations are more robust. If a wire breaks or a terminal becomes disconnected, the printer will think the endstop has triggered and will stop movement before the toolhead crashes into the bed or frame. Note that you should always still observe the homing routine - an intermittent break in an X or Y wire can still result in a crash as the nozzle will drop to where it thinks the Z endstop is and instead hit the bed (not applicable to V0 or Switchwire). Wiring mechanical endstop switches for NC operation is easy as the BOM spec switches have 3 pins exposed. With a multimeter, probe each combination of the three pins until a pair is found that has continuity (&lt;10 ohms resistance) when the switch is not triggered (normal state), but does not have continuity (&gt;10M ohms resistance) when the switch is triggered (depressed). Typically the outer two pins are the NC pins, but should be verified prior to installation. X/Y Endstop Wiring (Trident, V2) . The X/Y endstop connector can be strapped to the bottom of the joint. Just make sure the cable is long enough, be sure to install the cover to keep any prints that fly off from bonding to your endstops. ",
-    "url": "http://localhost:4000/build/electrical/#wiring-configuration--setup",
-    "relUrl": "/build/electrical/#wiring-configuration--setup"
-  },"112": {
-    "doc": "Electrical Wiring",
-    "title": "Controller (MCU) Wiring",
-    "content": "Follow the links to the wiring configuration guides specific to your printer and controller selection. There are other controllers on the market that may work (such as Duet), but those are not commonly used so standard configurations have not been developed. Voron 0 . | V0.0 - mini e3 V1.2 | V0.0 - mini e3 V2.0 | V0.1 - SKR Pico | . Voron 1 . | V1 - SKR 1.3 | V1 - SKR 1.4 | . Trident . | Trident - BigTreeTech Octopus | Trident - MKS Makerbase Monster8 | . Voron 2 . | V2 - SKR 1.3 | V2 - SKR 1.4 | V2 - FLYboard FLYF407ZG | V2 - Fysetc Spider | V2 - BigTreeTech Octopus | V2 - BigTreeTech Octopus Pro in UART Mode | V2 - BigTreeTech Octopus Pro in SPI Mode | V2 - MKS Makerbase Monster8 | . Voron Switchwire . | SW - mini e3 V2.0 | SW - Einsy Rambo | . ",
-    "url": "http://localhost:4000/build/electrical/#controller-mcu-wiring",
-    "relUrl": "/build/electrical/#controller-mcu-wiring"
-  },"113": {
-    "doc": "Electrical Wiring",
-    "title": "Additional Items",
-    "content": "Mini12864 Display (V1, Trident, V2, Switchwire) . If installing a Mini12864 display, please follow the Mini12864 Klipper Guide. Using non-24V fans with a 24V powered MCU . It is possible to use the SKR (and possibly other controllers) to control fans, LEDs, and other devices even when those devices use a different voltage. The SKR, like most controllers, uses the (-) pin to control if a device is switched on or off. For a given device, is the V+ is wired to an external power supply (e.g. 5V or 12V), and the V- is wired to the SKR, the fan can be switched on or off. As mentioned above, this will only work if the DC 0V of all of the power supplies is tied together. Note: In the diagram below, only DC wires are shown. Red represents V+, black represents V-. ",
-    "url": "http://localhost:4000/build/electrical/#additional-items",
-    "relUrl": "/build/electrical/#additional-items"
-  },"114": {
-    "doc": "Electrical Wiring",
-    "title": "Next: Software Installation",
-    "content": " ",
-    "url": "http://localhost:4000/build/electrical/#next-software-installation",
-    "relUrl": "/build/electrical/#next-software-installation"
-  },"115": {
-    "doc": "Alternate Electronics",
-    "title": "Alternate Electronics",
-    "content": "Community-generated documentation for alternate (non-spec) electronics and related configurations.. | Guide Name / Link | Author | . | BigTreeTech Expansion Module | BrewWeasel | . | Filament Runout Sensor | 120decibell | . | Hall Effect Endstop Setup | 120decibell | . | PT100 MAX31865 Setup | xbst_ | . | MKS Makerbase Monster8 v1.0 | Deuce | . External Links . | Klipper Expander | . ",
-    "url": "http://localhost:4000/community/electronics/",
-    "relUrl": "/community/electronics/"
-  },"116": {
-    "doc": "Tuning Guides",
-    "title": "Tuning Guides",
-    "content": "Tuning steps and processes after everything is working. ",
-    "url": "http://localhost:4000/tuning/",
-    "relUrl": "/tuning/"
-  },"117": {
     "doc": "Software Installation",
     "title": "Software Installation",
     "content": "All stock Voron printers run on the Klipper firmware. However, there are a few different web interfaces available for managing your printer. The Voron Project recommends using Mainsail or Fluidd, although it is also possible to use Octoprint. Mainsail and Fluidd are both developed specifically for Klipper based printers, whereas Octoprint is a more general-use platform. Note: If you are using a Pi Zero, such as in the Voron Legacy, you must use Mainsail or Fluidd . | Mainsail | Fluidd | Octoprint | . | | | | . ",
     "url": "http://localhost:4000/build/software/",
     "relUrl": "/build/software/"
-  },"118": {
+  },"96": {
     "doc": "Software Installation",
     "title": "Installation",
     "content": "Mainsail . Mainsail is a lightweight web interface for Klipper and other subsystems. It does not support plugins but generally doesn’t need to. Installing Mainsail . Fluidd . Fluidd is a lightweight web interface for Klipper and other subsystems that is very similar to Mainsail but has a different look and feel. It also does not support plugins. Installing Fluidd . Octoprint . Octoprint has been a popular system for many years. It supports plugins but also requires substantial CPU and memory. Installing Octoprint . ",
     "url": "http://localhost:4000/build/software/#installation",
     "relUrl": "/build/software/#installation"
-  },"119": {
+  },"97": {
     "doc": "Software Installation",
     "title": "Firmware Flashing",
     "content": "At this point Klipper will be installed on the Raspberry Pi. The next step is to compile and install the Klipper firmware onto the controller(s). | SKR 1.3 | SKR 1.4 | SKR mini e3 V1.2 | SKR mini e3 V2.0 | FLY FLYF407ZG | Fysetc Spider | BTT Octopus | . Next: Software Configuration . ",
     "url": "http://localhost:4000/build/software/#firmware-flashing",
     "relUrl": "/build/software/#firmware-flashing"
-  },"120": {
-    "doc": "Slicer Setup",
-    "title": "Slicer Setup",
-    "content": "All modern mainstream slicers are able to produce high quality prints when properly configured for your printer. The Voron community maintains a set of slicer profiles that you can use as a known good starting point for further tuning. Proper understanding of slicer settings will have a tremendous impact on print results. Try to learn more about your favorite slicer and tweak the settings to meet your needs. While using different slicers for different kinds of prints can be beneficial avoid blindly hopping between slicers and slicer profiles just because someone posted a nice print sliced with a different slicer. ",
-    "url": "http://localhost:4000/build/slicer/",
-    "relUrl": "/build/slicer/"
-  },"121": {
-    "doc": "Slicer Setup",
-    "title": "Slicer Selection",
-    "content": "There are two slicers that come with built in profiles for most Voron printers: . | Cura | Super Slicer | . Other slicers that can be configured to support Voron printers but do not have built in support: . | Prusa Slicer | Simplify3D | Slic3r | . Some slicers (e.g. PrusaSlicer) do not recognize the Klipper PRINT_START macro as a valid start macro and add an additional bed heat and nozzle heat to the start gcode. If examination of the output gcode shows an M109 and/or M190 before the PRINT_START macro, consider using a different or newer slicer that recognizes that macro as a valid start macro. ",
-    "url": "http://localhost:4000/build/slicer/#slicer-selection",
-    "relUrl": "/build/slicer/#slicer-selection"
-  },"122": {
-    "doc": "Slicer Setup",
-    "title": "Slicer Profile Creation",
-    "content": "Both Cura and SuperSlicer (in current versions) have built-in profiles for V2 printers which can be setup usin each software’s normal processes. The V1 is similar enough to V2 that the profile can be re-used. Some pre-built slicer profiles are available from Voron. | Voron 2.4 - PrusaSlicer / SuperSlicer | Voron 2.4 - Cura | . Profile generation for V0 and Switchwire is ongoing. ",
-    "url": "http://localhost:4000/build/slicer/#slicer-profile-creation",
-    "relUrl": "/build/slicer/#slicer-profile-creation"
-  },"123": {
-    "doc": "Slicer Setup",
-    "title": "Preheat and Start Sequences",
-    "content": "For maximum quality and accuracy, preheating the printer is recommended. This can be part of a scripted process or separate. A preheat of at least 10 minutes is highly recommended in order to bring all components to thermal expansion equilibrium. This time may vary depending on many factors including the size of the printer and bed heater. _ In testing, a 350^3 V2 grew 0.2mm in height after heating up for an hour._ . Every printer is going to have a start sequence that typically involves homing and/or leveling to prepare the printer. This is in addition to heating the nozzle and bed and doing other tasks. Look at the PRINT_START macro in the printer.cfg for the standard process. For additional information or ideas, check the macros page. Next: First Print . ",
-    "url": "http://localhost:4000/build/slicer/#preheat-and-start-sequences",
-    "relUrl": "/build/slicer/#preheat-and-start-sequences"
-  },"124": {
-    "doc": "Initial Startup",
-    "title": "Initial Startup Checks",
-    "content": "This section provides a list of steps to help confirm the pin settings in the Klipper printer.cfg file. During this guide, it may be necessary to make changes to the Klipper config file. Be sure to issue a RESTART command after every change to the config file to ensure that the change takes effect (type “restart” in the Octoprint or Mainsail terminal and then click “Send”). It’s also a good idea to issue a STATUS command after every RESTART to verify that the config file is successfully loaded. Any time commands are requested to be issued, those will happen in the ‘Terminal’ tab of the OctoPrint, Mainsail, or Fluidd web UI, in the box for entering commands directly. Any time movements need to be made, those will happen in the ‘Control’ tab / section of the Octoprint, Mainsail, or Fluidd web UI. The numbers underneath X, Y, and Z control the movement distance. ",
-    "url": "http://localhost:4000/build/startup/#initial-startup-checks",
-    "relUrl": "/build/startup/#initial-startup-checks"
-  },"125": {
-    "doc": "Initial Startup",
-    "title": "Verify Temperature",
-    "content": "Start by verifying that temperatures are being properly reported. Navigate to the Octoprint/Mainsail temperature graph. Verify that the temperature of the nozzle and bed are present and not increasing. If it is increasing, remove power from the printer. If the temperatures are not accurate, review the “sensor_type” and “sensor_pin” settings for the extruder and/or bed. ",
-    "url": "http://localhost:4000/build/startup/#verify-temperature",
-    "relUrl": "/build/startup/#verify-temperature"
-  },"126": {
-    "doc": "Initial Startup",
-    "title": "Verify heaters",
-    "content": "Navigate to the OctoprintMainsail temperature graph and type in 50 followed by enter in the “Tool” temperature target feild. The extruder temperature in the graph should start to increase (within about 30 seconds or so). Then go to the “Tool” temperature drop-down box and select “Off”. After several minutes the temperature should start to return to its initial room temperature value. If the temperature does not increase then verify the “heater_pin” setting in the config. perform the above test again with the bed. ",
-    "url": "http://localhost:4000/build/startup/#verify-heaters",
-    "relUrl": "/build/startup/#verify-heaters"
-  },"127": {
-    "doc": "Initial Startup",
-    "title": "Stepper Motor Check",
-    "content": "To verify that each stepper motor is operating correctly, send the following command in the terminal: . STEPPER_BUZZ STEPPER=stepper_x . Run this command for each of the motors: . V0, SW . | stepper_x | stepper_y | stepper_z | extruder | . V1, Legacy . | stepper_x | stepper_y | stepper_z | stepper_z1 | extruder | . Trident . | stepper_x | stepper_y | stepper_z | stepper_z1 | stepper_z2 | extruder | . V2 . | stepper_x | stepper_y | stepper_z | stepper_z1 | stepper_z2 | stepper_z3 | extruder | . The STEPPER_BUZZ command will cause the given stepper to move one millimeter in a positive direction and then it will return to its starting position. (If the endstop is defined at position_endstop=0 then at the start of each movement the stepper will move away from the endstop.) It will perform this oscillation ten times. If the stepper does not move at all, then verify the “enable_pin” and “step_pin” settings for the stepper. If the stepper motor moves but does not return to its original position then verify the “dir_pin” setting. If the stepper motor oscillates in an incorrect direction, then it generally indicates that the “dir_pin” for the axis needs to be inverted. This is done by adding a ‘!’ to the “dir_pin” in the printer config file (or removing it if one is already there). If the motor moves significantly more or significantly less than one millimeter then verify the “rotation_distance” setting. V2 motor positions (Others may vary) . ",
-    "url": "http://localhost:4000/build/startup/#stepper-motor-check",
-    "relUrl": "/build/startup/#stepper-motor-check"
-  },"128": {
-    "doc": "Initial Startup",
-    "title": "Endstop Check",
-    "content": "Make sure that none of the X, Y, or Z endstops are being pressed. Then send a QUERY_ENDSTOPS command. The terminal window should respond with the following: . Send: QUERY_ENDSTOPS Recv: x:open y:open z:open . If any of them say “triggered” instead of “open”, double-check to make sure none of them are pressed. Next, manually press the X endstop switch, send the QUERY_ENDSTOPS command again, and make sure that the X enstop says “triggered and the Y and Z endstops stay open. Repeat with the Y and Z endstops. If it is found that one of the endstops has inverted login (i.e. it reads as “open” when it is pressed and “triggered” when not pressed), go into the printer configuration file (typically printer.cfg) and add or remove the ! in front of the pin identifier. For example, if the X endstop was inverted, add a ! in front of the pin number as follows: . endstop_pin: P1.28 -&gt; endstop_pin: !P1.28 . ",
-    "url": "http://localhost:4000/build/startup/#endstop-check",
-    "relUrl": "/build/startup/#endstop-check"
-  },"129": {
-    "doc": "Initial Startup",
-    "title": "XY Homing Check",
-    "content": "At this point everything is ready to home X and Y. Important: You need to be able to quickly stop the printer in case something goes wrong (e.g. the tool head goes the wrong direction). There are a few ways of doing this: . | Use the E-stop button on the display (if installed). On the Mini12864 it is the small button underneath the main control knob. Test the button and see what happens - Klipper should shut down. Raspberry Pi and OctoPrint/Mainsail/Fluidd should still be running but disconnected from Klipper. Press “Connect” in the upper left corner of OctoPrint, then in the Octoprint terminal window send a FIRMWARE_RESTART to get the printer back up and running. | Have a computer right next to the printer with the RESTART or M112 command already in the terminal command line in OctoPrint. When you start homing the printer, if it goes in the wrong direction, quickly send the restart command and it will stop the printer. | As a “nuclear” option, power off the printer with the power switch if something goes wrong. This is not ideal because it may corrupt the files on the SD card and to recover would require reinstalling everything from scratch. | . Once there is a tested process for stopping the printer in case of something going wrong, you can test X and Y movement. note: you will need to test X AND Y before you can correctly determine what adjustments are needed. First, send a G28 X command. This will only home X: The tool head should move up slightly and then move to the right until it hits the X endstop. If it moves any other direction, abort, take note, but still move on to testing Y. Next, test Y: run G28 Y. The toolhead should move to the back of the printer until it hits the Y endstop. In a CoreXY configuration, both motors have to move in order to get the toolhead to go in only and X or Y direction (think Etch A Sketch). If the gantry moves downward first before moving to the right, you must reverse your z stepper directions in the config. If either axis does not move the toolhead in the expected or correct direction, refer to the table below to figure out how to correct it. If you need to invert the direction of one of the motors, invert the direction pin definition by adding a ! to the pin name. For example, dir_pin: PB2 would become dir_pin: !PB2. (if the entry already has a !, remove it instead). If the motors are going in directions that match the lower row of the chart, physically swap your X and Y (A and B) motor connectors on the MCU. | [stepper x] = Motor B | [stepper y] = Motor A | . ",
-    "url": "http://localhost:4000/build/startup/#xy-homing-check",
-    "relUrl": "/build/startup/#xy-homing-check"
-  },"130": {
-    "doc": "Initial Startup",
-    "title": "Motor Configuration Guides",
-    "content": "V0: . V1, Legacy: . Trident: . V2: . SW: . Important: Do not unplug or re-plug motors from MCUs without powering down the printer. Damage to MCU may result. ",
-    "url": "http://localhost:4000/build/startup/#motor-configuration-guides",
-    "relUrl": "/build/startup/#motor-configuration-guides"
-  },"131": {
-    "doc": "Initial Startup",
-    "title": "Bed locating (V2)",
-    "content": "The print bed location of the V2 is much more adjustable than on any of the other models. Before the 0,0 point and Z endstop locations are set, the physical locations of the Z endstop and print bed need to be finalized. The Z endstop should be located to be in line with the nozzle, when the toolhead is at max Y position. Home X and Y with G28 X Y and then traverse just X to locate a Z endstop position at the maximum Y travel that will still trigger the endstop. Lock down the Z endstop at that position. Once the Z endstop is fixed into position the base plate should be adjusted so that the Z endstop pin is approximately 2-3mm from the aluminum base plate. The base plate should be measured on each side to ensure it is centered and level / even with the front edge of the frame. If in that process the extrusions the base is mounted on have to be moved, double-check the Z endstop to confirm it can still be reached. When tightening the mounting screws for the bed, a good practice is to have one screw tight, 2 firm, and the last one loose (best done hot). ",
-    "url": "http://localhost:4000/build/startup/#bed-locating-v2",
-    "relUrl": "/build/startup/#bed-locating-v2"
-  },"132": {
-    "doc": "Initial Startup",
-    "title": "Bed locating (V1, Trident, Legacy)",
-    "content": "Before the 0,0 point and Z endstop locations are set, the physical locations of the Z endstop and print bed need to be finalized. The Z endstop should be located at close to max X position. Home X and Y with G28 X Y and then traverse just Y to locate a Z endstop position at the maximum X travel that will still trigger the endstop. Lock down the Z endstop at that position. Once the Z endstop is fixed into position the base plate should be adjusted so that the Z endstop pin is approximately 2-3mm from the aluminum base plate. ",
-    "url": "http://localhost:4000/build/startup/#bed-locating-v1-trident-legacy",
-    "relUrl": "/build/startup/#bed-locating-v1-trident-legacy"
-  },"133": {
-    "doc": "Initial Startup",
-    "title": "Define 0,0 Point (V0, V1, Trident, V2, Legacy)",
-    "content": "The homing position is not at the typical location of 0,0 but at the maximum travel location. The actual numbers vary by printer build size. Depending on bed location, the positional parameters may need to be adjusted to re-locate the 0,0 point. | Start by re-running G28 X Y to home X and Y. After this, the nozzle will be at the maximum X,Y as defined by position_max under [stepper_x] and [stepper_y]. | Using the OctoPrint or Mainsail controls, move the nozzle to the front left corner of the bed. | If the from left corner of the bed cannot be reached within 3-5mm, the bed location needs to be physically adjusted (if possible). Move the bed on the extrusions or move the extrusions to get the bed location within range. | For V2, Make sure whatever bed position results still allows the nozzle to reach the Z endstop switch (See ‘Bed Locating’). | If questionable, turn off motors and attempt to move the gantry by hand to see if the front left corner can physically be reached by the nozzle. | . | Once the nozzle is close to the front left corner of the bed but still on the bed, send an M114 command to retrieve the current location. | Note: Due to other tolerances, it is usually not recommended to have the 0,0 exactly on the corner of the bed or build surface. Spec bed sizes are always slightly larger than the defined print volume so print volume loss will be minimal. | . | . If X and Y offsets are less than 1mm and 0,0 is over the bed, nothing needs to be changed. If X and Y offsets are within 5mm or 0,0 is past the bed, the postition_max values should be adjusted to change where the 0,0 point is computed. If the 0,0 is over the bed, the distance from the home point to the front left (position_max) must be increased. If the 0,0 is past the bed, the distance must be decreased. The amount is determined by the output of the M114 command. Update position_max and position_endstop for both [stepper_x] and [stepper_y] as follows: . | For X: New = Current - Get Position X (M114) Result | For Y: New = Current - Get Position Y (M114) Result | . If the Z endstop pin location has been previously defined, be sure to re-follow the process to set the Z endstop pin location (if applicable). If anything is updated in the printer configuration file, save the file and restart Klipper using FIRMWARE_RESTART. ",
-    "url": "http://localhost:4000/build/startup/#define-00-point-v0-v1-trident-v2-legacy",
-    "relUrl": "/build/startup/#define-00-point-v0-v1-trident-v2-legacy"
-  },"134": {
-    "doc": "Initial Startup",
-    "title": "Z Endstop Pin Location (V1, Trident, V2, Legacy)",
-    "content": ". | Start by re-running G28 X Y to home X and Y. | Using the software controls, move the nozzle until it is directly over the Z endstop switch. | Send an M114 command and record the X and Y values. | Update the homing routing in the printer configuration file under [homing_override] or [safe_z_home] with those values. | Restart Klipper with FIRMWARE_RESTART. | Run a full G28 and make sure that the printer properly homes X, Y, and Z. | . ",
-    "url": "http://localhost:4000/build/startup/#z-endstop-pin-location-v1-trident-v2-legacy",
-    "relUrl": "/build/startup/#z-endstop-pin-location-v1-trident-v2-legacy"
-  },"135": {
-    "doc": "Initial Startup",
-    "title": "Z Endstop Location (V0)",
-    "content": "The V0 uses the bed assembly to contact the Z endstop switch via an adjustable screw in the T8 nut block. Ideally the activation of that switch will be at the exact bed height at which your nozzle also reaches the bed surface. However there is a window of travel from the moment that switch is activated to the point at which that switch bottoms out, this window is about 0.6mm. by using the adjustable screw in the T8 nut block and by being able to physically move the endstop switch up or down along the extrusion you need to position these so that the point at which your nozzle touches the bed (your Z0 point) happens within that 0.6mm window of travel. You can then use the ENDSTOP_CALIBRATEroutine to then tell your printer where within that window you land, or in other words, what the offset between the z0 position and the endstop trigger point is. ",
-    "url": "http://localhost:4000/build/startup/#z-endstop-location-v0",
-    "relUrl": "/build/startup/#z-endstop-location-v0"
-  },"136": {
-    "doc": "Initial Startup",
-    "title": "Inductive Probe Check (V1, Trident, V2, Switchwire, Legacy)",
-    "content": "Probe Testing . With the toolhead in the center of the bed, reconfirm that the probe is working correctly. When it is far from the bed, QUERY_PROBE should return “open”. When a metal object is close to the probe, QUERY_PROBE should return “triggered”. If the signal is inverted, add a “!” In front of the pin definition (ie, pin: ! z:P1.24). Slowly reduce your Z height and run QUERY_PROBE each time until QUERY_PROBE returns “triggered” - make sure the nozzle is not touching the print surface (and has clearance). Probe Accuracy Check . With the bed and hotend cold (for now), move the probe to the center of the bed and run PROBE_ACCURACY. It will probe the bed 10 times in a row and output a standard deviation value at the end. Make sure that the sensed distance is not trending (gradually decreasing or increasing over the 10 probes) and that the standard deviation is less than 0.003mm. Example of unstable PROBE_ACCURACY (trending downward during warm up). Send: PROBE_ACCURACY Recv: // PROBE_ACCURACY at X:125.000 Y:125.000 Z:7.173 (samples=10 retract=2.000 speed=2.0 Send: M105 Recv: // probe at 125.000,125.000 is z=4.975000 Recv: // probe at 125.000,125.000 is z=4.960000 Recv: // probe at 125.000,125.000 is z=4.955000 Recv: // probe at 125.000,125.000 is z=4.952500 Recv: // probe at 125.000,125.000 is z=4.950000 Recv: // probe at 125.000,125.000 is z=4.947500 Recv: // probe at 125.000,125.000 is z=4.942500 Recv: // probe at 125.000,125.000 is z=4.937500 Recv: // probe at 125.000,125.000 is z=4.937500 Recv: // probe at 125.000,125.000 is z=4.932500 Recv: // probe accuracy results: maximum 4.975000, minimum 4.932500, range 0.042500, average 4.949000, median 4.948750, standard deviation 0.011948 . ",
-    "url": "http://localhost:4000/build/startup/#inductive-probe-check-v1-trident-v2-switchwire-legacy",
-    "relUrl": "/build/startup/#inductive-probe-check-v1-trident-v2-switchwire-legacy"
-  },"137": {
-    "doc": "Initial Startup",
-    "title": "PID Tune Bed &amp; Hotend",
-    "content": "The PID tune is important for tuning the printer for a given hardware configuration to ensure that temperatures can remain as stable as possible during operation. PID Tune Heated Bed . Move nozzle to the center of the bed and approximately 5-10mm above the bed surface, then run: . PID_CALIBRATE HEATER=heater_bed TARGET=100 . It will perform a PID calibration routine that will last about 10 minutes. Once it is finished, type SAVE_CONFIG which will save the parameters into your configuration file. PID Tune Hotend . Set the part cooling fans to 25% (M106 S64) and then run: . PID_CALIBRATE HEATER=extruder TARGET=245 . It will perform a PID calibration routine that will last about 5 minutes. Once it is finished, type SAVE_CONFIG which will save the parameters into your configuration file. ",
-    "url": "http://localhost:4000/build/startup/#pid-tune-bed--hotend",
-    "relUrl": "/build/startup/#pid-tune-bed--hotend"
-  },"138": {
-    "doc": "Initial Startup",
-    "title": "Bed Leveling",
-    "content": "Depending on the printer type and capability, the following command(s) are used: . | V0: BED_SCREWS_ADJUST | V1, SW, Legacy: Z_TILT_ADJUST, SCREWS_TILT_CALCULATE | V2: QUAD_GANTRY_LEVEL | . Bed Screws (V0) . The V0 uses manual bed leveling, the bed is small enough and thick enough that a mesh or other types of per print leveling are not needed. there is a Macro in Klipper to help with the manual bed leveling process  BED_SCREWS_ADJUST . This tool will move the printer’s nozzle to each screw XY location and then move the nozzle to a Z=0.3 height. At this point one can use the “paper test” to adjust the bed screw directly under the nozzle. See the information described in “the paper test”, but adjust the bed screw instead of commanding the nozzle to different heights. Adjust the bed screw until there is a small amount of friction when pushing the paper back and forth. this process will move all three mounting points of your bed closer to the nozzle so it is critical that you re-run the Z offset adjust after completing this section. Once the screw is adjusted so that a small amount of friction is felt, run either the ACCEPT or ADJUSTED command. Use the ADJUSTED command if the bed screw needed an adjustment (typically anything more than about 1/8th of a turn of the screw). Use the ACCEPT command if no significant adjustment is necessary. Both commands will cause the tool to proceed to the next screw. (When an ADJUSTED command is used, the tool will schedule an additional cycle of bed screw adjustments; the tool completes successfully when all bed screws are verified to not require any significant adjustments.) One can use the ABORT command to exit the tool early. After the BED_SCREWS_ADJUST command has been completed rerun the Z_ENDSTOP_CALIBRATE command to to bring your nozzle to the correct Z=0 position. Bed Tilt (V1, Legacy) . The V1 and Legacy use a combination of automated and manual bed leveling. There are two macros built into Klipper to assist with the function. First run the BED_TILT macro. This will go back and forth between the predefined points to level the two Z motors. This setting is dynamically changed and nothing will need to be saved. Second run the SCREWS_TILT_CALCULATE macro. It will check the 3 positions defined in the [screws_tilt_adjust section] of printer.cfg for level, then return how much to adjust the front thumbscrew by. Re-run the process at least one more time to verify the adjustment. After both processes have been completed rerun the Z_ENDSTOP_CALIBRATE command to to bring your nozzle to the correct Z=0 position. Z Tilt (Trident) . The Trident uses automated bed leveling using 3 motors. There is a macro Z_TILT_ADJUST built into Klipper for that function. It is very similar to the QUAD_GANTRY_LEVEL used by V2, but supports 3 or more motors. Run the Z_TILT_ADJUST and it will probe each of the 3 points 3 times, average the readins, then make adjustments until the grantry is level. After that process has been completed, rehome z by running G28 Z, and then rerun the Z_ENDSTOP_CALIBRATE command to to bring your nozzle to the correct Z=0 position. Quad Gantry Level (V2) . Since the V2 uses 4 independent Z motors, the entire gantry system must be specially levelled. The macro to call this process is QUAD_GANTRY_LEVEL (sometimes referred to in conversation as ‘QGL’). It will probe each of 4 points 3 times, average the readings, then make adjustments until the gantry is level. If the process fails due to an “out of bounds” error, disable your stepper motors and slowly move your gantry or bed by hand until it is approximately flat. Re-home your printer (G28) and then rerun the sequence. You may have to run it more than once. Make sure that the adjustment value for each stepper motor converges to 0. If it diverges, check to make sure you have your stepper motors wired to the correct stepper driver (check documentation). Tilt / QGL With Heated Bed and Chamber (V1, Trident, V2) . Run a G28 command to home the printer since a SAVE_CONFIG restarts the printer. This will be the first time that a Quad Gantry Level has been run at a high chamber temperature. To ensure that the probe has stabilized with the heated bed at 100C and the hot end at 240C, run PROBE_ACCURACY with the nozzle at the center of the bed. If the values are trending (increasing or decreasing) throughout the 10 probes or the standard deviation is greater than 0.003mm, wait another 5 minutes and try again. Once the readings are stable, run Z_TILT_ADJUST or QUAD_GANTRY_LEVEL. Make a note of how long the probe readings took to stabilize for when starting prints - typically a cold printer takes 10-20 minutes to stabilize at temperature. Common QGL Problems . | If the QGL is having issues with too high of a standard deviation and the printer is heated and stable, check Z belt tension. Make sure they are reasonably tight and even. | If QGL fails with being unable to reach the probe in time, do a FIRMWARE_RESTART, manually level the bed as closely as possible, then home (G28) and re-attempt. | . Bed Mesh Only (Switchwire) . Crazy things. More to come. ",
-    "url": "http://localhost:4000/build/startup/#bed-leveling",
-    "relUrl": "/build/startup/#bed-leveling"
-  },"139": {
-    "doc": "Initial Startup",
-    "title": "Z Offset Adjustment",
-    "content": "If you did not run PID tuning, set your extruder to 245C and heated bed to 100C and let the printer heat up for at least 15 minutes. Initial / Simple Process . Preparation . | V1: Run a G28, and then a Z_TILT_ADJUST, and then another G28. | V2: Run a G28, and then a QUAD_GANTRY_LEVEL, and then another G28. | All others: Run a G28. | Move the nozzle to the center of the bed if it is not already. | Clear any stored bed meshes with BED_MESH_CLEAR | . Run Z_ENDSTOP_CALIBRATE (V0, Trident, V2) or PROBE_CALIBRATE (Switchwire) . Slowly move the nozzle toward the bed by using TESTZ Z=-1 Until the nozzle is relatively close to the bed, and then stepping down with TESTZ Z=-0.1 Until the nozzle touches a piece of paper on top of the build plate. If you go far down, you can move the nozzle back up with: TESTZ Z=0.1 Once you are satisfied with the nozzle height, run ACCEPT and then SAVE_CONFIG. Important: Klipper assumes that this process is being done cold. If being performed hot, do an additional TESTZ Z=-0.1 before accepting. If an “out of bounds” error occurs, send Z_ENDSTOP_CALIBRATE, ACCEPT, and then SAVE_CONFIG. This will redefine the 0 bed height so you will be able to get closer. V2: If you get this error it likely means that the shaft for your Z Endstop is too long and may catch on the print head during a print. It is best to cut the shaft or raise the bed (with a washer, for instance) so that it is within 1mm of the build surface. Fine Tuning Z Height . With LCD Screen . The Z offset can be adjusted during a print using the Tune menu on the display, and the printer configuration can be updated with this new value. Remember that higher values for the position_endstop means that the nozzle will be closer to the bed. Mainsail and Fluidd . The “babystepping” controls may be used to fine tune the z offset. Without LCD Screen . If you’re running your printer headless, the Z height can still be adjusted on-the-fly using the web interface. This is built into Mailsail and Fluidd, but requires some additional work for Octoprint. 1) (Optional) Create macros in your printer.cfg file so that the commands are easier to remember/run: . [gcode_macro ZUP] gcode: SET_GCODE_OFFSET Z_ADJUST=0.01 MOVE=1 [gcode_macro ZDOWN] gcode: SET_GCODE_OFFSET Z_ADJUST=-0.01 MOVE=1 . 2) Run ZUP or ZDOWN (or the associated SET_GCODE_OFFSET command) as needed in the terminal window until you have perfected your squish. 3) Run GET_POSITION and look for “gcode base”. Note the Z value. Saving your results (V0,Trident, V2) . All of the above methods are “transient”. The changes are lost as soon as your printer restarts. Once you find an adjustment you are happy with, you may make it permanent, by applying it to the position_endstop in your config file: run the command Z_OFFSET_APPLY_ENDSTOP followed by SAVE_CONFIG. This will restart your printer, with the adjustment permanently applied to the endstop position. Saving your results (Switchwire) . All of the above methods are “transient”. The changes are lost as soon as your printer restarts. Once you find an adjustment you are happy with, you may make it permanent, by applying it to the probe’s z_offset in your config file: run the command Z_OFFSET_APPLY_PROBE followed by SAVE_CONFIG. This will restart your printer, with the adjustment permanently applied to the probe offset. Community References . Z Endstop Configuration . ",
-    "url": "http://localhost:4000/build/startup/#z-offset-adjustment",
-    "relUrl": "/build/startup/#z-offset-adjustment"
-  },"140": {
-    "doc": "Initial Startup",
-    "title": "Extruder Calibration (e-steps)",
-    "content": "Before the first print,make sure that the extruder extrudes the correct amount of material. | With the hotend at temperature, make a mark between your roll of filament and your extruder, between 120mm and 150mm away from the entrance to the extruder. Measure the distance from the extrance of the extruder to that mark. | In Octoprint / Mailsail, extrude 50mm 2 times (for a total of 100mm since Klipper doesn’t allow you to extrude more than 50mm at a time). | Measure from the entrance of your extruder to the mark you made previously. | In a perfect world, assuming the mark is at 120mm, it would measure 20mm (120mm - 20mm = 100mm), but usually won’t be. | . | Update rotation_distance in the extruder section of the configuration file using this formula: . | New Config Value = Old Config Value * (Actual Extruded Amount/Target Extruded Amount) | . | . Note: a higher configuration value means that less filament is being extruded. Paste the new value into the configuration file, restart Klipper, and try again. Once the extrusion amount is within 0.5% of the target value (ie, 99.5-100.5mm for a target 100mm of extruded filament), the extruder is calibrated! . Typical rotation_distance values should be around 22.6789511 for Afterburner and Mobius (update gear_ratio to 80:20 for Mobius). Next: Slicer Setup . ",
-    "url": "http://localhost:4000/build/startup/#extruder-calibration-e-steps",
-    "relUrl": "/build/startup/#extruder-calibration-e-steps"
-  },"141": {
-    "doc": "Initial Startup",
-    "title": "Initial Startup",
-    "content": " ",
-    "url": "http://localhost:4000/build/startup/",
-    "relUrl": "/build/startup/"
-  },"142": {
-    "doc": "The Build",
-    "title": "The Build",
-    "content": "This guide contains all the the steps to go from a pile of parts to a functioning printer with a known working configuration. Please read the guide carefully, there are many details that seem trivial but are included because one or more people got stuck at these points. We as a community want to make sure that everyone has the best experience possible. If you find something confusing and would like clarification, that likely means someone else in the past or future will also find it difficult. Please reach out and we will gladly update the document! . This guide designed to be a “universal” setup guide that can be used across all printers in the Voron lineup. If you are building a printer and there is a section marked for a different printer, that section can be skipped. If you need help and are not there already, please join the Discord! . ",
-    "url": "http://localhost:4000/build/",
-    "relUrl": "/build/"
-  },"143": {
+  },"98": {
     "doc": "Voron Documentation",
     "title": "Voron Documentation",
     "content": "Welcome to the world of Voron 3D printers! . This is the Voron Documentation site. All of the information needed to go from zero to a working Voron printer can be found here. If this is the first time building a Voron printer (especially if this is the first 3D printer), it is strongly suggested to build 100% to spec using the documentation provided here. The spec configurations have been tested extensively and are well supported. Credits . ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"144": {
+  },"99": {
     "doc": "Mechanical Assembly",
     "title": "Mechanical Assembly",
     "content": " ",
     "url": "http://localhost:4000/build/mechanical/",
     "relUrl": "/build/mechanical/"
-  },"145": {
+  },"100": {
     "doc": "Mechanical Assembly",
     "title": "Tips",
     "content": "General . | Avoid excessive force! | Take your time, measure twice. | This is not rocket science (it’s garden tools), we do not need 0.001mm precision. | . Frame . | A granite countertop or other similarly flat surface will assist with extrusion alignment to ensure a square frame | Measure diagonals to check squareness - measurements should be &lt; 2mm different. | Extrusions that are attached using blind joints may rotate. This will be prevented by the panel corners and skirts later in the build | . Idler / drive unit assembly . | M5 standard washer thickness is 1mm ±0.2mm, so washer counts in the manual are meant as guidance. As an option, you may purchase 1mm thick shims which have tighter tolerances. It may be useful to have 0.5mm washers at hand to align pulleys and bearings optimally in your build or to swap in and out to ensure proper fitment | Make sure your toothed pulleys are GT2/2GT! | Make sure your pulleys do not wobble. Rotate them on a shaft and look for eccentric movement of the teeth. The flanges are not critical | Use genuine Gates GT2/2GT belts for the open loop belts–off brand/generic GT2/2GT belt is commonly wider than 6mm which will cause it to ride up on the flanges of the idler bearings | . Belts . | Make sure that both A/B or X/Z (Switchwire) belts are of equal length! This helps validate belt paths and tension during assembly. | If using a belted Z (V2), make sure all Z belts are the same length. This helps with tensioning. | Do not cut belts flush once assembled, leave an inch or two for adjustments or reassembly | . Gantry Assembly . | The gantry can be assembled and belted before you install it in the frame. Measure the outer width of the gantry before tightening to make sure it is correct | Routing the belt in the a/b drives looks tricky, but there are several ways to ease this: . | Fix something stiff like a cable tie or some wire to the end of the belt to help with routing | Use dental picks to guide the belt | . | For V2, Z joint screws should not be too tight to allow movement when doing quad gantry adjustments | For V1, V2, and Legacy, gantry should be squared with equal belt tension. See the guide for setting gantry belt tension. | Measure both diagonals to ensure squareness | . Bed . | Bed screws should always be left slightly loose during initial assembly and finished tightening while bed is heated after a few heating cycles. | Trident and V2 should firmly tighten one screw, then slightly tighten 2 others. (V2 can leave one screw alone) | V0 is leveled using the bed screws and has a different process. | . | . ",
     "url": "http://localhost:4000/build/mechanical/#tips",
     "relUrl": "/build/mechanical/#tips"
-  },"146": {
+  },"101": {
     "doc": "Mechanical Assembly",
     "title": "Build Manuals",
     "content": " ",
     "url": "http://localhost:4000/build/mechanical/#build-manuals",
     "relUrl": "/build/mechanical/#build-manuals"
-  },"147": {
+  },"102": {
     "doc": "Mechanical Assembly",
     "title": "V0",
     "content": "Current . V0.1 Assembly Manual . Historical . | V0 Assembly Manual | V0 Pocketwatch Manual | V0 Dozuki Guides | . ",
     "url": "http://localhost:4000/build/mechanical/#v0",
     "relUrl": "/build/mechanical/#v0"
-  },"148": {
+  },"103": {
     "doc": "Mechanical Assembly",
     "title": "V1",
     "content": "Historical . | V1.8 Assembly Manual | V1.6 Assembly Manual | V1.6 Dozuki Guides | V1.5 Documentation | V1.0 Documentation | . ",
     "url": "http://localhost:4000/build/mechanical/#v1",
     "relUrl": "/build/mechanical/#v1"
-  },"149": {
+  },"104": {
     "doc": "Mechanical Assembly",
     "title": "Trident (Replaces V1)",
     "content": "Trident Assembly Manual V1 Upgrade Manual . ",
     "url": "http://localhost:4000/build/mechanical/#trident-replaces-v1",
     "relUrl": "/build/mechanical/#trident-replaces-v1"
-  },"150": {
+  },"105": {
     "doc": "Mechanical Assembly",
     "title": "V2",
     "content": "Current . V2.4r2 Assembly Manual . Historical . | V2.4 Assembly Manual | V2.2 Assembly Manual | V2.1 Assembly Manual | . ",
     "url": "http://localhost:4000/build/mechanical/#v2",
     "relUrl": "/build/mechanical/#v2"
-  },"151": {
+  },"106": {
     "doc": "Mechanical Assembly",
     "title": "Switchwire",
     "content": "Current . | Switchwire Assembly Manual | . ",
     "url": "http://localhost:4000/build/mechanical/#switchwire",
     "relUrl": "/build/mechanical/#switchwire"
-  },"152": {
+  },"107": {
     "doc": "Mechanical Assembly",
     "title": "Legacy",
     "content": "Current . (coming soon) . Next: Electrical Wiring . ",
     "url": "http://localhost:4000/build/mechanical/#legacy",
     "relUrl": "/build/mechanical/#legacy"
+  },"108": {
+    "doc": "Community Documentation",
+    "title": "Community Documentation",
+    "content": "This is a repository of the tremendous amount of knowledge that has been put together by Voron owners. ",
+    "url": "http://localhost:4000/community/",
+    "relUrl": "/community/"
+  },"109": {
+    "doc": "Troubleshooting",
+    "title": "Troubleshooting",
+    "content": "| Guide Name / Link | Author | . | Blob of Death | 120decibell | . | Klipper Common Errors | eddie | . | printer.cfg Changes | shiftingtech | . | Rail Misalignment Causing Twist | badnoob | . | Twisted X Extrusion Diagnostics | Bryansj | . ",
+    "url": "http://localhost:4000/community/troubleshooting/",
+    "relUrl": "/community/troubleshooting/"
+  },"110": {
+    "doc": "Custom Macros",
+    "title": "Macros",
+    "content": "Macros are an essential tool for configuring and managing Klipper. A number of macros are pre-defined in the example configurations but a lot more is possible. Klipper macros are always in the following format: . [gcode_macro &lt;macro_name&gt;] gcode: &lt;gcode&gt; &lt;gcode&gt; . Important: The tab / spaces before the gcode is required. ",
+    "url": "http://localhost:4000/community/macros/#macros",
+    "relUrl": "/community/macros/#macros"
+  },"111": {
+    "doc": "Custom Macros",
+    "title": "Required / Pre-built",
+    "content": "To see examples of the macros themselves, look at the standard printer.cfg for the printer. Homing Override / Safe Z Home . By default, all printers are setup with a [homing_override] configuration section that includes a gcode macro for the home process. This macro is updating during thee setup process to define the Z endstop location. However the homing override method always homes X and Y before homing Z. The [safe_z_home] configuration allows for a Z homing process without requiring a repeat home of X and Y. To enable safe z homing disable homing override and provide a X,Y coordinate of your Z endstop pin. Be aware that enabling safe Z home will likely require a change in other processes / macros. [safe_z_home] home_xy_position: 175.5,253 z_hop: 5.0 . G32 . The G32 macro is included with the stock configuration for most printers. This is typically used as a “full home” process that will home and perform leveling / tilt adjustments. PRINT_START . The PRINT_START macro is called at the start of every print by slicers that are confgured to be aware of it. PRINT_END . The PRINT_END macro is called at the end of every print by slicers that are configured to be aware of it. ",
+    "url": "http://localhost:4000/community/macros/#required--pre-built",
+    "relUrl": "/community/macros/#required--pre-built"
+  },"112": {
+    "doc": "Custom Macros",
+    "title": "User Macros",
+    "content": "| Creator | Macros | Bed Size | . | 120decibell | CG28, G32, G141, PURGE_BUCKET, TEST_SPEED_FAST | 350mm | . Contributors - please make sure your macros are well documented! . ",
+    "url": "http://localhost:4000/community/macros/#user-macros",
+    "relUrl": "/community/macros/#user-macros"
+  },"113": {
+    "doc": "Custom Macros",
+    "title": "Custom Macros",
+    "content": " ",
+    "url": "http://localhost:4000/community/macros/",
+    "relUrl": "/community/macros/"
+  },"114": {
+    "doc": "How-To's",
+    "title": "How-To’s",
+    "content": "Community-generated documentation for the many items that the official guide may not cover. | Guide Name / Link | Author | . | Calculating Driver Current Settings | 120decibell | . | Chamber Temperature Exhaust Fan | alchemyEngine | . | IGUS Chain Ordering Guide | AMonkeyButler | . | Installing a Bed Heater with RTV | Fulg | . | Installing BetterBootLoader on a SKR | kage-chan | . | Z Endstop Configuration | 120decibell | . | I wish I had known | simonthecat | . | Automating Klipper MCU Updates | Drachenkatze | . | Switchwire Screws Adjust | DoubleT | . | Print Tuning Guide | Ellis | . | Multi-Colour Prints with a Single Nozzle | mikhail | . | Custom Raspberry Pi Boot screens | samwiseg0 | . | Klicky Probe as Endstop with constant Z Offset | Takuya &amp; Clee | . | Setting Up and Calibrating Sensorless XY Homing | clee | . External Links . | Assembling Limit Switches | Changing OctoPi Hostname | Cleaning and greasing Linear Rails Be sure to read the description first | Drill and Counterbore Voron Bed | Printed 80t pulley assembly | RAMPS 24V Conversion | . ",
+    "url": "http://localhost:4000/community/howto/#how-tos",
+    "relUrl": "/community/howto/#how-tos"
+  },"115": {
+    "doc": "How-To's",
+    "title": "How-To's",
+    "content": " ",
+    "url": "http://localhost:4000/community/howto/",
+    "relUrl": "/community/howto/"
+  },"116": {
+    "doc": "Slicer Setup",
+    "title": "Slicer Setup",
+    "content": "All modern mainstream slicers are able to produce high quality prints when properly configured for your printer. The Voron community maintains a set of slicer profiles that you can use as a known good starting point for further tuning. Proper understanding of slicer settings will have a tremendous impact on print results. Try to learn more about your favorite slicer and tweak the settings to meet your needs. While using different slicers for different kinds of prints can be beneficial avoid blindly hopping between slicers and slicer profiles just because someone posted a nice print sliced with a different slicer. ",
+    "url": "http://localhost:4000/build/slicer/",
+    "relUrl": "/build/slicer/"
+  },"117": {
+    "doc": "Slicer Setup",
+    "title": "Slicer Selection",
+    "content": "There are two slicers that come with built in profiles for most Voron printers: . | Cura | Super Slicer | . Other slicers that can be configured to support Voron printers but do not have built in support: . | Prusa Slicer | Simplify3D | Slic3r | . Some slicers (e.g. PrusaSlicer) do not recognize the Klipper PRINT_START macro as a valid start macro and add an additional bed heat and nozzle heat to the start gcode. If examination of the output gcode shows an M109 and/or M190 before the PRINT_START macro, consider using a different or newer slicer that recognizes that macro as a valid start macro. ",
+    "url": "http://localhost:4000/build/slicer/#slicer-selection",
+    "relUrl": "/build/slicer/#slicer-selection"
+  },"118": {
+    "doc": "Slicer Setup",
+    "title": "Slicer Profile Creation",
+    "content": "Both Cura and SuperSlicer (in current versions) have built-in profiles for V2 printers which can be setup usin each software’s normal processes. The V1 is similar enough to V2 that the profile can be re-used. Some pre-built slicer profiles are available from Voron. | Voron 2.4 - PrusaSlicer / SuperSlicer | Voron 2.4 - Cura | . Profile generation for V0 and Switchwire is ongoing. ",
+    "url": "http://localhost:4000/build/slicer/#slicer-profile-creation",
+    "relUrl": "/build/slicer/#slicer-profile-creation"
+  },"119": {
+    "doc": "Slicer Setup",
+    "title": "Preheat and Start Sequences",
+    "content": "For maximum quality and accuracy, preheating the printer is recommended. This can be part of a scripted process or separate. A preheat of at least 10 minutes is highly recommended in order to bring all components to thermal expansion equilibrium. This time may vary depending on many factors including the size of the printer and bed heater. _ In testing, a 350^3 V2 grew 0.2mm in height after heating up for an hour._ . Every printer is going to have a start sequence that typically involves homing and/or leveling to prepare the printer. This is in addition to heating the nozzle and bed and doing other tasks. Look at the PRINT_START macro in the printer.cfg for the standard process. For additional information or ideas, check the macros page. Next: First Print . ",
+    "url": "http://localhost:4000/build/slicer/#preheat-and-start-sequences",
+    "relUrl": "/build/slicer/#preheat-and-start-sequences"
+  },"120": {
+    "doc": "Tuning Guides",
+    "title": "Tuning Guides",
+    "content": "Tuning steps and processes after everything is working. ",
+    "url": "http://localhost:4000/tuning/",
+    "relUrl": "/tuning/"
+  },"121": {
+    "doc": "Initial Startup",
+    "title": "Initial Startup Checks",
+    "content": "This section provides a list of steps to help confirm the pin settings in the Klipper printer.cfg file. During this guide, it may be necessary to make changes to the Klipper config file. Be sure to issue a RESTART command after every change to the config file to ensure that the change takes effect (type “restart” in the Octoprint or Mainsail terminal and then click “Send”). It’s also a good idea to issue a STATUS command after every RESTART to verify that the config file is successfully loaded. Any time commands are requested to be issued, those will happen in the ‘Terminal’ tab of the OctoPrint, Mainsail, or Fluidd web UI, in the box for entering commands directly. Any time movements need to be made, those will happen in the ‘Control’ tab / section of the Octoprint, Mainsail, or Fluidd web UI. The numbers underneath X, Y, and Z control the movement distance. ",
+    "url": "http://localhost:4000/build/startup/#initial-startup-checks",
+    "relUrl": "/build/startup/#initial-startup-checks"
+  },"122": {
+    "doc": "Initial Startup",
+    "title": "Verify Temperature",
+    "content": "Start by verifying that temperatures are being properly reported. Navigate to the Octoprint/Mainsail temperature graph. Verify that the temperature of the nozzle and bed are present and not increasing. If it is increasing, remove power from the printer. If the temperatures are not accurate, review the “sensor_type” and “sensor_pin” settings for the extruder and/or bed. ",
+    "url": "http://localhost:4000/build/startup/#verify-temperature",
+    "relUrl": "/build/startup/#verify-temperature"
+  },"123": {
+    "doc": "Initial Startup",
+    "title": "Verify heaters",
+    "content": "Navigate to the OctoprintMainsail temperature graph and type in 50 followed by enter in the “Tool” temperature target feild. The extruder temperature in the graph should start to increase (within about 30 seconds or so). Then go to the “Tool” temperature drop-down box and select “Off”. After several minutes the temperature should start to return to its initial room temperature value. If the temperature does not increase then verify the “heater_pin” setting in the config. perform the above test again with the bed. ",
+    "url": "http://localhost:4000/build/startup/#verify-heaters",
+    "relUrl": "/build/startup/#verify-heaters"
+  },"124": {
+    "doc": "Initial Startup",
+    "title": "Stepper Motor Check",
+    "content": "To verify that each stepper motor is operating correctly, send the following command in the terminal: . STEPPER_BUZZ STEPPER=stepper_x . Run this command for each of the motors: . V0, SW . | stepper_x | stepper_y | stepper_z | extruder | . V1, Legacy . | stepper_x | stepper_y | stepper_z | stepper_z1 | extruder | . Trident . | stepper_x | stepper_y | stepper_z | stepper_z1 | stepper_z2 | extruder | . V2 . | stepper_x | stepper_y | stepper_z | stepper_z1 | stepper_z2 | stepper_z3 | extruder | . The STEPPER_BUZZ command will cause the given stepper to move one millimeter in a positive direction and then it will return to its starting position. (If the endstop is defined at position_endstop=0 then at the start of each movement the stepper will move away from the endstop.) It will perform this oscillation ten times. If the stepper does not move at all, then verify the “enable_pin” and “step_pin” settings for the stepper. If the stepper motor moves but does not return to its original position then verify the “dir_pin” setting. If the stepper motor oscillates in an incorrect direction, then it generally indicates that the “dir_pin” for the axis needs to be inverted. This is done by adding a ‘!’ to the “dir_pin” in the printer config file (or removing it if one is already there). If the motor moves significantly more or significantly less than one millimeter then verify the “rotation_distance” setting. V2 motor positions (Others may vary) . ",
+    "url": "http://localhost:4000/build/startup/#stepper-motor-check",
+    "relUrl": "/build/startup/#stepper-motor-check"
+  },"125": {
+    "doc": "Initial Startup",
+    "title": "Endstop Check",
+    "content": "Make sure that none of the X, Y, or Z endstops are being pressed. Then send a QUERY_ENDSTOPS command. The terminal window should respond with the following: . Send: QUERY_ENDSTOPS Recv: x:open y:open z:open . If any of them say “triggered” instead of “open”, double-check to make sure none of them are pressed. Next, manually press the X endstop switch, send the QUERY_ENDSTOPS command again, and make sure that the X enstop says “triggered and the Y and Z endstops stay open. Repeat with the Y and Z endstops. If it is found that one of the endstops has inverted login (i.e. it reads as “open” when it is pressed and “triggered” when not pressed), go into the printer configuration file (typically printer.cfg) and add or remove the ! in front of the pin identifier. For example, if the X endstop was inverted, add a ! in front of the pin number as follows: . endstop_pin: P1.28 -&gt; endstop_pin: !P1.28 . ",
+    "url": "http://localhost:4000/build/startup/#endstop-check",
+    "relUrl": "/build/startup/#endstop-check"
+  },"126": {
+    "doc": "Initial Startup",
+    "title": "XY Homing Check",
+    "content": "At this point everything is ready to home X and Y. Important: You need to be able to quickly stop the printer in case something goes wrong (e.g. the tool head goes the wrong direction). There are a few ways of doing this: . | Use the E-stop button on the display (if installed). On the Mini12864 it is the small button underneath the main control knob. Test the button and see what happens - Klipper should shut down. Raspberry Pi and OctoPrint/Mainsail/Fluidd should still be running but disconnected from Klipper. Press “Connect” in the upper left corner of OctoPrint, then in the Octoprint terminal window send a FIRMWARE_RESTART to get the printer back up and running. | Have a computer right next to the printer with the RESTART or M112 command already in the terminal command line in OctoPrint. When you start homing the printer, if it goes in the wrong direction, quickly send the restart command and it will stop the printer. | As a “nuclear” option, power off the printer with the power switch if something goes wrong. This is not ideal because it may corrupt the files on the SD card and to recover would require reinstalling everything from scratch. | . Once there is a tested process for stopping the printer in case of something going wrong, you can test X and Y movement. note: you will need to test X AND Y before you can correctly determine what adjustments are needed. First, send a G28 X command. This will only home X: The tool head should move up slightly and then move to the right until it hits the X endstop. If it moves any other direction, abort, take note, but still move on to testing Y. Next, test Y: run G28 Y. The toolhead should move to the back of the printer until it hits the Y endstop. In a CoreXY configuration, both motors have to move in order to get the toolhead to go in only and X or Y direction (think Etch A Sketch). If the gantry moves downward first before moving to the right, you must reverse your z stepper directions in the config. If either axis does not move the toolhead in the expected or correct direction, refer to the table below to figure out how to correct it. If you need to invert the direction of one of the motors, invert the direction pin definition by adding a ! to the pin name. For example, dir_pin: PB2 would become dir_pin: !PB2. (if the entry already has a !, remove it instead). If the motors are going in directions that match the lower row of the chart, physically swap your X and Y (A and B) motor connectors on the MCU. | [stepper x] = Motor B | [stepper y] = Motor A | . ",
+    "url": "http://localhost:4000/build/startup/#xy-homing-check",
+    "relUrl": "/build/startup/#xy-homing-check"
+  },"127": {
+    "doc": "Initial Startup",
+    "title": "Motor Configuration Guides",
+    "content": "V0: . V1, Legacy: . Trident: . V2: . SW: . Important: Do not unplug or re-plug motors from MCUs without powering down the printer. Damage to MCU may result. ",
+    "url": "http://localhost:4000/build/startup/#motor-configuration-guides",
+    "relUrl": "/build/startup/#motor-configuration-guides"
+  },"128": {
+    "doc": "Initial Startup",
+    "title": "Bed locating (V2)",
+    "content": "The print bed location of the V2 is much more adjustable than on any of the other models. Before the 0,0 point and Z endstop locations are set, the physical locations of the Z endstop and print bed need to be finalized. The Z endstop should be located to be in line with the nozzle, when the toolhead is at max Y position. Home X and Y with G28 X Y and then traverse just X to locate a Z endstop position at the maximum Y travel that will still trigger the endstop. Lock down the Z endstop at that position. Once the Z endstop is fixed into position the base plate should be adjusted so that the Z endstop pin is approximately 2-3mm from the aluminum base plate. The base plate should be measured on each side to ensure it is centered and level / even with the front edge of the frame. If in that process the extrusions the base is mounted on have to be moved, double-check the Z endstop to confirm it can still be reached. When tightening the mounting screws for the bed, a good practice is to have one screw tight, 2 firm, and the last one loose (best done hot). ",
+    "url": "http://localhost:4000/build/startup/#bed-locating-v2",
+    "relUrl": "/build/startup/#bed-locating-v2"
+  },"129": {
+    "doc": "Initial Startup",
+    "title": "Bed locating (V1, Trident, Legacy)",
+    "content": "Before the 0,0 point and Z endstop locations are set, the physical locations of the Z endstop and print bed need to be finalized. The Z endstop should be located at close to max X position. Home X and Y with G28 X Y and then traverse just Y to locate a Z endstop position at the maximum X travel that will still trigger the endstop. Lock down the Z endstop at that position. Once the Z endstop is fixed into position the base plate should be adjusted so that the Z endstop pin is approximately 2-3mm from the aluminum base plate. ",
+    "url": "http://localhost:4000/build/startup/#bed-locating-v1-trident-legacy",
+    "relUrl": "/build/startup/#bed-locating-v1-trident-legacy"
+  },"130": {
+    "doc": "Initial Startup",
+    "title": "Define 0,0 Point (V0, V1, Trident, V2, Legacy)",
+    "content": "The homing position is not at the typical location of 0,0 but at the maximum travel location. The actual numbers vary by printer build size. Depending on bed location, the positional parameters may need to be adjusted to re-locate the 0,0 point. | Start by re-running G28 X Y to home X and Y. After this, the nozzle will be at the maximum X,Y as defined by position_max under [stepper_x] and [stepper_y]. | Using the OctoPrint or Mainsail controls, move the nozzle to the front left corner of the bed. | If the from left corner of the bed cannot be reached within 3-5mm, the bed location needs to be physically adjusted (if possible). Move the bed on the extrusions or move the extrusions to get the bed location within range. | For V2, Make sure whatever bed position results still allows the nozzle to reach the Z endstop switch (See ‘Bed Locating’). | If questionable, turn off motors and attempt to move the gantry by hand to see if the front left corner can physically be reached by the nozzle. | . | Once the nozzle is close to the front left corner of the bed but still on the bed, send an M114 command to retrieve the current location. | Note: Due to other tolerances, it is usually not recommended to have the 0,0 exactly on the corner of the bed or build surface. Spec bed sizes are always slightly larger than the defined print volume so print volume loss will be minimal. | . | . If X and Y offsets are less than 1mm and 0,0 is over the bed, nothing needs to be changed. If X and Y offsets are within 5mm or 0,0 is past the bed, the postition_max values should be adjusted to change where the 0,0 point is computed. If the 0,0 is over the bed, the distance from the home point to the front left (position_max) must be increased. If the 0,0 is past the bed, the distance must be decreased. The amount is determined by the output of the M114 command. Update position_max and position_endstop for both [stepper_x] and [stepper_y] as follows: . | For X: New = Current - Get Position X (M114) Result | For Y: New = Current - Get Position Y (M114) Result | . If the Z endstop pin location has been previously defined, be sure to re-follow the process to set the Z endstop pin location (if applicable). If anything is updated in the printer configuration file, save the file and restart Klipper using FIRMWARE_RESTART. ",
+    "url": "http://localhost:4000/build/startup/#define-00-point-v0-v1-trident-v2-legacy",
+    "relUrl": "/build/startup/#define-00-point-v0-v1-trident-v2-legacy"
+  },"131": {
+    "doc": "Initial Startup",
+    "title": "Z Endstop Pin Location (V1, Trident, V2, Legacy)",
+    "content": ". | Start by re-running G28 X Y to home X and Y. | Using the software controls, move the nozzle until it is directly over the Z endstop switch. | Send an M114 command and record the X and Y values. | Update the homing routing in the printer configuration file under [homing_override] or [safe_z_home] with those values. | Restart Klipper with FIRMWARE_RESTART. | Run a full G28 and make sure that the printer properly homes X, Y, and Z. | . ",
+    "url": "http://localhost:4000/build/startup/#z-endstop-pin-location-v1-trident-v2-legacy",
+    "relUrl": "/build/startup/#z-endstop-pin-location-v1-trident-v2-legacy"
+  },"132": {
+    "doc": "Initial Startup",
+    "title": "Z Endstop Location (V0)",
+    "content": "The V0 uses the bed assembly to contact the Z endstop switch via an adjustable screw in the T8 nut block. Ideally the activation of that switch will be at the exact bed height at which your nozzle also reaches the bed surface. However there is a window of travel from the moment that switch is activated to the point at which that switch bottoms out, this window is about 0.6mm. by using the adjustable screw in the T8 nut block and by being able to physically move the endstop switch up or down along the extrusion you need to position these so that the point at which your nozzle touches the bed (your Z0 point) happens within that 0.6mm window of travel. You can then use the ENDSTOP_CALIBRATEroutine to then tell your printer where within that window you land, or in other words, what the offset between the z0 position and the endstop trigger point is. ",
+    "url": "http://localhost:4000/build/startup/#z-endstop-location-v0",
+    "relUrl": "/build/startup/#z-endstop-location-v0"
+  },"133": {
+    "doc": "Initial Startup",
+    "title": "Inductive Probe Check (V1, Trident, V2, Switchwire, Legacy)",
+    "content": "Probe Testing . With the toolhead in the center of the bed, reconfirm that the probe is working correctly. When it is far from the bed, QUERY_PROBE should return “open”. When a metal object is close to the probe, QUERY_PROBE should return “triggered”. If the signal is inverted, add a “!” In front of the pin definition (ie, pin: ! z:P1.24). Slowly reduce your Z height and run QUERY_PROBE each time until QUERY_PROBE returns “triggered” - make sure the nozzle is not touching the print surface (and has clearance). Probe Accuracy Check . With the bed and hotend cold (for now), move the probe to the center of the bed and run PROBE_ACCURACY. It will probe the bed 10 times in a row and output a standard deviation value at the end. Make sure that the sensed distance is not trending (gradually decreasing or increasing over the 10 probes) and that the standard deviation is less than 0.003mm. Example of unstable PROBE_ACCURACY (trending downward during warm up). Send: PROBE_ACCURACY Recv: // PROBE_ACCURACY at X:125.000 Y:125.000 Z:7.173 (samples=10 retract=2.000 speed=2.0 Send: M105 Recv: // probe at 125.000,125.000 is z=4.975000 Recv: // probe at 125.000,125.000 is z=4.960000 Recv: // probe at 125.000,125.000 is z=4.955000 Recv: // probe at 125.000,125.000 is z=4.952500 Recv: // probe at 125.000,125.000 is z=4.950000 Recv: // probe at 125.000,125.000 is z=4.947500 Recv: // probe at 125.000,125.000 is z=4.942500 Recv: // probe at 125.000,125.000 is z=4.937500 Recv: // probe at 125.000,125.000 is z=4.937500 Recv: // probe at 125.000,125.000 is z=4.932500 Recv: // probe accuracy results: maximum 4.975000, minimum 4.932500, range 0.042500, average 4.949000, median 4.948750, standard deviation 0.011948 . ",
+    "url": "http://localhost:4000/build/startup/#inductive-probe-check-v1-trident-v2-switchwire-legacy",
+    "relUrl": "/build/startup/#inductive-probe-check-v1-trident-v2-switchwire-legacy"
+  },"134": {
+    "doc": "Initial Startup",
+    "title": "PID Tune Bed &amp; Hotend",
+    "content": "The PID tune is important for tuning the printer for a given hardware configuration to ensure that temperatures can remain as stable as possible during operation. PID Tune Heated Bed . Move nozzle to the center of the bed and approximately 5-10mm above the bed surface, then run: . PID_CALIBRATE HEATER=heater_bed TARGET=100 . It will perform a PID calibration routine that will last about 10 minutes. Once it is finished, type SAVE_CONFIG which will save the parameters into your configuration file. PID Tune Hotend . Set the part cooling fans to 25% (M106 S64) and then run: . PID_CALIBRATE HEATER=extruder TARGET=245 . It will perform a PID calibration routine that will last about 5 minutes. Once it is finished, type SAVE_CONFIG which will save the parameters into your configuration file. ",
+    "url": "http://localhost:4000/build/startup/#pid-tune-bed--hotend",
+    "relUrl": "/build/startup/#pid-tune-bed--hotend"
+  },"135": {
+    "doc": "Initial Startup",
+    "title": "Bed Leveling",
+    "content": "Depending on the printer type and capability, the following command(s) are used: . | V0: BED_SCREWS_ADJUST | V1, SW, Legacy: Z_TILT_ADJUST, SCREWS_TILT_CALCULATE | V2: QUAD_GANTRY_LEVEL | . Bed Screws (V0) . The V0 uses manual bed leveling, the bed is small enough and thick enough that a mesh or other types of per print leveling are not needed. there is a Macro in Klipper to help with the manual bed leveling process  BED_SCREWS_ADJUST . This tool will move the printer’s nozzle to each screw XY location and then move the nozzle to a Z=0.3 height. At this point one can use the “paper test” to adjust the bed screw directly under the nozzle. See the information described in “the paper test”, but adjust the bed screw instead of commanding the nozzle to different heights. Adjust the bed screw until there is a small amount of friction when pushing the paper back and forth. this process will move all three mounting points of your bed closer to the nozzle so it is critical that you re-run the Z offset adjust after completing this section. Once the screw is adjusted so that a small amount of friction is felt, run either the ACCEPT or ADJUSTED command. Use the ADJUSTED command if the bed screw needed an adjustment (typically anything more than about 1/8th of a turn of the screw). Use the ACCEPT command if no significant adjustment is necessary. Both commands will cause the tool to proceed to the next screw. (When an ADJUSTED command is used, the tool will schedule an additional cycle of bed screw adjustments; the tool completes successfully when all bed screws are verified to not require any significant adjustments.) One can use the ABORT command to exit the tool early. After the BED_SCREWS_ADJUST command has been completed rerun the Z_ENDSTOP_CALIBRATE command to to bring your nozzle to the correct Z=0 position. Bed Tilt (V1, Legacy) . The V1 and Legacy use a combination of automated and manual bed leveling. There are two macros built into Klipper to assist with the function. First run the BED_TILT macro. This will go back and forth between the predefined points to level the two Z motors. This setting is dynamically changed and nothing will need to be saved. Second run the SCREWS_TILT_CALCULATE macro. It will check the 3 positions defined in the [screws_tilt_adjust section] of printer.cfg for level, then return how much to adjust the front thumbscrew by. Re-run the process at least one more time to verify the adjustment. After both processes have been completed rerun the Z_ENDSTOP_CALIBRATE command to to bring your nozzle to the correct Z=0 position. Z Tilt (Trident) . The Trident uses automated bed leveling using 3 motors. There is a macro Z_TILT_ADJUST built into Klipper for that function. It is very similar to the QUAD_GANTRY_LEVEL used by V2, but supports 3 or more motors. Run the Z_TILT_ADJUST and it will probe each of the 3 points 3 times, average the readins, then make adjustments until the grantry is level. After that process has been completed, rehome z by running G28 Z, and then rerun the Z_ENDSTOP_CALIBRATE command to to bring your nozzle to the correct Z=0 position. Quad Gantry Level (V2) . Since the V2 uses 4 independent Z motors, the entire gantry system must be specially levelled. The macro to call this process is QUAD_GANTRY_LEVEL (sometimes referred to in conversation as ‘QGL’). It will probe each of 4 points 3 times, average the readings, then make adjustments until the gantry is level. If the process fails due to an “out of bounds” error, disable your stepper motors and slowly move your gantry or bed by hand until it is approximately flat. Re-home your printer (G28) and then rerun the sequence. You may have to run it more than once. Make sure that the adjustment value for each stepper motor converges to 0. If it diverges, check to make sure you have your stepper motors wired to the correct stepper driver (check documentation). Tilt / QGL With Heated Bed and Chamber (V1, Trident, V2) . Run a G28 command to home the printer since a SAVE_CONFIG restarts the printer. This will be the first time that a Quad Gantry Level has been run at a high chamber temperature. To ensure that the probe has stabilized with the heated bed at 100C and the hot end at 240C, run PROBE_ACCURACY with the nozzle at the center of the bed. If the values are trending (increasing or decreasing) throughout the 10 probes or the standard deviation is greater than 0.003mm, wait another 5 minutes and try again. Once the readings are stable, run Z_TILT_ADJUST or QUAD_GANTRY_LEVEL. Make a note of how long the probe readings took to stabilize for when starting prints - typically a cold printer takes 10-20 minutes to stabilize at temperature. Common QGL Problems . | If the QGL is having issues with too high of a standard deviation and the printer is heated and stable, check Z belt tension. Make sure they are reasonably tight and even. | If QGL fails with being unable to reach the probe in time, do a FIRMWARE_RESTART, manually level the bed as closely as possible, then home (G28) and re-attempt. | . Bed Mesh Only (Switchwire) . Crazy things. More to come. ",
+    "url": "http://localhost:4000/build/startup/#bed-leveling",
+    "relUrl": "/build/startup/#bed-leveling"
+  },"136": {
+    "doc": "Initial Startup",
+    "title": "Z Offset Adjustment",
+    "content": "If you did not run PID tuning, set your extruder to 245C and heated bed to 100C and let the printer heat up for at least 15 minutes. Initial / Simple Process . Preparation . | V1: Run a G28, and then a Z_TILT_ADJUST, and then another G28. | V2: Run a G28, and then a QUAD_GANTRY_LEVEL, and then another G28. | All others: Run a G28. | Move the nozzle to the center of the bed if it is not already. | Clear any stored bed meshes with BED_MESH_CLEAR | . Run Z_ENDSTOP_CALIBRATE (V0, Trident, V2) or PROBE_CALIBRATE (Switchwire) . Slowly move the nozzle toward the bed by using TESTZ Z=-1 Until the nozzle is relatively close to the bed, and then stepping down with TESTZ Z=-0.1 Until the nozzle touches a piece of paper on top of the build plate. If you go far down, you can move the nozzle back up with: TESTZ Z=0.1 Once you are satisfied with the nozzle height, run ACCEPT and then SAVE_CONFIG. Important: Klipper assumes that this process is being done cold. If being performed hot, do an additional TESTZ Z=-0.1 before accepting. If an “out of bounds” error occurs, send Z_ENDSTOP_CALIBRATE, ACCEPT, and then SAVE_CONFIG. This will redefine the 0 bed height so you will be able to get closer. V2: If you get this error it likely means that the shaft for your Z Endstop is too long and may catch on the print head during a print. It is best to cut the shaft or raise the bed (with a washer, for instance) so that it is within 1mm of the build surface. Fine Tuning Z Height . With LCD Screen . The Z offset can be adjusted during a print using the Tune menu on the display, and the printer configuration can be updated with this new value. Remember that higher values for the position_endstop means that the nozzle will be closer to the bed. Mainsail and Fluidd . The “babystepping” controls may be used to fine tune the z offset. Without LCD Screen . If you’re running your printer headless, the Z height can still be adjusted on-the-fly using the web interface. This is built into Mailsail and Fluidd, but requires some additional work for Octoprint. 1) (Optional) Create macros in your printer.cfg file so that the commands are easier to remember/run: . [gcode_macro ZUP] gcode: SET_GCODE_OFFSET Z_ADJUST=0.01 MOVE=1 [gcode_macro ZDOWN] gcode: SET_GCODE_OFFSET Z_ADJUST=-0.01 MOVE=1 . 2) Run ZUP or ZDOWN (or the associated SET_GCODE_OFFSET command) as needed in the terminal window until you have perfected your squish. 3) Run GET_POSITION and look for “gcode base”. Note the Z value. Saving your results (V0,Trident, V2) . All of the above methods are “transient”. The changes are lost as soon as your printer restarts. Once you find an adjustment you are happy with, you may make it permanent, by applying it to the position_endstop in your config file: run the command Z_OFFSET_APPLY_ENDSTOP followed by SAVE_CONFIG. This will restart your printer, with the adjustment permanently applied to the endstop position. Saving your results (Switchwire) . All of the above methods are “transient”. The changes are lost as soon as your printer restarts. Once you find an adjustment you are happy with, you may make it permanent, by applying it to the probe’s z_offset in your config file: run the command Z_OFFSET_APPLY_PROBE followed by SAVE_CONFIG. This will restart your printer, with the adjustment permanently applied to the probe offset. Community References . Z Endstop Configuration . ",
+    "url": "http://localhost:4000/build/startup/#z-offset-adjustment",
+    "relUrl": "/build/startup/#z-offset-adjustment"
+  },"137": {
+    "doc": "Initial Startup",
+    "title": "Extruder Calibration (e-steps)",
+    "content": "Before the first print,make sure that the extruder extrudes the correct amount of material. | With the hotend at temperature, make a mark between your roll of filament and your extruder, between 120mm and 150mm away from the entrance to the extruder. Measure the distance from the extrance of the extruder to that mark. | In Octoprint / Mailsail, extrude 50mm 2 times (for a total of 100mm since Klipper doesn’t allow you to extrude more than 50mm at a time). | Measure from the entrance of your extruder to the mark you made previously. | In a perfect world, assuming the mark is at 120mm, it would measure 20mm (120mm - 20mm = 100mm), but usually won’t be. | . | Update rotation_distance in the extruder section of the configuration file using this formula: . | New Config Value = Old Config Value * (Actual Extruded Amount/Target Extruded Amount) | . | . Note: a higher configuration value means that less filament is being extruded. Paste the new value into the configuration file, restart Klipper, and try again. Once the extrusion amount is within 0.5% of the target value (ie, 99.5-100.5mm for a target 100mm of extruded filament), the extruder is calibrated! . Typical rotation_distance values should be around 22.6789511 for Afterburner and Mobius (update gear_ratio to 80:20 for Mobius). Next: Slicer Setup . ",
+    "url": "http://localhost:4000/build/startup/#extruder-calibration-e-steps",
+    "relUrl": "/build/startup/#extruder-calibration-e-steps"
+  },"138": {
+    "doc": "Initial Startup",
+    "title": "Initial Startup",
+    "content": " ",
+    "url": "http://localhost:4000/build/startup/",
+    "relUrl": "/build/startup/"
+  },"139": {
+    "doc": "The Build",
+    "title": "The Build",
+    "content": "This guide contains all the the steps to go from a pile of parts to a functioning printer with a known working configuration. Please read the guide carefully, there are many details that seem trivial but are included because one or more people got stuck at these points. We as a community want to make sure that everyone has the best experience possible. If you find something confusing and would like clarification, that likely means someone else in the past or future will also find it difficult. Please reach out and we will gladly update the document! . This guide designed to be a “universal” setup guide that can be used across all printers in the Voron lineup. If you are building a printer and there is a section marked for a different printer, that section can be skipped. If you need help and are not there already, please join the Discord! . ",
+    "url": "http://localhost:4000/build/",
+    "relUrl": "/build/"
+  },"140": {
+    "doc": "Electrical Wiring",
+    "title": "Electrical Wiring",
+    "content": " ",
+    "url": "http://localhost:4000/build/electrical/",
+    "relUrl": "/build/electrical/"
+  },"141": {
+    "doc": "Electrical Wiring",
+    "title": "Safety Note",
+    "content": "When wiring your printer electronics, you will be working with line voltage wiring (120V / 220V AC). Always double check to make sure your printer is unplugged and the capacitors in the power supplies have discharged before touching any wire or terminal. The recommendations made in here are typically out of an abundance of caution to prevent fires. ",
+    "url": "http://localhost:4000/build/electrical/#safety-note",
+    "relUrl": "/build/electrical/#safety-note"
+  },"142": {
+    "doc": "Electrical Wiring",
+    "title": "Risk of Damage",
+    "content": "Never plug or unplug any device while the printer is powered. In addition to being a safety hazard, it is very easy to damage electronic components. In particular the stepper drivers can be easily damaged by connecting or disconnecting stepper motors while powered. ",
+    "url": "http://localhost:4000/build/electrical/#risk-of-damage",
+    "relUrl": "/build/electrical/#risk-of-damage"
+  },"143": {
+    "doc": "Electrical Wiring",
+    "title": "Tips",
+    "content": ". | Depending on your level of expertise it may be useful to practice crimping and soldering before wiring everything up. Bad crimps are a major source of problems later on and sometimes hard to identify! . | AC wiring should be properly dimensioned. Use at least 18 AWG (0.75 mm²) for mains AC wiring, even better would be 16 AWG (1.25 mm²) | Buy a quality SSR (see the official sourcing guide), cheap clones may overheat and fail closed causing a heater thermal runaway. Add a 115-125°C thermal fuse to your bed heater as an additional safety measure | Dont run your bed above 110°C, this reduces the lifespan of the adhesive holding it onto the build plate | If using an AC powered bed, be sure to ground the bed regardless of if the assembly manual specifies it or not. | Grounding the frame is recommended. | . ",
+    "url": "http://localhost:4000/build/electrical/#tips",
+    "relUrl": "/build/electrical/#tips"
+  },"144": {
+    "doc": "Electrical Wiring",
+    "title": "Connectors",
+    "content": "The recommended MicroFit 3.0 connectors are specified for up to 5A and should be used for all connections to the stepper motors, hotend and limit switches The JST connectors are used for connections to the MCU board(s). JST connnectors are not available as mid-wire connectors so they must be mixed. Adding Molex connectors to all stepper motors is useful. Use a 3pin MLX connector (see the official sourcing guide) to allow your bed to be removable without disconnecting from the SSR directly. The thermistor can use a 2pin Microfit connector. Microfit Pins . When assembling Microfit connectors, the male pins are inserted into the female housings and the female pins are inserted into the male housings. For larger wires, such as heater cartridge wiring, heatshrink tubing is helpful. ",
+    "url": "http://localhost:4000/build/electrical/#connectors",
+    "relUrl": "/build/electrical/#connectors"
+  },"145": {
+    "doc": "Electrical Wiring",
+    "title": "Cables",
+    "content": "Silicone wiring has been specified because it has a high strand count which means it has higher fatigue life. Silicone insulation withstands heat and is more flexible which is good in high movement applications. It is less prone to snagging on other wires or the walls inside the cable chain. Check your cable loom before installing the chains. PTFE or Heluflon wires are a premium option as they have a thinner insulation and a lower friction coefficient, which increases bending capabilities and decreases wear. But these advantages are most useful in printers that use cable chains. For printers with an umbilical cord cabling setup (V0 Toolhead, Legacy), they might be overkill. Automation cable such as IGUS can be used, but the minimum bend radius of the cable needs to be verified as the typical bend radius for Voron cable chains is very small. See the cable lengths and count section for specific counts. Do not downsize the hot end heater wires, they are oversized for safety reasons. You may add additional wires to your cable chains as a replacement in case of wire breaks. However, these cables will be heated/cooled and moved around as much as your live cables and may be broken already when you need them! So may be better to keep extra wires as spares outside of the printer. Buy some cable holders (e.g. with adhesive) to organize your cables in the electronics compartment. Keep in mind that the adhesive fails over time due to exposure to above room temperature. Cables can be hidden in the rails. Optionally print cable covers for the rails. ",
+    "url": "http://localhost:4000/build/electrical/#cables",
+    "relUrl": "/build/electrical/#cables"
+  },"146": {
+    "doc": "Electrical Wiring",
+    "title": "Stepper Motor Wiring",
+    "content": "There is no standard either for the color of wire on stepper motors, nor for the order of wires in the connector. As a result, it is often necessary to re-order stepper motor wires even on motors sold specifically for use in Vorons. If you are using the exact BOM motors, the colors shown in the wiring guides should work, however in any other case, you should verify your motor wiring. All control boards currently used with voron expect one winding to be connected on pins 1&amp;2, and the other on pins 3&amp;4. Note that other details, such as identifying winding A vs winding B is not critical. At worst, your motor will run backwards, which you can easily fix later, in software. Identifying Windings . There are 3 basic options for identifying windings: 1) Check the documentation. Many motors come with a card which tells you what wire colors are on the same winding. If there’s no card, the manufacturer’s website may have something. 2) Use a multimeter: put your meter in “continuity” mode. Pick one wire, and then find any other wire that shows continuity with it. Those two wires are on the same winding. By process of elimination, it should be safe to assume the other two represent the other winding. 3) If you don’t have a meter available, you can twist 2 wires together, and then try to spin the shaft of the motor. If the wires are on the same winding, it will become noticably harder to spin the shaft. Symptoms of miswired motors . Traditionally, trying to move a stepper that’s miswired, has either resulted in nothing happening, or a nasty buzzing sound. However, recent versions of klipper will generally detect the miswiring, and simply shutdown. If, during your motor checks, klipper immediately shuts down: check your logs. If there is a wiring issue with your stepper, it will report something like . TMC 'stepper_y' reports DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!) olb=1(OpenLoad_B!) CS_ACTUAL=25 Transition to shutdown state: TMC 'stepper_y' reports error: DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!) . ",
+    "url": "http://localhost:4000/build/electrical/#stepper-motor-wiring",
+    "relUrl": "/build/electrical/#stepper-motor-wiring"
+  },"147": {
+    "doc": "Electrical Wiring",
+    "title": "DC Power Supply Wiring",
+    "content": "Many of the latest generation of Voron printers spec the use of two or more independent power supplies. That can include 24V, 5V, and 12V power supplies depending on configuration. Important! Connect the DC 0V (typically labelled V-) on all of your DC power supplies together to ensure they all have the same voltage reference. If this is not done then it may be difficult to diagnose issues (devices may not turn on or may be damaged due to exceeding voltage limits). Smaller Printers (V0, Legacy) . Instead of multiple power supplies, the V0 uses a DC-DC converter to generate a 5V bus instead of a dedicated 5V power supply. Larger Printers (V1, Trident, V2, Switchwire) . Please see the associated assembly guides for power supply configurations. ",
+    "url": "http://localhost:4000/build/electrical/#dc-power-supply-wiring",
+    "relUrl": "/build/electrical/#dc-power-supply-wiring"
+  },"148": {
+    "doc": "Electrical Wiring",
+    "title": "Wiring Configuration / Setup",
+    "content": "Wire counts / lengths . The following are guides for each printer model for planning of wire counts and lengths. As always, these are recommendations and adding allowances is always a good idea. | V1 Gantry Wires | Trident Gantry Wires | V2 Gantry Wires | . Gantry Routing . While some extruder motors and inductive probes come with wire leads long enough to reach part or all of the way down the cable chain, resist the urge to use them. The wires typically found in them are not rated for the constant bending encountered in the cable chains and may break much sooner than desired. Terminate all connections to silicone or PTFE wire before entering the cable chain. Wire Terminals . Different controller boards use different terminal types. The RAMPS boards use Dupont terminals but the SKR boards use JST-XH terminals. If using an SKR board, a JST-XH connector kit is required with 2-pin, 3-pin, and 4-pin connectors (see the BOM). Unlike Dupont connectors, JST-XH connectors are keyed and will only fit one orientation so pay close attention when inserting pins. For wiring the stepper motors, keep the same wire color sequence that your stepper motors came with and use that same sequence for all stepper motors in the printer. If the BOM spec motors from StepperOnline are used, the wires should be in the color order as shown in the wiring diagrams. If the purchased steppers do not match the color order in the documentation, there is no need to rewire just to change colors. There is not a “standard” wire color order for these parts. If the builder decides to reterminate to change connector types or whatever, be sure to use the same order as before. The spec motors also come with a datasheet or card so you can double check the work. One can also use a multimeter to find wire pairs in the motor by measuring continuity between leads. Each lead should have continuity to the other lead in its pair. Important: If the motors are found later on to be going the wrong direction, repinning the connectors is not required. The direction can be inverted in the software configuration later. Inductive Probe Wiring (V1, Trident, V2, Switchwire) . The BOM spec PL-08N inductive probe (and the alterate Omron probe) that is used for Bed Mesh, Z Tilt Adjust (V1/Legacy) or Quad Gantry Leveling (V2) needs to be powered with 12-24V, not the typical 5V that is used for end stop switches. This is critical because if powered with 5V the sense distance is reduced enough to cause a nozzle crash. If not closely following the BOM spec, ensure that the inductive probe purchased is a normally closed (NC) version rather than normally open (NO). The configuration cannot be changed as that is built specifically from the factory. A normally open (NO) probe may cause crashes if a wire breaks. BAT85 Diode . Due to the switching used by the sensor the output voltage is approximately the same voltage as the sensor is powered with. If the sensor is powered with the common 24V, it will send 24V to an input on the MCU that is never intended to see more than 5V. The BAT85 diode is used to alleviate this issue. It is oriented so that when the probe signal wire is high (12-24V), not current will flow into the MCU input pin. As a result the MCU will read HIGH voltage due to the internal pull-up resistor. If the probe signal is LOW (0V), current will flow from the MCU input pin through the diode, through the probe, and to ground (V-). This will pull the MCU pin low and trigger appropriately. Important: The BAT85 diode should always be wired with the black band toward the probe, not toward the MCU. Below is a circuit diagram with more details. Endstop Wiring . Endstops can be wired one of two ways: normally closed (NC) or normally open (NO). For normally closed configurations, the endstop switch allows current to flow through when not triggered. For normally open configurations, the endstop switch only allows current to flow through whe triggered. While both of these configurations will work fine in an ideal world, normally closed (NC) configurations are more robust. If a wire breaks or a terminal becomes disconnected, the printer will think the endstop has triggered and will stop movement before the toolhead crashes into the bed or frame. Note that you should always still observe the homing routine - an intermittent break in an X or Y wire can still result in a crash as the nozzle will drop to where it thinks the Z endstop is and instead hit the bed (not applicable to V0 or Switchwire). Wiring mechanical endstop switches for NC operation is easy as the BOM spec switches have 3 pins exposed. With a multimeter, probe each combination of the three pins until a pair is found that has continuity (&lt;10 ohms resistance) when the switch is not triggered (normal state), but does not have continuity (&gt;10M ohms resistance) when the switch is triggered (depressed). Typically the outer two pins are the NC pins, but should be verified prior to installation. X/Y Endstop Wiring (Trident, V2) . The X/Y endstop connector can be strapped to the bottom of the joint. Just make sure the cable is long enough, be sure to install the cover to keep any prints that fly off from bonding to your endstops. ",
+    "url": "http://localhost:4000/build/electrical/#wiring-configuration--setup",
+    "relUrl": "/build/electrical/#wiring-configuration--setup"
+  },"149": {
+    "doc": "Electrical Wiring",
+    "title": "Controller (MCU) Wiring",
+    "content": "Follow the links to the wiring configuration guides specific to your printer and controller selection. There are other controllers on the market that may work (such as Duet), but those are not commonly used so standard configurations have not been developed. Voron 0 . | V0.0 - mini e3 V1.2 | V0.0 - mini e3 V2.0 | V0.1 - SKR Pico | . Voron 1 . | V1 - SKR 1.3 | V1 - SKR 1.4 | . Trident . | Trident - BigTreeTech Octopus | Trident - MKS Makerbase Monster8 | . Voron 2 . | V2 - SKR 1.3 | V2 - SKR 1.4 | V2 - FLYboard FLYF407ZG | V2 - Fysetc Spider | V2 - BigTreeTech Octopus | V2 - BigTreeTech Octopus Pro in UART Mode | V2 - BigTreeTech Octopus Pro in SPI Mode | V2 - MKS Makerbase Monster8 | . Voron Switchwire . | SW - mini e3 V2.0 | SW - Einsy Rambo | . ",
+    "url": "http://localhost:4000/build/electrical/#controller-mcu-wiring",
+    "relUrl": "/build/electrical/#controller-mcu-wiring"
+  },"150": {
+    "doc": "Electrical Wiring",
+    "title": "Additional Items",
+    "content": "Mini12864 Display (V1, Trident, V2, Switchwire) . If installing a Mini12864 display, please follow the Mini12864 Klipper Guide. Using non-24V fans with a 24V powered MCU . It is possible to use the SKR (and possibly other controllers) to control fans, LEDs, and other devices even when those devices use a different voltage. The SKR, like most controllers, uses the (-) pin to control if a device is switched on or off. For a given device, is the V+ is wired to an external power supply (e.g. 5V or 12V), and the V- is wired to the SKR, the fan can be switched on or off. As mentioned above, this will only work if the DC 0V of all of the power supplies is tied together. Note: In the diagram below, only DC wires are shown. Red represents V+, black represents V-. ",
+    "url": "http://localhost:4000/build/electrical/#additional-items",
+    "relUrl": "/build/electrical/#additional-items"
+  },"151": {
+    "doc": "Electrical Wiring",
+    "title": "Next: Software Installation",
+    "content": " ",
+    "url": "http://localhost:4000/build/electrical/#next-software-installation",
+    "relUrl": "/build/electrical/#next-software-installation"
+  },"152": {
+    "doc": "Alternate Electronics",
+    "title": "Alternate Electronics",
+    "content": "Community-generated documentation for alternate (non-spec) electronics and related configurations.. | Guide Name / Link | Author | . | BigTreeTech Expansion Module | BrewWeasel | . | Filament Runout Sensor | 120decibell | . | Hall Effect Endstop Setup | 120decibell | . | PT100 MAX31865 Setup | xbst_ | . | MKS Makerbase Monster8 v1.0 | Deuce | . External Links . | Klipper Expander | . ",
+    "url": "http://localhost:4000/community/electronics/",
+    "relUrl": "/community/electronics/"
   },"153": {
     "doc": "Installing BetterBootLoader on a SKR board",
     "title": "Installing BetterBootLoader on a SKR board",
