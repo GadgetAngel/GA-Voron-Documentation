@@ -218,6 +218,14 @@ For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
 
 {% assign colorfilename = "/build/electrical/images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf" %}
 
+{% assign VoronDBaseURL = "https://docs.vorondesign.com/" %}
+
+{% assign GADBaseURL = "https://gadgetangel.org/" %}
+
+Site URL is equal to {{ site.url }}
+
+Site Base URL is equal to {{ site.baseurl }}
+
 {% assign nbviewer_url = "https://nbviewer.org/github/VoronDesign/Voron-Documentation/" %}
 
 {% if site.url == "https://localhost:4000" %}
