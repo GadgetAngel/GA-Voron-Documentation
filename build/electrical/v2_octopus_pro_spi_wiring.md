@@ -220,7 +220,7 @@ For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
 
 {% assign nbviewer_url = "https://nbviewer.org/github/VoronDesign/Voron-Documentation/" %}
 
-{% if site.url == "http://localhost:4000" %}
+{% if site.url == "https://localhost:4000" %}
 
 * Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ colorfilename | prepend:site.url }})
 
@@ -242,7 +242,7 @@ For reference, here is the original pinout of the BTT Octopus Pro V1.0
 
 * BTT's documentation for Octopus Pro V1.0 board is [located here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro)
 
-* Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram is [located here](http://nbviewer.jupyter.org/github/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro%20-%20PIN.pdf)
+* Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram is [located here](https://nbviewer.jupyter.org/github/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro%20-%20PIN.pdf)
 
 ## After I have Wired up the MCU Board, What Comes Next?<span> <br> </span>
 <span> <br> </span>
