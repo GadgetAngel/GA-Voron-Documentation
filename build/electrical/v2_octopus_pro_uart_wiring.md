@@ -209,7 +209,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 ## Testing
 
 * Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram:
-<a href=./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf>
+<a href=./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf> </a>
 
 <div>
 
