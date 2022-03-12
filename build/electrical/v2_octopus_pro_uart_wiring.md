@@ -224,8 +224,8 @@ But with further reading I found that Kramdown Parser does allow a "title text o
       },
       {
         embedMode: 'IN_LINE',
-        showDownloadPDF: false,
-        showPrintPDF: false,
+        showDownloadPDF: true,
+        showPrintPDF: true,
       }
     );
   });
