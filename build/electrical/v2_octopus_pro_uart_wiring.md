@@ -211,7 +211,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 * Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram:
 
 <embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=https://github.com/VoronDesign/Voron-2/blob/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf" width="500" height="375">
+viewer?embedded=true&url=https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf" width="500" height="375">
 
 ## Color PIN Diagram for BTT Octopus Pro V1.0
 
