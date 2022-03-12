@@ -208,30 +208,33 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 ## Testing
 
-{% assign colorfilename = "/build/electrical/images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf" %}
+{% assign Pfilename = "https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf" %}
 
-* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is <a href="{{ colorfilename | prepend:site.url }}">located here</a>
+{% assign Pfilename2 = "https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH Octopus Pro_SCH.pdf" %}
 
-* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ colorfilename | prepend:site.url }})
+{% assign filename = "BIGTREETECH Octopus Pro_SCH.pdf" %}
+
+* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is <a href="{{ Pfilename }}">located here</a>
+
+* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ Pfilename }})
 
 <div>
 
-<!-->
 <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
   document.addEventListener("adobe_dc_view_sdk.ready", function(){
     var adobeDCView = new AdobeDC.View({clientId: "b50f4d92def142d6885aafa1b84e68e4", divId: "adobe-dc-view"});
     adobeDCView.previewFile({
-      content:{location: {url: "./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf"}},
-      metaData:{fileName: "BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf"}
+      content:{location: {url: "{{ Pfilename2 }}"}},
+      metaData:{fileName: "{{ filename }}"}
     }, {embedMode: "SIZED_CONTAINER",
         showDownloadPDF: true,
         showPrintPDF: true,
         }
     );
   });
-  -->
+
 
 </script>
 
@@ -246,6 +249,8 @@ For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
 * Downloadable BTT Octopus Pro V1.0 Color PIN diagram in .pdf format is [located here](./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf)
 
 * Downloadable BTT Octopus Pro V1.0 Color PIN diagram in .jpg format is [located here](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg)
+
+{% assign colorfilename = "/build/electrical/images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf" %}
 
 {% assign nbviewer_url = "https://nbviewer.org/github/VoronDesign/Voron-Documentation/" %}
 
