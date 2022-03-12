@@ -1,1 +1,0 @@
-Please to go the [documentation site](https://gadgetangel.github.io/GA-Voron-Documentation/)
