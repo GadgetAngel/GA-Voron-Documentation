@@ -210,6 +210,8 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 {% assign colorfilename = "/build/electrical/images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf" %}
 
+* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is <a href="{{ colorfilename | prepend:site.url }}">located here</a>
+
 * Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ colorfilename | prepend:site.url }})
 
 <div>
