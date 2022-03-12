@@ -212,7 +212,7 @@ For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
 
 ###### ![](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg) {#BTT-Octopus-Pro-V1.0-color-PIN_1}
 
-* Downloadable BTT Octopus Pro V1.0 Color PIN diagram in .pdf format is [located here](./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf)
+* Open PDF file in NEW Tab and make it a downloadable ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram in .pdf format is [located here](./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf#target="_tab")
 
 * Downloadable BTT Octopus Pro V1.0 Color PIN diagram in .jpg format is [located here](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg)
 
@@ -228,13 +228,13 @@ Site Base URL is equal to {{ site.baseurl }}
 
 {% assign nbviewer_url = "https://nbviewer.org/github/VoronDesign/Voron-Documentation/" %}
 
-{% if site.url == "https://localhost:4000" %}
+{% if site.url == "http://localhost:4000" %}
 
-* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ colorfilename | prepend:site.url }})
+* ~~Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ colorfilename | prepend:site.url }})~~
 
 {% else %}
 
-* Downloadable and ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ nbviewer_url | append: "blob/main" | append: colorfilename }})
+* ~~Downloadable and ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ nbviewer_url | append: "blob/main" | append: colorfilename }})~~
 
 {% endif %}
 
