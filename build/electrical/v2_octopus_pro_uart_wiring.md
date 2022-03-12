@@ -213,6 +213,8 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 <embed src="https://drive.google.com/viewerng/
 viewer?embedded=true&url=https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf" width="500" height="375">
 
+<iframe src="https://drive.google.com/file/d/1aBICtfLsTJMeAyiaeMPjOq03S8u5SmqP/preview" width="640" height="480" allow="autoplay"></iframe>
+
 ## Color PIN Diagram for BTT Octopus Pro V1.0
 
 For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
