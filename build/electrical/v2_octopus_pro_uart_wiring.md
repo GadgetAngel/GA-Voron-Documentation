@@ -231,7 +231,6 @@ But with further reading I found that Kramdown Parser does allow a "title text o
   });
 </script>
 
-<div>
 <span> <br> </span>
 <span> <br> </span>
 
