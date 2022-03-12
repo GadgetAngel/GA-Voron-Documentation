@@ -212,7 +212,7 @@ For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
 
 ###### ![](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg) {#BTT-Octopus-Pro-V1.0-color-PIN_1}
 
-* Open PDF file in NEW Tab and make it a downloadable ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram in .pdf format is [located here](./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf#target="_tab")
+* Open PDF file in NEW Tab and make it a downloadable ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram in .pdf format is [located here](./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf#) {:target="_blank" rel="noopener"}
 
 * Downloadable BTT Octopus Pro V1.0 Color PIN diagram in .jpg format is [located here](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg)
 
