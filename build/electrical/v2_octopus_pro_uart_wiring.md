@@ -206,40 +206,6 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 * The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for BTT Octopus Pro 1.0 board is [located here](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg)
 
-## Testing
-
-{% assign Pfilename = "https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf" %}
-
-{% assign Pfilename2 = "https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH Octopus Pro_SCH.pdf" %}
-
-{% assign filename = "BIGTREETECH Octopus Pro_SCH.pdf" %}
-
-* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is <a href="{{ Pfilename }}">located here</a>
-
-* Downloadable and LOCAL ZOOM capable web display for BTT Octopus Pro V1.0 Color PIN diagram is [located here]({{ Pfilename }})
-
-<div>
-
-<div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
-<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-<script type="text/javascript">
-  document.addEventListener("adobe_dc_view_sdk.ready", function(){
-    var adobeDCView = new AdobeDC.View({clientId: "b50f4d92def142d6885aafa1b84e68e4", divId: "adobe-dc-view"});
-    adobeDCView.previewFile({
-      content:{location: {url: "{{ Pfilename2 }}"}},
-      metaData:{fileName: "{{ filename }}"}
-    }, {embedMode: "SIZED_CONTAINER",
-        showDownloadPDF: true,
-        showPrintPDF: true,
-        }
-    );
-  });
-
-
-</script>
-
-</div>
-
 ## Color PIN Diagram for BTT Octopus Pro V1.0
 
 For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
