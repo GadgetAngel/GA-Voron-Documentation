@@ -209,11 +209,29 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 ## Testing
 
 * Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram:
+<div id="adobe-dc-view" style="width: 800px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+  document.addEventListener('adobe_dc_view_sdk.ready', function () {
+    var adobeDCView = new AdobeDC.View({
+      clientId: 'b50f4d92def142d6885aafa1b84e68e4',
+      divId: 'adobe-dc-view',
+    });
+    adobeDCView.previewFile(
+      {
+        content: { location: { url: './images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf' } },
+        metaData: { fileName: 'BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf' },
+      },
+      {
+        embedMode: 'IN_LINE',
+        showDownloadPDF: false,
+        showPrintPDF: false,
+      }
+    );
+  });
+</script>
 
-<iframe src="https://docs.google.com/viewer?url=https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
-
-<iframe src="https://drive.google.com/file/d/1aBICtfLsTJMeAyiaeMPjOq03S8u5SmqP/preview" width="640" height="480" allow="autoplay"></iframe>
-
+<div>
 ## Color PIN Diagram for BTT Octopus Pro V1.0
 
 For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
