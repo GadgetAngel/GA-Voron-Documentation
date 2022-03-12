@@ -209,30 +209,21 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 ## Testing
 
 * Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram:
-<div id="adobe-dc-view" style="width: 800px;"></div>
+<div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
-  document.addEventListener('adobe_dc_view_sdk.ready', function () {
-    var adobeDCView = new AdobeDC.View({
-      clientId: 'b50f4d92def142d6885aafa1b84e68e4',
-      divId: 'adobe-dc-view',
-    });
-    adobeDCView.previewFile(
-      {
-        content: { location: { url: './images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf' } },
-        metaData: { fileName: 'BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf' },
-      },
-      {
-        embedMode: 'IN_LINE',
+  document.addEventListener("adobe_dc_view_sdk.ready", function(){
+    var adobeDCView = new AdobeDC.View({clientId: "b50f4d92def142d6885aafa1b84e68e4", divId: "adobe-dc-view"});
+    adobeDCView.previewFile({
+      content:{location: {url: "./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf"}},
+      metaData:{fileName: "BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf"}
+    }, {embedMode: "SIZED_CONTAINER",
         showDownloadPDF: true,
         showPrintPDF: true,
-      }
+        }
     );
   });
 </script>
-
-<span> <br> </span>
-<span> <br> </span>
 
 ## Color PIN Diagram for BTT Octopus Pro V1.0
 
