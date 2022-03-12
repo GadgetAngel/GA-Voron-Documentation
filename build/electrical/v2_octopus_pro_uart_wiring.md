@@ -207,7 +207,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 * The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for BTT Octopus Pro 1.0 board is [located here](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg)
 
 ## Testing
-hi
+
 * Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram:
 
 <div id="adobe-dc-view" style="width: 800px;"></div>
@@ -216,8 +216,8 @@ hi
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "b50f4d92def142d6885aafa1b84e68e4", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH Octopus - PIN.pdf"}},
-			metaData:{fileName: "BIGTREETECH Octopus - PIN.pdf"}
+			content:{location: {url: "https://github.com/GadgetAngel/Voron2.4_My_Build_Log/blob/main/Resources/Advanced-3D-Printing-Klipper-Kit-Installation-Guide-v1.1.pdf"}},
+			metaData:{fileName: "Advanced-3D-Printing-Klipper-Kit-Installation-Guide-v1.1.pdf"}
 		}, {embedMode: "IN_LINE"});
 	});
 </script>
