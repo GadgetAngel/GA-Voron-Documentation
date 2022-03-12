@@ -216,8 +216,8 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "b50f4d92def142d6885aafa1b84e68e4", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://github.com/bigtreetech/github/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro%20-%20PIN.pdf"}},
-			metaData:{fileName: "BIGTREETECH Octopus Pro - PIN.pdf"}
+			content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+			metaData:{fileName: "Bodea Brochure.pdf"}
 		}, {embedMode: "IN_LINE"});
 	});
 </script>
