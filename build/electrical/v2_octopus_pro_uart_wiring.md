@@ -210,8 +210,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 * Downloadable and ZOOM capable web display for BTT's Octopus Pro V1.0 original pinout diagram:
 
-<embed src="https://drive.google.com/viewerng/
-viewer?embedded=true&url=https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf" width="500" height="375">
+<iframe src="https://docs.google.com/viewer?url=https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
 
 <iframe src="https://drive.google.com/file/d/1aBICtfLsTJMeAyiaeMPjOq03S8u5SmqP/preview" width="640" height="480" allow="autoplay"></iframe>
 
