@@ -102,7 +102,6 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 ### The Klipper Configuration file for SKR Pico board
 <span> <br> </span>
-
 The Klipper Configuration file from VoronDesign/Voron-0 GitHub Repo, Voron0.1 branch for SKR Pico board is [located here](https://github.com/VoronDesign/Voron-0/blob/Voron0.1/Firmware/skr-pico-v1.0.cfg){:target="_blank" rel="noopener"}
 
 ## Color PIN Diagram for SKR Pico
@@ -125,17 +124,17 @@ For reference, here is the original pinout of the SKR Pico
 
 ###### ![](./images/skr-pico-pinout.png) {#skr-pico-pinout}
 
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PDF format then [click here](<./images/BTT SKR Pico V1.0-PIN.pdf>){:target="_blank" rel="noopener"}
-
 ### The BTT's GitHub Repo for the SKR Pico Board
+
+* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PDF format then [click here](<./images/BTT SKR Pico V1.0-PIN.pdf>){:target="_blank" rel="noopener"}
 
 * BigTreeTech documentation for SKR Pico board is [located here](https://github.com/bigtreetech/SKR-Pico){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?<span> <br> </span>
 <span> <br> </span>
 
-![](./images/VoronHex_Number_1_small.png)   Once the MCU board is wired up and wire management has been performed, the next step is to compile and install the Klipper Firmware, please see [The Build ═► Software Installation](../../build/software/#software-installation)
+![](./images/VoronHex_Number_1_small.png)   Once the MCU board is wired up and wire management has been performed, the next step is to compile and install the Klipper Firmware, please see [The Build ═► Software Installation](../../build/software/index.md#software-installation)
 
-![](./images/VoronHex_Number_2_small.png)   Once the MCU board has the Klipper Firmware Installed, the next step is to edit the Klipper Config file (skr-pico-v1.0.cfg) to ensure your Voron build matches your Klipper Config file, please see [The Build ═► Software Configuration](../../build/software/configuration#software-configuration).  Please use the Color PIN Diagrams, [displayed above](#color-pin-diagram-for-skr-pico), as a source of information. 
+![](./images/VoronHex_Number_2_small.png)   Once the MCU board has the Klipper Firmware Installed, the next step is to edit the Klipper Config file (skr-pico-v1.0.cfg) to ensure your Voron build matches your Klipper Config file, please see [The Build ═► Software Configuration](../../build/software/configuration.md#software-configuration).  Please use the Color PIN Diagrams, [displayed above](#color-pin-diagram-for-skr-pico), as a source of information. 
 
-![](./images/VoronHex_Number_3_small.png)   After editing the Klipper Config file (skr-pico-v1.0.cfg), the next step is to check all the motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/#initial-startup-checks)
+![](./images/VoronHex_Number_3_small.png)   After editing the Klipper Config file (skr-pico-v1.0.cfg), the next step is to check all the motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index.md#initial-startup-checks)
