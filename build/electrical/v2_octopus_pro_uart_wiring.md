@@ -80,7 +80,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 {% endcomment %}
 
-{% assign UseColorText_forOctopusProV10_1 = 1 %}
+{% assign UseColorText_forOctopusProV10_1 = 0 %}
 
 {% if UseColorText_forOctopusProV10_1 == 1 %}
 
