@@ -102,6 +102,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 ### The Klipper Configuration file for SKR Pico board
 <span> <br> </span>
+
 The Klipper Configuration file from VoronDesign/Voron-0 GitHub Repo, Voron0.1 branch for SKR Pico board is [located here](https://github.com/VoronDesign/Voron-0/blob/Voron0.1/Firmware/skr-pico-v1.0.cfg){:target="_blank" rel="noopener"}
 
 ## Color PIN Diagram for SKR Pico
@@ -124,9 +125,9 @@ For reference, here is the original pinout of the SKR Pico
 
 ###### ![](./images/skr-pico-pinout.png) {#skr-pico-pinout}
 
-### The BTT's GitHub Repo for the SKR Pico Board
-
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PDF format then [click here](<./images/BTT SKR Pico V1.0-PIN.pdf>){:target="_blank" rel="noopener"}
+
+### The BTT's GitHub Repo for the SKR Pico Board
 
 * BigTreeTech documentation for SKR Pico board is [located here](https://github.com/bigtreetech/SKR-Pico){:target="_blank" rel="noopener"}
 
