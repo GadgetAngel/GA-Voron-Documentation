@@ -82,7 +82,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 {% assign UseColorText_forOctopusProV10_1 = 0 %}
 
-{% capture Color_MCU_Text %}
+{% capture Color_MCU_Text_forOctopus_Pro_1 %}
 
 * Connect <span style="text-shadow: 2px 2px 5px red; font-size: 125%;">24V and GND (V+ and V-)</span> from the PSU to <span style="text-shadow: 2px 2px 5px #4c959c; font-size: 125%;">PWR</span> and <span style="text-shadow: 2px 2px 5px #4c959c; font-size: 125%;">MOTOR_POWER</span>
 * Connect <span style="text-shadow: 2px 2px 5px #cc9900; font-size: 125%;">stepper driver</span> for <span style="text-shadow: 2px 2px 5px #cc9900; font-size: 125%;">the B Motor (gantry left)</span> into position <span style="text-shadow: 2px 2px 5px #e35223; font-size: 125%;">DRIVER0</span>
@@ -116,7 +116,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 {% endcapture %}
 
-{% capture Plain_MCU_Text %}
+{% capture Plain_MCU_Text_forOctopus_Pro_1 %}
 
 * Connect 24V and GND (V+ and V-) from the PSU to PWR and MOTOR_POWER
 * Connect stepper driver for the B Motor (gantry left) into position DRIVER0
@@ -152,11 +152,11 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 {% if UseColorText_forOctopusProV10_1 == 1 %}
 
-{{ Color_MCU_Text }}
+{{ Color_MCU_Text_forOctopus_Pro_1 }}
 
 {% else %}
 
-{{ Plain_MCU_Text }}
+{{ Plain_MCU_Text_forOctopus_Pro_1 }}
 
 {% endif %}
 
@@ -195,7 +195,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 * Voron Design recommends using USB to control the Octopus Pro, which simply requires connecting a USB-A to USB-C cable between the Octopus Pro and Pi. 
 * The option also exists to use a UART connection from the Pi header, in place of the USB.  If you prefer this option, please see the wiring diagram located above in [Connection Using Separate Power Supply](#connection-using-separate-power-supply) and use the instructions below on the Raspberry Pi.  You will want to perform the instructions below **after Mailsail/Fluidd is installed on the Raspberry Pi.**
 
-###### ![](./images/ConnectPitoMCU-Instructions.png) {#ConnectPitoMCU-Instructions_1}
+###### ![](./images/ConnectPitoMCU-Instructions.png) {#ConnectPitoOctopusPro-Instructions_1}
 
 ## SSR Wiring
 
