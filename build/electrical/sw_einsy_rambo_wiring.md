@@ -36,6 +36,7 @@ nav_exclude: true
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 <span> <br> </span>
+
 ![](./images/EinsyRambo1.1b_PREP-WiringDiagram-heatsinks_150.png)
 
 ## mini 12864 Display
