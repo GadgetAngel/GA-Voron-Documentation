@@ -40,9 +40,9 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
     For Admin of Voron DOCs site:
 
-    In this page the Boolean variable "UseColorText_forOctopusProV10_1" if set to 1 then the static web page will use the colorized text for the MCU descirption.
+    In this page the Boolean variable "UseColorText_forSKRPicoV10_1" if set to 1 then the static web page will use the colorized text for the MCU descirption.
 
-    If you set "UseColorText_forOctopusProV10_1" to anything other than 1, like 0 then the static web page will use regular text for the MCU descirption
+    If you set "UseColorText_forSKRPicoV10_1" to anything other than 1, like 0 then the static web page will use regular text for the MCU descirption
 
 {% endcomment %}
 
