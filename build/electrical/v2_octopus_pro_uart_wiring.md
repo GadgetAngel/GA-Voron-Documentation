@@ -3,7 +3,6 @@ layout: default
 title: "Voron V2 - BTT Octopus Pro V1.0 (in UART Mode) Wiring"
 nav_exclude: true
 ---
-
 # Voron V2 - BTT Octopus Pro V1.0 (in UART Mode) Wiring
 
 ## Initial Removal of Jumpers

@@ -221,9 +221,9 @@ For reference, here is the original pinout of the BTT Octopus Pro V1.0
 
 ### The BTT's GitHub Repo for the Octopus Pro V1.0 board
 
-* BTT's documentation for Octopus Pro V1.0 board is [located here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro){:target="_blank" rel="noopener"}
-
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PDF format then [click here](<./images/BIGTREETECH Octopus Pro - PIN.pdf>){:target="_blank" rel="noopener"}
+
+* BTT's documentation for Octopus Pro V1.0 board is [located here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?<span> <br> </span>
 <span> <br> </span>
