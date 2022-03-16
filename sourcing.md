@@ -9,7 +9,7 @@ nav_order: 4
 
 ## Bill of Materials and Source Guide
 
-The Bill of Materials (BOM) is generated from the [Voron Design website](https://vorondesign.com).  Select the printer to be built, then select 'Configurator' and choose from the parameters.  A customized BOM will be presented.  The BOM is considered the absolute guide for what is actually required to build the printer.
+The Bill of Materials (BOM) is generated from the [Voron Design website](http://vorondesign.com).  Select the printer to be built, then select 'Configurator' and choose from the parameters.  A customized BOM will be presented.  The BOM is considered the absolute guide for what is actually required to build the printer.
 
 The Sourcing Guide is made available at the same time as the customized BOM.  It is a list of Voron maintained references to where to purchase the various components listed on the BOM for the different printers.  _The sourcing guide is not customized to the printer.  All quantities are mostly incorrect._  There are additional tabs at the bottom of the sourcing guide for optional or additional components.
 
