@@ -1,7 +1,18 @@
+---
+layout: default
+title: "BTT Octopus Pro V1.0 in SPI Mode"
+parent: "Voron V2 - BTT Octopus Pro V1.0 Wiring"
+nav_exclude: true
+nav_order: 2
+---
 
 # BTT Octopus Pro V1.0 in SPI Mode
 
 ## Initial Removal of Jumpers for SPI Mode
+
+We have no idea what state your board is in when you start this process.  Someone could have moved jumpers around already.  But since we are here, on the SPI end of the site, then I assume that you might want to look at the next section **before** removing **all the jumpers** because if all the jumpers are already set for SPI mode then removing them and placing them right back in would be a waste of your valuable time.  
+
+**If one does not understand what I mean by "if the jumpers are set for SPI" then I would recommend that removing all the jumpers would be the place to start.**
 
 Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below.
 
@@ -39,7 +50,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/Octopus_Pro_F446_SPI_Mode_for_Prep_150.png) {#Octopus_Pro_F446_SPI_Mode_for_Prep}
+###### ![](./images/Octopus_Pro_F446_SPI_Mode_for_Prep.png) {#Octopus_Pro_F446_SPI_Mode_for_Prep}
 {:.no_toc}
 
 [Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
@@ -80,35 +91,35 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 ## MCU Wiring for SPI Mode
 
-* Connect <span class="tshadow-red-MCU-desciption fs_percent_125">24V and GND (V+ and V-)</span> from the PSU to <span class="tshadow-bg-MCU-desciption fs_percent_125">PWR</span> and <span class="tshadow-bg-MCU-desciption fs_percent_125">MOTOR_POWER</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the B Motor (gantry left)</span> into position <span class="tshadow-b-orgn-MCU-desciption fs_percent_125">DRIVER0</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the B Motor (gantry left)</span> into position <span class="tshadow-b-orgn-MCU-desciption fs_percent_125">MOTOR0</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the A Motor (gantry right)</span> into position <span class="tshadow-lt-blue-MCU-desciption fs_percent_125">DRIVER1</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the A Motor (gantry right)</span> into position <span class="tshadow-lt-blue-MCU-desciption fs_percent_125">MOTOR1</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">DRIVER2</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">MOTOR2_1</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z1</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">DRIVER3</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z1</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">MOTOR3</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z2</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">DRIVER4</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z2</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">MOTOR4</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z3</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">DRIVER5</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the Z3</span> into positions <span class="tshadow-dk-purple-MCU-desciption fs_percent_125">MOTOR5</span>
-* Connect <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper driver</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the extruder motor</span> into position <span class="tshadow-neon-grn-MCU-desciption fs_percent_125">DRIVER6</span>
-* Plug in <span class="tshadow-gold-MCU-desciption fs_percent_125">stepper motor</span> for <span class="tshadow-gold-MCU-desciption fs_percent_125">the extruder motor</span> into position <span class="tshadow-neon-grn-MCU-desciption fs_percent_125">MOTOR6</span>
-* Connect the <span class="tshadow-gold-MCU-desciption fs_percent_125">hot end heater</span> to <span class="tshadow-pink-MCU-desciption fs_percent_125">HE0 (PA2)</span>
-* Connect the <span class="tshadow-gold-MCU-desciption fs_percent_125">bed SSR (DC Control Side)</span> to <span class="tshadow-bg-MCU-desciption fs_percent_125">HE1 (PA3)</span>
-* Connect the <span class="tshadow-gold-MCU-desciption fs_percent_125">part cooling fan</span> to <span class="tshadow-brown-MCU-desciption fs_percent_125">FAN0 (PA8)</span>
-* Connect the <span class="tshadow-gold-MCU-desciption fs_percent_125">hot end fan</span> to <span class="tshadow-brown-MCU-desciption fs_percent_125">FAN1 (PE5)</span>
-* Connect the <span class="tshadow-gold-MCU-desciption fs_percent_125">controller fans</span> to <span class="tshadow-brown-MCU-desciption fs_percent_125">FAN2 (PD12)</span>
-* Connect the <span class="tshadow-gold-MCU-desciption fs_percent_125">chamber exhaust fan</span> to <span class="tshadow-lt-green-MCU-desciption fs_percent_125">FAN3 (PD13)</span>
-* Connect the <span class="tshadow-yellow-MCU-desciption fs_percent_125">hot end thermistor</span> to <span class="tshadow-neon-grn-MCU-desciption fs_percent_125">T0 (PF4)</span>
-* Connect the <span class="tshadow-light-purple-MCU-desciption fs_percent_125">bed thermistor</span> to <span class="tshadow-bg-MCU-desciption fs_percent_125">TB (PF3)</span>
-* Connect the <span class="tshadow-green-MCU-desciption fs_percent_125">X endstop</span> to <span class="tshadow-green-MCU-desciption fs_percent_125">STOP_0 (PG6)</span>
-* Connect the <span class="tshadow-b-orgn-MCU-desciption fs_percent_125">Y endstop</span> to <span class="tshadow-muted-green-MCU-desciption fs_percent_125">STOP_1 (PG9)</span>
-* Connect the <span class="tshadow-pink-MCU-desciption fs_percent_125">Z endstop</span> to <span class="tshadow-light-purple-MCU-desciption fs_percent_125">STOP_2 (PG10)</span>
-* Connect the <span class="tshadow-bg-MCU-desciption fs_percent_125">signal wire on the PROBE</span> to <span class="tshadow-neon-grn-MCU-desciption fs_percent_125">STOP_7 (PG15)</span>
-* Connect the <span class="tshadow-red-MCU-desciption fs_percent_125">V+ an 0V wires on the probe</span> to <span class="tshadow-pink-MCU-desciption fs_percent_125">PROBE</span>
-* if using a <span class="tshadow-gold-MCU-desciption fs_percent_125">mini12864 display</span>, connect to <span class="tshadow-lt-blue-MCU-desciption fs_percent_125">EXP1 & EXP2</span>, only after completing the steps <span class="tshadow-pink-MCU-desciption fs_percent_125">shown [below](#mini-12864-display)</span>
+* Connect 24V and GND (V+ and V-) from the PSU to PWR and MOTOR_POWER
+* Connect stepper driver for the B Motor (gantry left) into position DRIVER0
+* Plug in stepper motor for the B Motor (gantry left) into position MOTOR0
+* Connect stepper driver for the A Motor (gantry right) into position DRIVER1
+* Plug in stepper motor for the A Motor (gantry right) into position MOTOR1
+* Connect stepper driver for the Z into positions DRIVER2
+* Plug in stepper motor for the Z into positions MOTOR2_1
+* Connect stepper driver for the Z1 into positions DRIVER3
+* Plug in stepper motor for the Z1 into positions MOTOR3
+* Connect stepper driver for the Z2 into positions DRIVER4
+* Plug in stepper motor for the Z2 into positions MOTOR4
+* Connect stepper driver for the Z3 into positions DRIVER5
+* Plug in stepper motor for the Z3 into positions MOTOR5
+* Connect stepper driver for the extruder motor into position DRIVER6
+* Plug in stepper motor for the extruder motor into position MOTOR6
+* Connect the hot end heater to HE0 (PA2)
+* Connect the bed SSR (DC Control Side) to HE1 (PA3)
+* Connect the part cooling fan to FAN0 (PA8)
+* Connect the hot end fan to FAN1 (PE5)
+* Connect the controller fans to FAN2 (PD12)
+* Connect the chamber exhaust fan to FAN3 (PD13)
+* Connect the hot end thermistor to T0 (PF4)
+* Connect the bed thermistor to TB (PF3)
+* Connect the X endstop to STOP_0 (PG6)
+* Connect the Y endstop to STOP_1 (PG9)
+* Connect the Z endstop to STOP_2 (PG10)
+* Connect the signal wire on the PROBE to STOP_7 (PG15)
+* Connect the V+ an 0V wires on the probe to PROBE
+* if using a mini12864 display, connect to EXP1 & EXP2, only after completing the steps shown [below](#mini-12864-display)
 
 [Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
 
@@ -118,7 +129,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 ###### ![](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI_150.jpg) {#Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI}
 {:.no_toc}
 
-* <span class="tshadow-drop-red-MCU-desciption fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI_150.jpg){:target="_blank" rel="noopener"}</span>
 
 [Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
 
@@ -133,39 +144,9 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 [Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
 
-## Raspberry Pi
-{:.no_toc}
-### Power 
-{:.no_toc}
-* The Octopus Pro is capable of providing 5V power to run your Raspberry Pi.  To take advantage of this feature, connect the wires as shown below, from the pi header of the Octopus Pro, to the GPIO header of the Pi.
-* Use at least 24awg wire for this connection.  It may be tempting to use the common "Dupont" jumpers found in many electronics kits, however these jumpers typically use very small gauge wire, and will not carry enough current to run the Pi.
-* Tie all the DC 0V (typically labelled V-) lines for all the DC power supplies together to ensure that all power supplies have the same voltage reference.
+## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
 
-###### ![](./images/v2_octopus_pro_pi_onlyPWR.png) {#v2_octopus_pro_pi_onlyPWR_2}
-{:.no_toc}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
-
-### Connection Using Separate Power Supply
-{:.no_toc}
-* To reduce the current load on the 5V rail of the Octopus Pro board, the Raspberry Pi can be powered by an independent power supply.
-* Use at least 24awg wire for V+ and GND connections to the Pi's power supply
-* Tie all the DC 0V (typically labelled V-) lines for all the DC power supplies together to ensure that all power supplies have the same voltage reference.
-
-###### ![](./images/v2_octopus_Pro_to_PI_UART.png) {#v2_octopus_Pro_to_PI_UART_2}
-{:.no_toc}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
-
-### Control
-{:.no_toc}
-* Voron Design recommends using USB to control the Octopus Pro, which simply requires connecting a USB-A to USB-C cable between the Octopus Pro and Pi. 
-* The option also exists to use a UART connection from the Pi header, in place of the USB.  If you prefer this option, please see the wiring diagram located above in [Connection Using Separate Power Supply](#connection-using-separate-power-supply) and use the instructions below on the Raspberry Pi.  You will want to perform the instructions below **after Mailsail/Fluidd is installed on the Raspberry Pi.**
-
-###### ![](./images/ConnectPitoMCU-Instructions.png) {#ConnectPitoOctopusPro-Instructions_2}
-{:.no_toc}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
+* see [the Raspberry Pi Section](OctopusPro_RaspberryPi.html#raspberry-pi)
 
 ## SSR Wiring for SPI Mode
 
@@ -182,51 +163,6 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 {:.no_toc}
 * See [the mini12864 guide](./mini12864_klipper_guide.md)
 
-## The Klipper Configuration file for BTT Octopus Pro V1.0 Board 
+## URL Resources Links for the Octopus Pro (Klipper Configuration file, PIN Diagrams and Repo)
 {:.no_toc}
-* The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for BTT Octopus Pro 1.0 board is [located here](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg){:target="_blank" rel="noopener"}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
-
-## Color PIN Diagram for BTT Octopus Pro V1.0
-{:.no_toc}
-For reference, here is the Color PIN diagram for the BTT Octopus Pro V1.0
-
-###### ![](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg) {#BTT-Octopus-Pro-V1.0-color-PIN_2}
-{:.no_toc}
-
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PDF format then [click here](./images/BTT-Octopus-Pro-V1.0-Color-PIN-V3.0.pdf){:target="_blank" rel="noopener"}
-
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/BTT-Octopus-Pro-V1.0-color-PIN-V3.0.jpg){:target="_blank" rel="noopener"}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
-
-## Original BTT Octopus Pro V1.0 Pinout
-{:.no_toc}
-For reference, here is the original pinout of the BTT Octopus Pro V1.0
-
-* Note: If you see a conflict between the original pinout and any other source, please refer back to the [BTT Octopus Pro V1.0 schematic diagram](<./images/BIGTREETECH Octopus Pro_SCH.pdf>){:target="_blank" rel="noopener"}
-
-###### ![](./images/BIGTREETECH_Octopus_Pro-PIN-original.jpg) {#BIGTREETECH_Octopus_Pro-PIN-original_2}
-{:.no_toc}
-
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PDF format then [click here](<./images/BIGTREETECH Octopus Pro - PIN.pdf>){:target="_blank" rel="noopener"}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
-
-## The BTT's GitHub Repo for the Octopus Pro V1.0 board
-{:.no_toc}
-* BTT's documentation for Octopus Pro V1.0 board is [located here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro){:target="_blank" rel="noopener"}
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
-
-## After I have Wired up the MCU Board, What Comes Next?<span> <br> </span>
-<span> <br> </span>
-{:.no_toc}
-![](./images/VoronHex_Number_1_small.png)   Once the MCU board is wired up and wire management has been performed, the next step is to compile and install the Klipper Firmware, please see [The Build ═► Software Installation](../../build/software/index.md#software-installation)
-
-![](./images/VoronHex_Number_2_small.png)   Once the MCU board has the Klipper Firmware Installed, the next step is to edit the Klipper Config file (Voron2_Octopus_Config.cfg) to ensure your Voron build matches your Klipper Config file, please see [The Build ═► Software Configuration](../../build/software/configuration.md#software-configuration).  Please use the Color PIN Diagrams, [displayed above](#color-pin-diagram-for-btt-octopus-pro-v10), as a source of information. 
-
-![](./images/VoronHex_Number_3_small.png)   After editing the Klipper Config file (Voron2_Octopus_Config.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index.md#initial-startup-checks)
-
-[Go Back to the Table of Contents](v2_octopus_pro_uartspi_wiring.html#table-of-contents)
+* see [The Octopus Pro Resource Section](OctopusPro_Resources.html#raspberry-pi)
