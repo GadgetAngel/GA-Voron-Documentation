@@ -1,1 +1,1 @@
-Please to go the [documentation site](https://vorondesign.github.io/Voron-Documentation/)
+Please to go to [GadgetAngel's Live Testing site for a demo of this repo](https://gadgetangel.org/)
