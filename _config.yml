@@ -64,9 +64,9 @@ toggle_auto_mode: nil               # default: nil (manual toggle)
 
 # To set the button text for toggling and reverting:
 # toggle_text_1 is for light color scheme
-toggle_text_1: "-> Return to the Dark Side"
+toggle_text_1: "-> Return to the Dark Side"             # default: "-> Dark Mode"
 # toggle_text_2 is for dark color scheme
-toggle_text_2: "-> Color-Blind-Friendly Light Mode"
+toggle_text_2: "-> Color-Blind-Friendly Light Mode"     # default: "-> Light Mode"
 
 #exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
 #, "docs/tests/"
@@ -115,7 +115,7 @@ aux_links_new_tab: true
 # Sort order for navigation links (i.e.: case_sensitive, case_insensitive)
 # nav_sort: case_insensitive # default, equivalent to nil
 # nav_sort: case_sensitive # # Capital letters sorted before lowercase
-#nav_sort: case_insensitive # default, equivalent to nil
+# nav_sort: case_insensitive # default, equivalent to nil
 
 # Back to top link
 back_to_top: true

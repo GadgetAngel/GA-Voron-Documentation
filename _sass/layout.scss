@@ -167,10 +167,11 @@
   );
 }
 
+// for toggle dark mode and light mode
 .theme-toggle {
   position: absolute;
   top: $header-height;
-  top-margin: $sp-3;
+  margin-top: $sp-3;
 }
 
 // stylelint-disable selector-max-type
