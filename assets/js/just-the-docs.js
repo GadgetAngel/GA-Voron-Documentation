@@ -120,6 +120,7 @@ function searchLoaded(index, docs) {
   var currentInput;
   var currentSearchIndex = 0;
 
+  // for toggle dark mode and light mode
   var body = document.querySelector('body');
 
   function showSearch() {
@@ -460,7 +461,7 @@ jtd.setTheme = function(css_theme) {
 }
 
 // Scroll site-nav to ensure the link to the current page is visible
-
+// for toggle dark mode and light mode
 function scrollNav() {
   const href = document.location.pathname.replace(/(\/.*)\/+$/, "$1");
   const siteNav = document.getElementById('site-nav');
