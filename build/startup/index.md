@@ -23,7 +23,7 @@ Any time movements need to be made, those will happen in the 'Control' tab / sec
 
 ![](./images/mainsail_controls.png)
 
-## Verify Temperature
+## Verify Temperature 
 
 Start by verifying that temperatures are being properly reported. Navigate to the Octoprint/Mainsail temperature graph.
 
