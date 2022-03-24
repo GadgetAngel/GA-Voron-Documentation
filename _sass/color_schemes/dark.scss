@@ -130,7 +130,7 @@ input[type=text] {
   color: $grey-lt-300;
 }
 
-button.btn.theme-toggle{
+button.btn.theme-toggle[id=theme-toggle]{
   background-color: $mytogglebtnbg;
   color: $mytogglebtncolor;
 }
