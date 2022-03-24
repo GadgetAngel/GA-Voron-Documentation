@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Voron Documentation
+nav_order: 1
 ---
 
 # Voron Documentation

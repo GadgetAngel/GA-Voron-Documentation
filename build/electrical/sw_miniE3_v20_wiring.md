@@ -48,8 +48,8 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 * Connect X end stop to X-STOP connector (PC0)
 * Connect Y end stop to Y-STOP connector (PC1)
 * Plug Probe GND and Signal (with BAT85 diode) in to Z-STOP (PC2)
-* Connect Probe +V (Probe Voltage) to VIN in terminal on the "DCOUT" connector next to HB
-* Wire 24V and -V from DC power supply to VIN and GND terminals in corner on the "DCIN (Power In)" connector
+* Connect Probe +V to VIN in terminal next to HB
+* Wire 24V and -V from DC power supply to VIN and GND terminals in corner
 * Connect USB Cable to your SKR mini E3, **but do not connect it yet to your Raspberry Pi**
 
 ### MCU Diagram
