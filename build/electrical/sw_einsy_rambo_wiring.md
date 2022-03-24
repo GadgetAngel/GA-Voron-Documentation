@@ -16,7 +16,7 @@ any title text. I ended up using header 6 with a blank title and then I use a Kr
 a Header ID.
 
 If I use the GFM Parser for creating a header anchor with an empty title the static web page produced
-DOES NOT show the LINK symbol to the left of the diagram. The Link is setup but only I can use it in the 
+DOES NOT show the LINK symbol to the left of the diagram. The Link is setup but only I can use it in the
 web page code. An outside Voron Helper could not access the Link Address.  The GFM Parser syntax for "header anchors" forces you to use a text in the title.  If you use a title text then the LINK symbol will be generated.
 
 But with further reading I found that Kramdown Parser does allow a "title text of empty" which produces the LINK symbol to the left of the diagram and generates the LINK address that Voron Users and Voron Helpers can access by right-clicking on the LINK symbol. The documentation for this can be found at https://kramdown.gettalong.org/syntax.html#headers ; look for "Specifying a Header ID"
