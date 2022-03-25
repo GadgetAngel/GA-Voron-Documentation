@@ -42,7 +42,7 @@ For larger wires, such as heater cartridge wiring, heatshrink tubing is helpful.
 
 ## Cables
 
-Silicone wiring has been specified because it has a high strand count which means it has higher fatigue life. Silicone insulation withstands heat and is more flexible which is good in high movement applications. It is less prone to snagging on other wires or the walls inside the cable chain. Check your cable loom before installing the chains. 
+Silicone wiring has been specified because it has a high strand count which means it has higher fatigue life. Silicone insulation withstands heat and is more flexible which is good in high movement applications. It is less prone to snagging on other wires or the walls inside the cable chain. Check your cable loom before installing the chains.
 
 PTFE or Heluflon wires are a premium option as they have a thinner insulation and a lower friction coefficient, which increases bending capabilities and decreases wear. But these advantages are most useful in printers that use cable chains. For printers with an umbilical cord cabling setup (V0 Toolhead, Legacy), they might be overkill. Automation cable such as IGUS can be used, but the minimum bend radius of the cable needs to be verified as the typical bend radius for Voron cable chains is very small.
 
@@ -149,6 +149,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 
 ### Voron 0
 * [V0.0 - mini e3 V1.2](./v0_miniE3_v12_wiring.md)
+* [V0.1 - mini e3 V1.2](./v01_miniE3_v12_wiring.md)
 * [V0.0 - mini e3 V2.0](./v0_miniE3_v20_wiring.md)
 * [V0.1 - mini e3 V2.0](./v01_miniE3_v20_wiring.md)
 * [V0.1 - mini e3 V3.0](./v01_SKR_mini_E3_V30_wiring.md)
