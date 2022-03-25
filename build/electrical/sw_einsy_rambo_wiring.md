@@ -89,11 +89,11 @@ For reference, here is the pinout of the Einsy Rambo
 
     * For Einsy Rambo boards sold Prusa, please see [the following article](https://nikolak.com/klipper-on-prusa-mk3s/){:target="_blank" rel="noopener"}
 
-3.  Once the MCU board has the Klipper Firmware Installed, the next step is to edit the Klipper Config file (skr-pico-v1.0.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here](https://raw.githubusercontent.com/VoronDesign/Voron-Switchwire/master/Firmware/einsy_config.cfg){:target="_blank" rel="noopener"};
+3.  Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (skr-pico-v1.0.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "SW Einsy Rambo"](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"};
 
     *   Please use the Color PIN Diagrams, [displayed above](#einsy-rambo-pinout), as a source of information.
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-4.  After editing the Klipper Config file (einsy_config.cfg), the next step is to check all the motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4.  After **creating/editing** the Klipper Config file (einsy_config.cfg renamed to printer.cfg), the next step is to check all the motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
 
