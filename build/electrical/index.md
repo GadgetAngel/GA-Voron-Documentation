@@ -46,7 +46,7 @@ Silicone wiring has been specified because it has a high strand count which mean
 
 PTFE or Heluflon wires are a premium option as they have a thinner insulation and a lower friction coefficient, which increases bending capabilities and decreases wear. But these advantages are most useful in printers that use cable chains. For printers with an umbilical cord cabling setup (V0 Toolhead, Legacy), they might be overkill. Automation cable such as IGUS can be used, but the minimum bend radius of the cable needs to be verified as the typical bend radius for Voron cable chains is very small.
 
-See the cable lengths and count section for specific counts. Do not downsize the hot end heater wires, they are oversized for safety reasons. 
+See the cable lengths and count section for specific counts. Do not downsize the hot end heater wires, they are oversized for safety reasons.
 
 You may add additional wires to your cable chains as a replacement in case of wire breaks. However, these cables will be heated/cooled and moved around as much as your live cables and may be broken already when you need them! So may be better to keep extra wires as spares outside of the printer.
 
@@ -68,7 +68,7 @@ Traditionally, trying to move a stepper that's miswired, has either resulted in 
 
 ```
 TMC 'stepper_y' reports DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!) olb=1(OpenLoad_B!) CS_ACTUAL=25
-Transition to shutdown state: TMC 'stepper_y' reports error: DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!) 
+Transition to shutdown state: TMC 'stepper_y' reports error: DRV_STATUS: 001900d0 s2vsa=1(LowSideShort_A!) ola=1(OpenLoad_A!)
 ```
 
 
@@ -171,6 +171,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [V2 - MKS Makerbase Monster8](./v2_monster8_wiring.md)
 
 ### Voron Switchwire
+* [SW - mini e3 V1.2](./sw_miniE3_v12_wiring.md)
 * [SW - mini e3 V2.0](./sw_miniE3_v20_wiring.md)
 * [SW - mini e3 V3.0](./sw_miniE3_v30_wiring.md)
 * [SW - Einsy Rambo](./sw_einsy_rambo_wiring.md)
