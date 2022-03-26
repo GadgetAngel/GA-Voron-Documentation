@@ -1,50 +1,38 @@
 ---
 layout: default
-title: "Voron V2 - SKR 1.3 Wiring"
+title: "Voron V2 - BTT SKR V1.3 Wiring"
 nav_exclude: true
+has_children: true
 ---
 
-# Voron V2 - SKR 1.3 Wiring
+# Voron V2 - BTT SKR V1.3 Wiring
 
-## Initial Preparation
+## What is the difference between UART mode and SPI mode?
 
-* Reconfigure the on-board jumpers as shown.
+* This stuff refers to the way the hardware communicates. SPI is significantly faster than UART. In some cases, an SPI solution can be three times faster than a UART solution.
 
-![](./images/skr13-preparation.png)
+* So, how do you know which mode to pick? It depends on the stepper motor drivers you choose to buy with the SKR V1.3 board.  The list below shows which stepper motor drivers are UART mode and which are SPI mode.
 
-## MCU X/Y/E, Hot End
+## UART Mode TMC Driver List
 
-* Place stepper drivers for X, Y, and E in positions X, Y, and E0
-* Plug in stepper motors for X, Y, and E in positions X, Y, and E0
-* Plug Hot End thermistor to thermistor TH0 (P0.24)
-* Plug Hot End heater in to HE0 (P2.7)
-* Plug Hot End Fan in to HE1 (P2.4)
-* Plug Part Cooling Fan in to Fan (P2.3)
-* Connect X end stop to +X connector (P1.28)
-* Connect Y end stop to +Y connector (P1.26)
-* Wire 24V and 0V from DC power supply to Power In
-* Connect USB Cable to your SKR 1.3, but do not connect it yet to your Raspberry Pi
+### UART Mode TMC Drivers That Use 24 VDC:
 
-![](./images/v2-skr13-mcu-xye.png)
+1.  TMC2208
+2.  TMC2209
+3.  TMC2225
+4.  TMC2226
 
-## MCU Z, Bed, Exhaust Fan
 
-* Place stepper drivers for Z0, Z1, Z2, and Z3 into positions X, Y, Z, and E0
-* Plug in stepper motors for Z0, Z1, Z2, and Z3 into positions X, Y, Z, and E0
-* Plug Bed Heater Temp in to TB (P0.23)
-* Plug in Exhaust Fan in to HE0 (P2.7)
-* Plug in Controller Fan in to HE1 (P2.4)
-* Plug SSR Control for Heated Bed in to Fan (P2.3)
-* Plug Z Endstop Switch into -Z (P1.25)
-* Plug Probe GND and Signal (with BAT85 diode) in to +Z (P1.24
-* Plug display wires in to EXP1 and EXP2
-* Wire 24V and 0V from DC power supply to Power In
-* Connect USB Cable to your SKR 1.3, but do not connect it yet to your Raspberry Pi
+## SPI Mode TMC Driver List
 
-![](./images/v2-skr13-mcu-z.png)
+### SPI Mode TMC Drivers That Use 24 VDC:
 
-## SKR 1.3 Pinout
+1.  TMC2100
+2.  TMC2130
+3.  TMC5160
+4.  TMC5161
 
-For reference, here is the pinout of the SKR 1.3
+### SPI Mode TMC Drivers That Use 48 VDC or Higher:
 
-![](./images/SKR-V1.3-pinout.jpg)
+1. TMC5160HV
+2. TMC5160_PRO
