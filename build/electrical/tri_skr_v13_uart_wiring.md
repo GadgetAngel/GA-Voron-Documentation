@@ -1,18 +1,18 @@
 ---
 layout: default
-title: "Voron V2 - SKR V1.3 in UART Mode (TMC2208, TMC2209, TMC2225, TMC2226)"
-parent: "Voron V2 - BTT SKR V1.3 Wiring"
+title: "Trident - SKR V1.3 in UART Mode (TMC2208, TMC2209, TMC2225, TMC2226)"
+parent: "Trident - BTT SKR V1.3 Wiring"
 nav_exclude: true
 nav_order: 1
 ---
 
-# Voron V2 - SKR V1.3 in UART Mode (TMC2208, TMC2209, TMC2225, TMC2226)
+# Trident - SKR V1.3 in UART Mode (TMC2208, TMC2209, TMC2225, TMC2226)
 
 ## Initial Removal of Jumpers
 
 Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below:
 
-###### ![](./images/SKR_V1.3_PREP-Removal_150.png) {#SKR_V13_PREP-Removal_UART1}
+###### ![](./images/SKR_V1.3_PREP-Removal_150.png) {#SKR_V13_PREP-Removal_UART2}
 
 ## Initial Preparation for UART Mode - Set Jumpers
 
@@ -22,7 +22,7 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/SKR_V1.3_in_UART_mode_PREP_150.png) {#SKR_V13_in_UART_mode_for_Prep_150}
+###### ![](./images/SKR_V1.3_in_UART_mode_PREP_150.png) {#SKR_V13_in_UART_mode_for_Prep_150_1}
 
 ## Stepper Motor Drivers
 * Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
@@ -43,18 +43,18 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 ### MCU X/Y/E, Hot End in UART Mode Wiring Diagram
 
-###### ![](./images/Voron2.4r2_Wiring_Diagram_BTT_SKRV1.3_XYE_in_UART_mode_150.jpg) {#Voron2_Wiring_Diagram_BTT_SKRV13_XYE_in_UART_mode}
+###### ![](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_XYE_in_UART_mode_150.jpg) {#Trident_Wiring_Diagram_BTT_SKRV13_XYE_in_UART_mode}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2.4r2_Wiring_Diagram_BTT_SKRV1.3_XYE_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_XYE_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
 
 ## MCU Z, Bed, Exhaust Fan in UART Mode
 
-* Place stepper drivers for Z0, Z1, Z2, and Z3 into positions X, Y, Z, and E0
-* Plug in stepper motors for Z0, Z1, Z2, and Z3 into positions X, Y, Z, and E0
+* Place stepper drivers for Z2, Z1, and Z0 into positions X, Z, and E1
+* Plug in stepper motors for Z2, Z1, and Z0 into positions X, Z, and E1
 * Plug Bed Thermistor in to TB (P0.23)
-* Plug in Exhaust Fan in to HE0 (P2.7)
-* Plug in Controller Fans in to HE1 (P2.4)
-* Plug SSR Control for Heated Bed in to Fan (P2.3)
+* Plug in Exhaust Fan in to H-BED (P2.5)
+* Plug in Controller Fans in to FAN (P2.3)
+* Plug SSR Control for Heated Bed in to HE1 (P2.4)
 * Plug Z Endstop Switch into Z- (P1.25)
 * Plug Probe Signal (with BAT85 diode) in to Z+ (P1.24)
 * Plug Probe GND and Probe Voltage in to "DC OUT" connector next to X motor connector
@@ -64,31 +64,31 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 ### MCU Z, Bed, Exhaust Fan in UART Mode Wiring Diagram
 
-###### ![](./images/Voron2.4r2_Wiring_Diagram_BTT_SKRV1.3_Z_in_UART_mode_150.jpg) {#Voron2_Wiring_Diagram_BTT_SKRV13_Z_in_UART_mode}
+###### ![](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_Z_in_UART_mode_150.jpg) {#Trident_Wiring_Diagram_BTT_SKRV13_Z_in_UART_mode}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2.4r2_Wiring_Diagram_BTT_SKRV1.3_Z_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_Z_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
 
-[Go Back to the Table of Contents](./v2_skr13_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_skr_V13#table-of-contents)
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 
 ### MCU X/Y/E, Hot End with Heat Sinks Installed
 
-###### ![](./images/SKR_V1.3_in_UART_mode_Heatsinks1_150.png) {#SKR_V13_UART_Heatsinks1}
+###### ![](./images/SKR_V1.3_in_UART_mode_Heatsinks1_150.png) {#SKR_V13_UART_Heatsinks_2}
 
 ### MCU Z, Bed, Exhaust Fan with Heat Sinks Installed
 
-###### ![](./images/SKR_V1.3_in_UART_Mode_Heatsinks2_150.png) {#SKR_V13_UART_Heatsinks2}
+###### ![](./images/Trident_SKR_V1.3_in_UART_Mode_Heatsinks2_150.png) {#Trident_SKR_V13_UART_Heatsinks2}
 
 ## SSR Wiring (Board Shown is in UART mode)
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/btt-SKRV1.3inUART-ssr-wiring.png) {#btt-SKRV13inUART-ssr-wiring}
+###### ![](./images/btt-SKRV1.3inUART-ssr-wiring.png) {#btt-SKRV13inUART-ssr-wiring_2}
 
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/btt-SKRV1.3inUART-ssr-wiring.png){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_skr13_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_skr_V13#table-of-contents)
 
 ## mini 12864 Display
 
@@ -96,7 +96,7 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 ### The Klipper Configuration file for SKR V1.3 board
 
-The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for SKR V1.3 board is [located here; Select "V2 SKR 1.3"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
+The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for SKR V1.3 board is [located here](https://raw.githubusercontent.com/VoronDesign/Voron-Trident/main/Firmware/Voron_Trident_SKR_1.3.cfg){:target="_blank" rel="noopener"}
 
 ## URL Resources Links for the SKR V1.3 (PIN Diagrams and Repo)
 
@@ -108,11 +108,10 @@ The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for SKR V1.3
 
 2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> SKR 1.3](../../build/software/skr13_klipper#skr-1314-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron2_SKR_13_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "V2 SKR 1.3"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron_Trident_SKR_1.3.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here](https://raw.githubusercontent.com/VoronDesign/Voron-Trident/main/Firmware/Voron_Trident_SKR_1.3.cfg){:target="_blank" rel="noopener"};
 
     * Please use the Color PIN Diagrams, [displayed above](./skr_v13_Resources#SKRV13_Colored_PIN_Diagram){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-
-4. After **creating/editing** the Klipper Config file (Voron2_SKR_13_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating/editing** the Klipper Config file (Voron_Trident_SKR_1.3.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
