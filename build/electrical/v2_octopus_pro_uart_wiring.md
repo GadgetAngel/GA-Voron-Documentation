@@ -39,7 +39,7 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
 
-* Ensure the removal of the USB 5V power supply jumper ("Power Selection Jumper, shown in the **<span class="color-blind-red">RED box</span>**") which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
+* Ensure the **removal of the USB 5V power supply jumper ("Power Selection Jumper, shown in the <span class="color-blind-red">RED box</span>")** which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
