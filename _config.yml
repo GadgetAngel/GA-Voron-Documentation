@@ -27,7 +27,7 @@ logo: "/images/voron_design_logo.png"
 logo_dark: "/images/voron_design_logo.png"
 # set the logo to use during light mode - set logo-light:
 logo_light: "/images/voron_design_logo_light.png"
-uartspi_article: false
+uartspi_article: true
 
 markdown: kramdown
 remote_theme: pmarsceill/just-the-docs
