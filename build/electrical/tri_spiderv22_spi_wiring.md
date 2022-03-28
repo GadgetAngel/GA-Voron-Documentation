@@ -83,7 +83,7 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 * <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_FYSETC_Spider_V2.2_in_SPI_mode_150.jpg){:target="_blank" rel="noopener"}</span>
 
-[Go Back to the Table of Contents](tri_spiderv22_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_spiderv22_wiring#table-of-contents)
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 
