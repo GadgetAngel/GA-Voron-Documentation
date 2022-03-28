@@ -163,6 +163,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 ### Trident
 * [Trident - SKR V1.3](./tri_skr_v13.md)
 * [Trident - BigTreeTech Octopus](./v2_octopus_wiring.md)
+* [Trident - Fysetc Spider V2.2](./tri_spiderv22_wiring.md)
 * [Trident - MKS Makerbase Monster8](./v2_monster8_wiring.md)
 
 ### Voron 2
