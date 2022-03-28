@@ -15,9 +15,7 @@ has_children: true
 <span> <br> </span>
 <span> <br> </span>
 
-<div>
-
-<!--
+{% if site.uartspi_article %}
 
 {% if site.url == "http://localhost:4000" %}
 
@@ -44,9 +42,7 @@ has_children: true
 
 {% endif %}
 
--->
-
-</div>
+{% endif %}
 
 ## UART Mode TMC Driver List
 

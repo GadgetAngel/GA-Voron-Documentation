@@ -15,6 +15,8 @@ has_children: true
 <span> <br> </span>
 <span> <br> </span>
 
+{% if site.uartspi_article %}
+
 {% if site.url == "http://localhost:4000" %}
 
 <iframe
@@ -37,6 +39,8 @@ has_children: true
     height="550"
     style="border:5px outset #dd2e2e;"
 ></iframe>
+
+{% endif %}
 
 {% endif %}
 
