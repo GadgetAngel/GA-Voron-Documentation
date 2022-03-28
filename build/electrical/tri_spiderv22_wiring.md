@@ -17,7 +17,7 @@ has_children: true
 
 {% if site.uartspi_article == true %}
 
-{% if site.url == "http://localhost:4000" %}
+ {% if site.url == "http://localhost:4000" %}
 
 <iframe
     id="uartspipdf"
@@ -27,9 +27,9 @@ has_children: true
     style="border:5px outset #dd2e2e;">
 </iframe>
 
-{% else %}
+ {% else %}
 
-{% capture myurlpdf %} https://drive.google.com/viewerng/viewer?embedded=true&url={{ site.url }}/build/electrical/images/What_is_the_Difference_Between_SPI_vs_UART.pdf#toolbar=1&page=1 {% endcapture %}
+ {% capture myurlpdf %} https://drive.google.com/viewerng/viewer?embedded=true&url={{ site.url }}/build/electrical/images/What_is_the_Difference_Between_SPI_vs_UART.pdf#toolbar=1&page=1 {% endcapture %}
 
 <iframe
     id="uartspipdf"
@@ -40,7 +40,7 @@ has_children: true
     style="border:5px outset #dd2e2e;"
 ></iframe>
 
-{% endif %}
+ {% endif %}
 
 {% endif %}
 
