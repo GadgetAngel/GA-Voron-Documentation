@@ -15,7 +15,7 @@ has_children: true
 <span> <br> </span>
 <span> <br> </span>
 
-{% if site.uartspi_article %}
+{% if site.uartspi_article == true %}
 
 {% if site.url == "http://localhost:4000" %}
 
