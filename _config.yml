@@ -127,7 +127,7 @@ back_to_top_text: "Back to top"
 
 # Footer content
 # appears at the bottom of every page's main content
-footer_content: "Open Source Project by Voron Design Team. Distributed by an <a href=\"https://github.com/VoronDesign/Voron-Documentation/tree/main/LICENSE.txt\">GNU GENERAL PUBLIC LICENSE.</a>"
+footer_content: "Open Source Project by Voron Design Team. Distributed by an <a href=\"https://github.com/GadgetAngel/GA-Voron-Documentation/blob/main/LICENSE.txt\">GNU GENERAL PUBLIC LICENSE.</a>"
 
 # Footer last edited timestamp
 #last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
