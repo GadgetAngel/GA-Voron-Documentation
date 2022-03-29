@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Voron V2 - BTT Octopus V1.0/V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)"
-parent: "Voron V2 - BTT Octopus V1.0/V1.1 Wiring"
+title: "Trident - BTT Octopus V1.0/V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)"
+parent: "Trident - BTT Octopus V1.0/V1.1 Wiring"
 nav_exclude: true
 nav_order: 2
 ---
 
-# Voron V2 - BTT Octopus V1.0/V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+# Trident - BTT Octopus V1.0/V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
 
 ## Initial Removal of Jumpers for SPI Mode
 
@@ -23,7 +23,7 @@ We have no idea what state your board is in when you start this process.  Someon
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/Octopus11_SPI_Mode_for_Prep.png) {#Octopus11_SPI_Mode_for_Prep}
+###### ![](./images/Octopus11_SPI_Mode_for_Prep.png) {#Octopus11_SPI_Mode_for_Prep_Tri}
 
 ### (FAN & PROBE) Voltage Selection Headers
 
@@ -45,7 +45,7 @@ We have no idea what state your board is in when you start this process.  Someon
 
 ### (FAN & PROBE) Voltage Selection Diagram
 
-###### ![](./images/Octopus11_SPI_VoltageSelect.png) {#Octopus11_SPI_VoltageSelect}
+###### ![](./images/Octopus11_SPI_VoltageSelect.png) {#Octopus11_SPI_VoltageSelect_Tri}
 
 ## Stepper Motor Drivers
 * Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
@@ -64,8 +64,6 @@ We have no idea what state your board is in when you start this process.  Someon
 * Plug in stepper motor for the Z1 into positions MOTOR3
 * Connect stepper driver for the Z2 into positions DRIVER4
 * Plug in stepper motor for the Z2 into positions MOTOR4
-* Connect stepper driver for the Z3 into positions DRIVER5
-* Plug in stepper motor for the Z3 into positions MOTOR5
 * Connect stepper driver for the extruder motor into position DRIVER6
 * Plug in stepper motor for the extruder motor into position MOTOR6
 * Connect the hot end heater to HE0 (PA2)
@@ -86,11 +84,11 @@ We have no idea what state your board is in when you start this process.  Someon
 ## MCU Wiring Diagram for SPI Mode
 <span> <br> </span>
 
-###### ![](./images/Voron2.4r2_Wiring_Diagram_Octopus_V1.1_in_SPI.jpg) {#Voron2_Wiring_Diagram_Octopus_V11_SPI}
+###### ![](./images/Trident_Wiring_Diagram_Octopus_V1.1_in_SPI.jpg) {#Tri_Wiring_Diagram_Octopus_V11_SPI}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2.4r2_Wiring_Diagram_Octopus_V1.1_in_SPI.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_Octopus_V1.1_in_SPI.jpg){:target="_blank" rel="noopener"}</span>
 
-[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_octopus_wiring#table-of-contents)
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 
@@ -98,7 +96,7 @@ We have no idea what state your board is in when you start this process.  Someon
 
 <span> <br> </span>
 
-###### ![](./images/Octopus11_SPI_Heatsinks.png) {#Octopus11_SPI_Heatsinks}
+###### ![](./images/Trident_Octopus11_SPI_Heatsinks.png) {#Tri_Octopus11_SPI_Heatsinks}
 
 ## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
 
@@ -108,11 +106,11 @@ We have no idea what state your board is in when you start this process.  Someon
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/BTTOctopus11-ssr-SPI-wiring.png) {#BTTOctopus11-ssr-SPI-wiring}
+###### ![](./images/BTTOctopus11-ssr-SPI-wiring.png) {#BTTOctopus11-ssr-SPI-wiring_Tri}
 
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/BTTOctopus11-ssr-SPI-wiring.png){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_octopus_wiring#table-of-contents)
 
 ## mini 12864 Display
 
@@ -120,9 +118,9 @@ We have no idea what state your board is in when you start this process.  Someon
 
 ## The Klipper Configuration file for BTT Octopus V1.0/V1.1 Board
 
-* The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for BTT Octopus 1.0/V1.1 board is [located here; Select "V2 Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
+* The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for BTT Octopus 1.0/V1.1 board is [located here; Select "Trident Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_octopus_wiring#table-of-contents)
 
 ## URL Resources Links for the Octopus V1.0/V1.1 (PIN Diagrams and Repo)
 
@@ -134,13 +132,13 @@ We have no idea what state your board is in when you start this process.  Someon
 
 2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> BTT Octopus](../../build/software/octopus_klipper#octopuspro-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron2_Octopus_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "V2 Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Trident_Octopus_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "Trident Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"};
 
     * Please use the Color PIN Diagrams, [displayed here](./Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 
-4. After **creating/editing** the Klipper Config file (Voron2_Octopus_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating/editing** the Klipper Config file (Trident_Octopus_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_octopus_wiring#table-of-contents)
