@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "BTT Octopus Pro V1.0 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)"
-parent: "Voron V2 - BTT Octopus Pro V1.0 Wiring"
+title: "BTT Octopus V1.0/V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)"
+parent: "Voron V2 - BTT Octopus V1.0/V1.1 Wiring"
 nav_exclude: true
 nav_order: 2
 ---
 
-# BTT Octopus Pro V1.0 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+# BTT Octopus V1.0/V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
 
 ## Initial Removal of Jumpers for SPI Mode
 
@@ -16,47 +16,42 @@ We have no idea what state your board is in when you start this process.  Someon
 
 * Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below.
 
-###### ![](./images/Octopus_Pro_PREP-Removal_150.png) {#Octopus_Pro_PREP-Removal_SPI}
+
+###### ![](./images/Octopus11_PREP-Removal.png) {#Octopus11_PREP-Removal_SPI}
 
 ## Initial Preparation for SPI Mode - Set Jumpers
 
-* Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** because the Voron printer does not use sensorless homing.
-
-* Ensure the **removal of the USB 5V power supply jumper ("Power Selection Jumper, shown in the <span class="color-blind-red">RED box</span>")** which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
-
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/Octopus_Pro_F446_SPI_Mode_for_Prep.png) {#Octopus_Pro_F446_SPI_Mode_for_Prep}
+###### ![](./images/Octopus11_SPI_Mode_for_Prep.png) {#Octopus11_SPI_Mode_for_Prep}
 
-### (FAN & MOTOR POWER & PROBE) Voltage Selection Headers
+### (FAN & PROBE) Voltage Selection Headers
 
-* In the diagram below, the **COLORED BOXES** indicate the headers with **<span class="color-blind-green">GREEN</span>** jumpers which are set for 24VDC.
+* As shown in the diagram below, ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-purple">PURPLE box</span>) are removed** because the Voron printer does not use sensorless homing.
+
+* As shown in the diagram below, ensure the **removal of the USB 5V power supply jumper ("Power Selection Jumper, shown in the <span class="color-blind-red">RED box</span>")** which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
+
+* In the diagram below, the **<span class="color-blind-blue">BLUE</span> and <span class="color-blind-orange">ORANGE</span> boxes** indicate the headers with **<span class="color-blind-green">GREEN</span>** jumpers which are set for 24VDC.
 
 * In the diagram below, the **<span class="color-blind-blue">BLUE box</span>** indicates the "fan voltage selection headers" with **<span class="color-blind-green">GREEN</span>** jumpers which are set for 24VDC.
 
-    * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **If fans that use 5VDC or 12VDC are used, please take <span class="color-blind-red">NOTE</span> of these "fan voltage selection headers" and set the jumpers to the appropriate jumper position so that the correct fan voltage will be produced to run the 5VDC or 12VC fan.  If the fan voltage selection jumper is set for 24VDC and a 5VDC/12VDC fan is connected to it, the Octopus Pro board will be damaged.**
+    * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **If fans that use 5VDC or 12VDC are used, please take <span class="color-blind-red">NOTE</span> of these "fan voltage selection headers" and set the jumpers to the appropriate jumper position so that the correct fan voltage will be produced to run the 5VDC or 12VC fan.  If the fan voltage selection jumper is set for 24VDC and a 5VDC/12VDC fan is connected to it, the Octopus board will be damaged.**
 
 * In the diagram below, the **<span class="color-blind-orange">ORANGE box</span>** indicates the "probe voltage selection header" with a **<span class="color-blind-green">GREEN</span>** jumper which is set for 24VDC. If a PROBE voltage of 5VDC or 12VDC is desired, this jumper needs to be changed.
 
-    * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **If the voltage required by the PROBE device does not match the voltage selected by the "probe voltage selection Jumper" then the Octopus Pro board could be damaged.**
-
-* In the diagram below, the **<span class="color-blind-orange">ORANGE box made with a dash line</span>** indicates the PT100/PT1000 DIP switches. The default setting of all the DIP switches is set to OFF. This default setting is undefined.  Therefore, **before you install the Octopus Pro board, a valid setting must be chosen.  Choose between a 2-wire or 4-wire arrangement: ([2-wire: 7, 11] or [4-wire: 4, 8])**
-
-* In the diagram below, the **<span class="color-blind-yellow">YELLOW box</span>** indicates the motor power selection headers with **<span class="color-blind-green">GREEN</span>** jumpers which are set for 24VDC.  Each stepper motor driver has this header so that each individual socket can be set to either 24VDC (V<sub>in</sub>) or MOTOR_POWER voltage.
-
-    * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **If the motor power selection headers DO NOT match the voltage being supplied to the stepper driver, the Octopus Pro board will be damaged along with the stepper motor driver.  Set each of the motor power selection jumpers to the appropriate position so that the stepper driver _voltage needed, matches the PSU voltage selected_ by the motor power selection jumper. For example, If the stepper motor driver voltage is set for 48VDC and the actual stepper motor driver runs at 24VDC, the Octopus Pro board and the stepper motor driver will be damaged.**
+    * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **If the voltage required by the PROBE device does not match the voltage selected by the "probe voltage selection Jumper" then the Octopus board could be damaged.**
 
 * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
-### (FAN & MOTOR POWER & PROBE) Voltage Selection Diagram
+### (FAN & PROBE) Voltage Selection Diagram
 
-###### ![](./images/Octopus_Pro_F446_SPI_VoltageSelect_150.png) {#Octopus_Pro_F446_SPI_VoltageSelect}
+###### ![](./images/Octopus11_SPI_VoltageSelect.png) {#Octopus11_SPI_VoltageSelect}
 
 ## Stepper Motor Drivers
 * Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
 * Install heat sinks on all stepper motor drivers
 
-## MCU Wiring for SPI Mode
+## MCU Wiring for UART Mode
 
 * Connect 24V and GND (V+ and V-) from the PSU to PWR and MOTOR_POWER
 * Connect stepper driver for the B Motor (gantry left) into position DRIVER0
@@ -91,11 +86,11 @@ We have no idea what state your board is in when you start this process.  Someon
 ## MCU Wiring Diagram for SPI Mode
 <span> <br> </span>
 
-###### ![](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI_150.jpg) {#Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI}
+###### ![](./images/Voron2.4r2_Wiring_Diagram_Octopus_V1.1_in_SPI.jpg) {#Voron2_Wiring_Diagram_Octopus_V11_SPI}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_SPI_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2.4r2_Wiring_Diagram_Octopus_V1.1_in_SPI.jpg){:target="_blank" rel="noopener"}</span>
 
-[Go Back to the Table of Contents](./v2_octopus_pro_uartspi_wiring#table-of-contents)
+[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 
@@ -103,35 +98,35 @@ We have no idea what state your board is in when you start this process.  Someon
 
 <span> <br> </span>
 
-###### ![](./images/Octopus_Pro_SPI_Heatsinks_150.png) {#Octopus_Pro_SPI_Heatsinks}
+###### ![](./images/Octopus11_SPI_Heatsinks.png) {#Octopus11_SPI_Heatsinks}
 
 ## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
 
-* see [the Raspberry Pi Section](./OctopusPro_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
+* see [the Raspberry Pi Section](./Octopus11_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
 ## SSR Wiring (Board Shown is in SPI mode)
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/BTTOctopus_Pro-ssr-SPI-wiring.png) {#BTTOctopus_Pro-ssr-SPI-wiring}
+###### ![](./images/BTTOctopus11-ssr-SPI-wiring.png) {#BTTOctopus11-ssr-SPI-wiring}
 
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/BTTOctopus_Pro-ssr-SPI-wiring.png){:target="_blank" rel="noopener"}
+* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/BTTOctopus11-ssr-SPI-wiring.png){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_octopus_pro_uartspi_wiring#table-of-contents)
+[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
 
 ## mini 12864 Display
 
 * See [the mini12864 guide](./mini12864_klipper_guide.md){:target="_blank" rel="noopener"}
 
-## The Klipper Configuration file for BTT Octopus Pro V1.0 Board
+## The Klipper Configuration file for BTT Octopus V1.0/V1.1 Board
 
-* The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for BTT Octopus Pro 1.0 board is [located here; Select "V2 Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
+* The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for BTT Octopus 1.0/V1.1 board is [located here; Select "V2 Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_octopus_pro_uartspi_wiring#table-of-contents)
+[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
 
-## URL Resources Links for the Octopus Pro (PIN Diagrams and Repo)
+## URL Resources Links for the Octopus V1.0/V1.1 (PIN Diagrams and Repo)
 
-* see [The Octopus Pro Resource Section](./OctopusPro_Resources#color-pin-diagram-for-btt-octopus-pro-v10){:target="_blank" rel="noopener"}
+* see [The Octopus V1.0/V1.1 Resource Section](./Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
@@ -141,11 +136,11 @@ We have no idea what state your board is in when you start this process.  Someon
 
 3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron2_Octopus_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "V2 Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"};
 
-    * Please use the Color PIN Diagrams, [displayed above](./OctopusPro_Resources#color-pin-diagram-for-btt-octopus-pro-v10){:target="_blank" rel="noopener"}, as a source of information;
+    * Please use the Color PIN Diagrams, [displayed here](./Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 
 4. After **creating/editing** the Klipper Config file (Voron2_Octopus_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_octopus_pro_uartspi_wiring#table-of-contents)
+[Go Back to the Table of Contents](./v2_octopus_wiring#table-of-contents)
