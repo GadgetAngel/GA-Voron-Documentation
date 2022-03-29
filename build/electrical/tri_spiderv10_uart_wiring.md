@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Voron V2 - Fysetc Spider V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)"
-parent: "Voron V2 - Fysetc Spider V1.1 Wiring"
+title: "Trident - Fysetc Spider V1.1 in UART Mode (TMC2208, TMC2209, TMC2225, TMC2226)"
+parent: "Trident - Fysetc Spider V1.1 Wiring"
 nav_exclude: true
-nav_order: 2
+nav_order: 1
 ---
 
-# Voron V2 - Fysetc Spider V1.1 in SPI Mode (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+# Trident - Fysetc Spider V1.1 in UART Mode (TMC2208, TMC2209, TMC2225, TMC2226)
 
 ## Initial Removal of Jumpers
 
@@ -14,17 +14,17 @@ nav_order: 2
 
 * __<span class="underline-double-trouble color-blind-red">NOTE:</span>__ The Fysetc Spider V1.0 board has jumpers located inside the endstop connectors, **remove them**.
 
-###### ![](./images/FYSETC_Spider_V1.0_PREP-Removal_150.png) {#FYSETC_Spider_V10_PREP-Removal_1}
+###### ![](./images/FYSETC_Spider_V1.0_PREP-Removal_150.png) {#FYSETC_Spider_V10_PREP-Removal_6}
 
-## Initial Preparation for SPI Mode - Set Jumpers
+## Initial Preparation for UART Mode - Set Jumpers
 
-* Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** because the Voron printer does not use sensorless homing.
+* Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
 
 * Ensure the "Power Selection Jumper" (shown in the **<span class="color-blind-red">RED box</span>**) is in the bottom position (as shown in the diagram below) on the "Power Selection" header. This setting prevents the USB 5V power supply from being used.
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/FYSETC_Spider_V1.0_in_SPI_mode_PREP_150.png) {#FYSETC_Spider_V10_in_SPI_Mode_PREP}
+###### ![](./images/FYSETC_Spider_V1.0_in_UART_mode_PREP_150.png) {#FYSETC_Spider_V10_in_UART_Mode_PREP_6}
 
 ### (FAN & PROBE) Voltage Selection Headers
 
@@ -42,24 +42,24 @@ nav_order: 2
 
 ### (FAN & PROBE) Voltage Selection Diagram
 
-###### ![](./images/FYSETC_Spider_V1.0_inSPIMode_VoltageSelect_150.png) {#FYSETC_Spider_V10_inSPIMode_VoltageSelect}
+###### ![](./images/FYSETC_Spider_V1.0_inUARTMode_VoltageSelect_150.png) {#FYSETC_Spider_V10_inUARTMode_VoltageSelect_6}
 
 ## Stepper Drivers
 * If using Fysetc drivers, inspect for left over rosin, and clean with IPA if need
-* Install step drivers in all slots except E4-MOT
+* Install step drivers in all slots except E3-MOT and E4-MOT
 * Install heat sinks on all step drivers
 * _**NOTE: if the board has been powered, ensure that motor power caps are fully drained before inserting stepper drivers: Temporarily connect a 100K resistor between VMOT+ and VMOT- to safely drain the capacitors**_ See [Fysetc Spider 3.3v issue](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/Spider%203.3v%20issue.md){:target="_blank" rel="noopener"}
 
-## MCU Wiring for SPI Mode
+## MCU Wiring for UART Mode
 
 * Connect 24V Power from the PSU to PWR IN and BED_POWER/DCIN
 * Connect stepper driver for the B Motor (gantry left) into position X-MOT (stepper socket).
 * Plug in stepper motor for the B Motor (gantry left) into position X-MOT (motor connector).
 * Connect stepper driver for the A Motor (gantry right) into position Y-MOT (stepper socket).
 * Plug in stepper motor for the A Motor (gantry right) into position Y-MOT (motor connector).
-* Connect stepper drivers for the Z, Z1, Z2, and Z3 into positions Z-MOT, E1-MOT, E2-MOT and E3-MOT (stepper sockets).
+* Connect stepper drivers for the Z, Z1, and Z2 into positions Z-MOT, E1-MOT, and E2-MOT (stepper sockets).
 * Ensure that Z2-MOT motor connector has two jumpers set.  These jumpers allow the Z1-MOT connector to work properly.
-* Plug in stepper motors for the Z, Z1, Z2, and Z3 into positions Z1-MOT, E1-MOT, E2-MOT and E3-MOT (motor connectors).
+* Plug in stepper motors for the Z, Z1, and Z2 into positions Z1-MOT, E1-MOT, and E2-MOT (motor connectors).
 * Connect stepper driver for the extruder motor into position E0-MOT (stepper socket).
 * Plug in stepper motor for the extruder motor into position E0-MOT (motor connector).
 * Connect the hot end heater to E0 OUT (PB15)
@@ -76,34 +76,34 @@ nav_order: 2
 * Connect the Z endstop to Z- (PA0)
 * if using a mini12864 display, connect to EXP1 & EXP2, only after completing the steps shown [below](#mini-12864-display)
 
-## MCU Wiring Diagram for SPI Mode
+## MCU Wiring Diagram for UART Mode
 
-###### ![](./images/Voron2.4r2_Wiring_Diagram_FYSETC_Spider_V1.0_in_SPI_mode_150.jpg) {#Voron2_Wiring_Diagram_FYSETC_Spider_V10_in_SPI}
+###### ![](./images/Trident_Wiring_Diagram_FYSETC_Spider_V1.0_in_UART_mode_150.jpg) {#Trident_Wiring_Diagram_FYSETC_Spider_V10_in_UART_6}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2.4r2_Wiring_Diagram_FYSETC_Spider_V1.0_in_SPI_mode_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_FYSETC_Spider_V1.0_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
 
-[Go Back to the Table of Contents](./v2_spider_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_spider_wiring#table-of-contents)
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 
-### MCU in SPI Mode with Heat Sinks Installed
+### MCU in UART Mode with Heat Sinks Installed
 
-###### ![](./images/FYSETC_Spider_V1.0_in_SPI_mode_Heatsinks_150.png) {#FYSETC_Spider_v10_SPI_Heatsinks}
+###### ![](./images/Trident_FYSETC_Spider_V1.0_in_UART_mode_with_Heatsinks_150.png) {#Trident_FYSETC_Spider_v10_UART_Heatsinks_6}
 
 ## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
 
 * see [the Raspberry Pi Section](./Fysetc_Spider_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
-## SSR Wiring (Board Shown is in SPI mode)
+## SSR Wiring (Board Shown is in UART mode)
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/fysetc-spiderv1.0inSPI-ssr-wiring_150.png) {#fysetc-spiderv10-ssr-SPI-wiring}
+###### ![](./images/fysetc-spiderv1.0inUART-ssr-wiring_150.png) {#fysetc-spiderv10-ssr-UART-wiring}
 
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/fysetc-spiderv1.0inSPI-ssr-wiring_150.png){:target="_blank" rel="noopener"}
+* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/fysetc-spiderv1.0inUART-ssr-wiring_150.png){:target="_blank" rel="noopener"}
 <span> <br> </span>
 
-[Go Back to the Table of Contents](./v2_spider_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_spider_wiring#table-of-contents)
 
 ## mini 12864 Display
 
@@ -112,11 +112,17 @@ nav_order: 2
 * *BTT mini12864 only* remove components R1, and C6, and rotate the connectors 180 degrees
 * See [the mini12864 guide](./mini12864_klipper_guide#mini12864-klipper-guide){:target="_blank" rel="noopener"}
 
-### The Klipper Configuration file for Fysetc Spider V1.0 Board
+<div>
 
-The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for Fysetc Spider V1.0 board is [located here; Select "V2 Spider"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
+<!--
+### The Klipper Configuration file for Fysetc Spider V1.1 Board
 
-[Go Back to the Table of Contents](./v2_spider_wiring#table-of-contents)
+The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for Fysetc Spider V1.1 board is [located here; Select "V2 Spider"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
+
+[Go Back to the Table of Contents](./tri_spider_wiring#table-of-contents)
+-->
+
+</div>
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
@@ -128,13 +134,13 @@ The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for Fysetc S
 
 2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> Fysetc Spider](../../build/software/spider_klipper#spider-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron2_Spider_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "V2 Spider"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create** the Klipper Config file (printer.cfg);
 
     * Please use the Color PIN Diagrams, [displayed above](./Fysetc_Spider_Resources_v1#FYSETC_Spider_V10-color-PIN_1){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 
-4. After **creating/editing** the Klipper Config file (Voron2_Spider_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating** the Klipper Config file (printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
 
-[Go Back to the Table of Contents](./v2_spider_wiring#table-of-contents)
+[Go Back to the Table of Contents](./tri_spider_wiring#table-of-contents)
