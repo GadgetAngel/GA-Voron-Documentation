@@ -3,27 +3,6 @@ layout: default
 title: "Voron V0.1 - SKR Pico v1.0 Wiring"
 nav_exclude: true
 ---
-<div>
-
-<!--
-To be able to supply the Voron user and Voron Helper staff with an easy access LINK for all diagrams, I tested
-a couple of different methods.  I found one method that allowed the user to left-click on the diagram
-and it would open the diagram up in the web browser. I choose to not use this method because ther would be
-a lot of Voron users who probably would activate this by accident and then not beable to get themselves back.
-
-The method I choose was one that will display the LINK symbol to the left of the diagram and without adding
-any title text. I ended up using header 6 with a blank title and then I use a Kramdown Syntax for specifying
-a Header ID.
-
-If I use the GFM Parser for creating a header anchor with an empty title the static web page produced
-DOES NOT show the LINK symbol to the left of the diagram. The Link is setup but only I can use it in the
-web page code. An outside Voron Helper could not access the Link Address.  The GFM Parser syntax for "header anchors" forces you to use a text in the title.  If you use a title text then the LINK symbol will be generated.
-
-But with further reading I found that Kramdown Parser does allow a "title text of empty" which produces the LINK symbol to the left of the diagram and generates the LINK address that Voron Users and Voron Helpers can access by right-clicking on the LINK symbol. The documentation for this can be found at https://kramdown.gettalong.org/syntax.html#headers ; look for "Specifying a Header ID"
--->
-
-</div>
-
 # Voron V0.1 - SKR Pico Wiring
 
 ## Initial Removal of Jumpers
@@ -33,6 +12,10 @@ But with further reading I found that Kramdown Parser does allow a "title text o
 ## Initial Preparation - Set Jumpers
 
 * **All** Jumpers should be **removed** from the SKR Pico board.
+
+* Ensure the **removal of the USB 5V power supply jumper ("SW_USB Selection Jumper, shown in the <span class="color-blind-red">RED box</span>")** which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
+
+###### ![](./images/SKR_PICO_V1.0_voltageselect.png) {#SKR_PICO_V1.0_voltageselect}
 
 ## MCU
 
