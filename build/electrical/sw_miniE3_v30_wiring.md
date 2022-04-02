@@ -89,11 +89,11 @@ For reference, here is the original pinout of the SKR mini E3 V3.0
 
 1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../build/software/index#software-installation){:target="_blank" rel="noopener"}
 
-2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please use the [above Color Pin Diagram, look for "Klipper Building Options"](./images/SKR_mini_E3_V3.0_Color_PIN_diagram_300.pdf){:target="_blank" rel="noopener"}
+2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please use the [above Color Pin Diagram, look for "Klipper Building Options"](./images/SKR_mini_E3_V3.0_Color_PIN_diagram_300.pdf){:target="_blank" rel="noopener"}; an alternative source of information on [how to build and install the Klipper firmware for the SKR mini E3 V3.0 is located here](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3/tree/master/firmware/V3.0/Klipper){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create** the Klipper Config file (printer.cfg);
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create** the Klipper Config file (create a printer.cfg file, consider looking at [V0.1 skr-mini-E3-v3.0.cfg file](https://github.com/VoronDesign/Voron-0/blob/Voron0.1/Firmware/skr-mini-E3-v3.0.cfg){:target="_blank" rel="noopener"} as a good starting point);
 
-    * Please use the Color PIN Diagrams, [displayed above](#skr_mini_E3_V3.0_Color_PIN_diagram), as a source of information;
+    * Please use the Color PIN Diagrams, [displayed here](#skr_mini_E3_V3.0_Color_PIN_diagram), as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
