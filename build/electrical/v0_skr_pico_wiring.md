@@ -13,7 +13,7 @@ nav_exclude: true
 
 * **All** Jumpers should be **removed** from the SKR Pico board.
 
-* Ensure the **removal of the USB 5V power supply jumper ("SW_USB Selection Jumper, shown in the <span class="color-blind-red">RED box</span>")** which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
+* Ensure the **removal of the SW_USB 5V power supply jumper ("SW_USB header, shown in the <span class="color-blind-red">RED box</span>")** which avoids the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
 
 ###### ![](./images/SKR_PICO_V1.0_voltageselect.png) {#SKR_PICO_V1.0_voltageselect}
 
