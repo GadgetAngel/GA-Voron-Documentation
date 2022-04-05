@@ -120,9 +120,9 @@ If not closely following the BOM spec, ensure that the inductive probe purchased
 
 ### BAT85 Diode
 
-Due to the switching used by the sensor the output voltage is approximately the same voltage as the sensor is powered with.  If the sensor is powered with the common 24V, it will send 24V to an input on the MCU that is never intended to see more than 5V.  The BAT85 diode is used to alleviate this issue.  It is oriented so that when the probe signal wire is high (12-24V), not current will flow into the MCU input pin.  As a result the MCU will read HIGH voltage due to the internal pull-up resistor.  If the probe signal is LOW (0V), current will flow from the MCU input pin through the diode, through the probe, and to ground (V-).  This will pull the MCU pin low and trigger appropriately.
+Due to the switching used by the sensor the output voltage is approximately the same voltage as the sensor is powered with.  If the sensor is powered with the common 24V, it will send 24V to an input on the MCU that is never intended to see more than 5V (for 8-bit microprocessor) or 3.3V (for STM 32-bit microprocessor).  The BAT85 diode is used to alleviate this issue.  It is oriented so that when the probe signal wire is high (12-24V), no current will flow into the MCU input pin (i.e. it prevents current flowing into the pin on the microprocessor which stops the microprocessor from being damaged).  As a result the MCU will read HIGH voltage due to the internal pull-up resistor.  If the probe signal is LOW (0V), current will flow from the MCU input pin through the diode, through the probe, and to ground (V-).  This will pull the MCU pin low and trigger appropriately.
 
-**Important:** The BAT85 diode should always be wired with the black band toward the probe, not toward the MCU.
+<span class="fs_percent_110">__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ The BAT85 diode should always be wired with the black band toward the probe, **<span class="color-blind-red">not toward the MCU.</span>** </span>
 
 Below is a circuit diagram with more details.
 
@@ -163,6 +163,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 ### Trident
 * [Trident - SKR V1.3](./tri_skr_v13.md)
 * [Trident - SKR V1.4](./tri_2skrv14_wiring.md)
+* [Trident - SKR V1.4 and EXP-MOT](./tri_skrv14_exp-mot_wiring.md)
 * [Trident - FLYboard FLYF407ZG](./tri_flyf407zg_wiring.md)
 * [Trident - Fysetc Spider V1.1](./tri_spider_wiring.md)
 * [Trident - Fysetc Spider V2.2](./tri_spiderv22_wiring.md)
