@@ -83,7 +83,7 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 * - [ ] Connect the hot end thermistor to TH0 (P0.24)
 * - [ ] Connect the X endstop to X-STOP (P1.29)
 * - [ ] Connect the Y endstop to Y-STOP (P1.28)
-* - [ ] Connect USB Cable to your SKR 1.4/1.4Turbo, **but do not connect it yet to your Raspberry Pi**
+* - [ ] Connect USB Cable to your SKR 1.4/1.4Turbo,&nbsp; **but do not connect it yet to your Raspberry Pi**
 
 ### MCU X/Y/E, Hot End in SPI Mode Wiring Diagram
 
