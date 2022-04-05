@@ -45,3 +45,5 @@ nav_exclude: true
 
 
 * **The DIAG PIN must be disconnected from the SKR board on the <span class="color-blind-red">extruder driver</span> step stick for the filament run out sensor to work properly**, if you are using a TMC2209 or TMC2226.
+
+[Go Back to the Table of Contents](./tri_skrv14_exp-mot_wiring#trident---btt-skr-v14turbo-and-exp-mot-wiring)
