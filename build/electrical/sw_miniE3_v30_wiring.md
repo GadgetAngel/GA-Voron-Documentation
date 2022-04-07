@@ -22,7 +22,7 @@ nav_exclude: true
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-orange">ORANGE boxes</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstops.
 
-###### ![gone baby gone](./images/SKR_MINI_E3_V3.0_voltageselect1.png) {#SSKR_MINI_E3_V3.0_voltageselect}
+###### ![gone baby gone](./images/SKR_MINI_E3_V3.0_voltageselect.png) {#SSKR_MINI_E3_V3.0_voltageselect}
 
 ## MCU
 
