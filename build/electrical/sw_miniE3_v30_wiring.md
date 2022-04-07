@@ -22,11 +22,14 @@ nav_exclude: true
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-orange">ORANGE boxes</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstops.
 
-###### ![gone baby gone](./images/SKR_MINI_E3_V3.0_voltageselect.png) {#SSKR_MINI_E3_V3.0_voltageselect}
+###### ![](./images/SKR_MINI_E3_V3.0_voltageselect.png) {#SSKR_MINI_E3_V3.0_voltageselect}
 
 ## MCU
 
-* - [ ] Plug in stepper motors for X, Y, Z, and E in positions Xm, Ym, ZAm, and Em
+* - [ ] Plug in stepper motors for X in positions Xm (motor connector)
+* - [ ] Plug in stepper motors for Y in positions Ym (motor connector)
+* - [ ] Plug in stepper motors for Z in positions ZAm (motor connector)
+* - [ ] Plug in stepper motors for E in positions Em (motor connector)
 * - [ ] Plug Hot End thermistor to thermistor TH0 (PA0)
 * - [ ] Plug Hot End heater in to E0 (PC8)
 * - [ ] Plug Hot End Fan in to FAN1 (PC7)
