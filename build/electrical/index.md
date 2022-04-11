@@ -165,6 +165,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [Trident - SKR V1.4](./tri_2skrv14_wiring.md)
 * [Trident - SKR V1.4 and EXP-MOT](./tri_skrv14_exp-mot_wiring.md)
 * [Trident - SKR 2](./tri_skr2_wiring.md)
+* [Trident - SKR Pico](./tri_skr_pico_wiring.md)
 * [Trident - FLYboard FLYF407ZG](./tri_flyf407zg_wiring.md)
 * [Trident - Fysetc Spider V1.1](./tri_spider_wiring.md)
 * [Trident - Fysetc Spider V2.2](./tri_spiderv22_wiring.md)
