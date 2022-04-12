@@ -78,3 +78,12 @@ For reference, here is the pinout of the Einsy Rambo
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 4.  After **creating/editing** the Klipper Config file (einsy_config.cfg renamed to printer.cfg), the next step is to check all the motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function sw_einsy_enable_checkboxes(){
+    const sw_einsy_checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(sw_einsy_checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
