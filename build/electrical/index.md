@@ -189,6 +189,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [SW - mini e3 V1.2](./sw_miniE3_v12_wiring.md)
 * [SW - mini e3 V2.0](./sw_miniE3_v20_wiring.md)
 * [SW - mini e3 V3.0](./sw_miniE3_v30_wiring.md)
+* [SW - SKR Pico](./sw_skr_pico_wiring.md)
 * [SW - Einsy Rambo](./sw_einsy_rambo_wiring.md)
 
 ## Additional Items
