@@ -12,13 +12,15 @@ nav_exclude: true
 
 ## Initial Preparation
 
-* The **<span class="color-blind-green">GREEN Neo-PWR1 jumper/span>** setting will decide the source of the SKR's 5V rail. The board's 5V rail can be sourced from the board itself or from an external DCDC bridge module.  One can purchase an external DCDC bridge module (sold separately) to power 5V NeoPixel LEDs.  This bridge module is called the "DCDC Mode V1.0" board. Since the Voron printer does not require the extra DCDC bridge module, **set the Neo-PWR1 jumper** so that the board's 5V rail will be powered by the MCU (as shown by the **<span class="color-blind-green">GREEN</span>** jumper in the diagram below).
+* The **<span class="color-blind-green">GREEN Neo-PWR1 jumper</span>** setting will decide the source of the SKR's 5V rail. The board's 5V rail can be sourced from the board itself or from an external DCDC bridge module.  One can purchase an external DCDC bridge module (sold separately) to power 5V NeoPixel LEDs.  This bridge module is called the "DCDC Mode V1.0" board. Since the Voron printer does not require the extra DCDC bridge module, **set the Neo-PWR1 jumper** so that the board's 5V rail will be powered by the MCU (as shown by the **<span class="color-blind-green">GREEN</span>** jumper in the diagram below).
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-purple">PURPLE boxes</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstops.
 
-###### ![](./images/PREP_SKR_mini_E3_V2.0_150.png) {#PREP_v01_SKR_mini_E3_V2.0_v00}
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
-* If you want to open the above picture, in a new tab of your web browser, then [click here](./images/PREP_SKR_mini_E3_V2.0_150.png){:target="_blank" rel="noopener"}
+###### ![](./images/PREP_SKR_mini_E3_V2.0_150.jpg) {#PREP_v01_SKR_mini_E3_V2.0_v00}
+
+* If you want to open the above picture, in a new tab of your web browser, then [click here](./images/PREP_SKR_mini_E3_V2.0_150.jpg){:target="_blank" rel="noopener"}
 
 ## MCU
 
@@ -41,7 +43,7 @@ nav_exclude: true
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to your SKR mini E3, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](./mini_e3_v20_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to your SKR mini E3, but do not connect it yet to your Raspberry Pi
 
 ### MCU Diagram
@@ -94,5 +96,13 @@ The Klipper Configuration file from /VoronDesign/Voron-0 GitHub Repo, Voron0.0 b
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-
 4. After **creating/editing** the Klipper Config file (the file is already named printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function v00_skrminie3_v20_enable_checkboxes(){
+    const v00_skrminie3_v20_checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(v00_skrminie3_v20_checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
