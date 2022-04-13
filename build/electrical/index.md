@@ -174,7 +174,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [Trident - MKS Makerbase Monster8](./tri_monster8_wiring.md)
 
 ### Voron 2
-* [V2 - SKR V1.3](./v2_skr13_wiring.md)
+* [V2 - SKR V1.3](./v2_skr13_uart_wiring.md)
 * [V2 - SKR V1.4](./v2_skr14_wiring.md)
 * [V2 - SKR 2](./v2_skr2_wiring.md)
 * [V2 - SKR Pico](./v2_skr_pico_wiring.md)

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Voron V2 - BTT SKR V1.3 Wiring"
+title: "Voron V2 - BTT SKR V1.3 Wiring for both SPI and UART modes"
 nav_exclude: true
 has_children: true
 has_toc: false
 ---
 
-# Voron V2 - BTT SKR V1.3 Wiring
+# Voron V2 - BTT SKR V1.3 Wiring for both SPI and UART modes
 
 ## What is the difference between UART mode and SPI mode?
 
@@ -25,16 +25,6 @@ has_toc: false
 * Here is a [comparison chart of the different TMC stepper motor drivers](https://learn.watterott.com/silentstepstick/comparison/){:target="_blank" rel="noopener"}
 
 
-## UART Mode TMC Driver List
-
-### UART Mode TMC Drivers That Use 24 VDC:
-
-1.  [TMC2208](./v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226){:target="_blank" rel="noopener"}
-2.  [TMC2209](./v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226){:target="_blank" rel="noopener"}
-3.  [TMC2225](./v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226){:target="_blank" rel="noopener"}
-4.  [TMC2226](./v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226){:target="_blank" rel="noopener"}
-
-
 ## SPI Mode TMC Driver List
 
 ### SPI Mode TMC Drivers That Use 24 VDC:
@@ -48,3 +38,13 @@ has_toc: false
 
 1. [TMC5160HV](./v2_skr13_spi_wiring#voron-v2---skr-v13-tmc2100-tmc2130-tmc5160-tmc5161-tmc5160hv-tmc5160pro){:target="_blank" rel="noopener"}
 2. [TMC5160_PRO](./v2_skr13_spi_wiring#voron-v2---skr-v13-tmc2100-tmc2130-tmc5160-tmc5161-tmc5160hv-tmc5160pro){:target="_blank" rel="noopener"}
+
+
+## UART Mode TMC Driver List
+
+### UART Mode TMC Drivers That Use 24 VDC:
+
+1.  [TMC2208](../../../build/electrical/v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226-wiring-diagram){:target="_blank" rel="noopener"}
+2.  [TMC2209](../../../build/electrical/v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226-wiring-diagram){:target="_blank" rel="noopener"}
+3.  [TMC2225](../../../build/electrical/v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226-wiring-diagram){:target="_blank" rel="noopener"}
+4.  [TMC2226](../../../build/electrical/v2_skr13_uart_wiring#voron-v2---skr-v13-tmc2208-tmc2209-tmc2225-or-tmc2226-wiring-diagram){:target="_blank" rel="noopener"}
