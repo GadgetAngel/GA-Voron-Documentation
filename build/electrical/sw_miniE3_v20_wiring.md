@@ -15,6 +15,8 @@ nav_exclude: true
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-purple">PURPLE boxes</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstops.
 
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
+
 ###### ![](./images/PREP_SKR_mini_E3_V2.0_150.png) {#PREP_SKR_mini_E3_V2.0}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/PREP_SKR_mini_E3_V2.0_150.png){:target="_blank" rel="noopener"}
@@ -39,7 +41,7 @@ nav_exclude: true
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to your SKR mini E3, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](./mini_e3_v20_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to your SKR mini E3, but do not connect it yet to your Raspberry Pi
 
 BAT85
@@ -87,5 +89,13 @@ The Klipper Configuration file from VoronDesign/Voron-Switchwire GitHub Repo for
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-
 4. After **creating/editing** the Klipper Config file (skr_mini_e3_v2_config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function sw_skrminie3_v20_enable_checkboxes(){
+    const sw_skrminie3_v20_checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(sw_skrminie3_v20_checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
