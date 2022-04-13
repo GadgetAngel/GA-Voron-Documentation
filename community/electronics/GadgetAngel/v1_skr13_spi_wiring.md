@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "Voron V1 - SKR V1.3: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO"
-parent: "Voron V1 - BTT SKR V1.3 Wiring"
+parent: "Voron V1 - BTT SKR V1.3 Wiring for both SPI and UART modes"
 nav_exclude: true
-nav_order: 2
+nav_order: 1
 ---
 
 # Voron V1 - SKR V1.3: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO
@@ -31,6 +31,8 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 * **Set the USB-PWR jumper to the INT position (as shown in the <span class="color-blind-purple">PURPLE box</span>)** to avoid the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
 
 * Ensure **all of "DIAG Jumpers" or "ST Jumper Block" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed**, since the Voron printer does not use sensorless homing.
+
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
 ###### ![](./images/SKR_V1.3_in_SPI_voltageselect.png) {#SKR_V1.3_in_SPI_voltageselect_v1}
 
@@ -69,11 +71,11 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to your SKR V1.3, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](../../../build/electrical/skrv13_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to your SKR V1.3, but do not connect it yet to your Raspberry Pi
 
 BAT85
-: a Schottky barrier diode. BAT85 is needed to protect the SKR board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](./index#bat85-diode){:target="_blank" rel="noopener"}
+: a Schottky barrier diode. BAT85 is needed to protect the SKR board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](../../../build/electrical/index#bat85-diode){:target="_blank" rel="noopener"}
 
 ### MCU in SPI Mode Wiring Diagram
 
@@ -97,7 +99,7 @@ BAT85
 
 ## Setting up UART Communications with the Raspberry Pi
 
-* see [the Raspberry Pi Section](./skrv13_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
+* see [the Raspberry Pi Section](../../../build/electrical/skrv13_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
 ## SSR Wiring (Board Shown is in SPI mode)
 
@@ -107,24 +109,33 @@ BAT85
 
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/btt-SKRV1.3inSPI-ssr-wiring.png){:target="_blank" rel="noopener"}
 
-### The Klipper Configuration file for SKR V1.3 board
+### The Klipper Configuration file for SKR V1.3 board (UART mode - SPI mode needs to be added to this)
 
-The Klipper Configuration file from VoronDesign/Voron-1/Voron1.8 GitHub Repo for SKR V1.3 board is [located here;](https://raw.githubusercontent.com/VoronDesign/Voron-1/Voron1.8/Firmware/klipper_configurations/SKR_1.3/Voron_1_SKR_13_Config.cfg){:target="_blank" rel="noopener"}
+The Klipper Configuration file from VoronDesign/Voron-1/Voron1.8 GitHub Repo for SKR V1.3 board is [located here](https://raw.githubusercontent.com/VoronDesign/Voron-1/Voron1.8/Firmware/klipper_configurations/SKR_1.3/Voron_1_SKR_13_Config.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the SKR V1.3 (PIN Diagrams and Repo)
 
-* see [The SKR V1.3 Resource Section](./skr_v13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}
+* see [The SKR V1.3 Resource Section](../../../build/electrical/skrv13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
-1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../build/software/index#software-installation){:target="_blank" rel="noopener"}
+1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../../build/software/index#software-installation){:target="_blank" rel="noopener"}
 
-2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> SKR 1.3](../../build/software/skr13_klipper#skr-1314-klipper-firmware){:target="_blank" rel="noopener"}
+2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> SKR 1.3](../../../build/software/skr13_klipper#skr-1314-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron_1_SKR_13_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here](https://raw.githubusercontent.com/VoronDesign/Voron-1/Voron1.8/Firmware/klipper_configurations/SKR_1.3/Voron_1_SKR_13_Config.cfg){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron_1_SKR_13_Config.cfg rename it to printer.cfg and replace UART with SPI). Please see [the file located here](https://raw.githubusercontent.com/VoronDesign/Voron-1/Voron1.8/Firmware/klipper_configurations/SKR_1.3/Voron_1_SKR_13_Config.cfg){:target="_blank" rel="noopener"} as a good starting point;
 
-    * Please use the Color PIN Diagrams, [displayed above](./skr_v13_Resources#SKRV13_Colored_PIN_Diagram){:target="_blank" rel="noopener"}, as a source of information;
+    * Please use the Color PIN Diagrams, [displayed above](../../../build/electrical/skrv13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}, as a source of information;
 
-    * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
+    * Please consult [The Build ═► Software Configuration](../../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-4. After **creating/editing** the Klipper Config file (Voron_1_SKR_13_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating/editing** the Klipper Config file (Voron_1_SKR_13_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function v18_skr13spi_enable_checkboxes(){
+    const v18_skr13spi_checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(v18_skr13spi_checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>

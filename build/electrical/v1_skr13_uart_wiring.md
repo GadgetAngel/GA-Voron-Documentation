@@ -1,9 +1,7 @@
 ---
 layout: default
 title: "Voron V1 - SKR V1.3: TMC2208, TMC2209, TMC2225, or TMC2226"
-parent: "Voron V1 - BTT SKR V1.3 Wiring"
 nav_exclude: true
-nav_order: 1
 ---
 
 # Voron V1 - SKR V1.3: TMC2208, TMC2209, TMC2225, or TMC2226
@@ -27,6 +25,8 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 * **Set the USB-PWR jumper to the INT position (as shown in the <span class="color-blind-purple">PURPLE box</span>)** to avoid the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
 
 * Ensure **all of "DIAG Jumpers" or "ST Jumper Block" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
+
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
 ###### ![](./images/SKR_V1.3_in_UART_voltageselect.png) {#SKR_V1.3_in_UART_voltageselect_v1}
 
@@ -65,7 +65,7 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to your SKR V1.3, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](./skrv13_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to your SKR V1.3, but do not connect it yet to your Raspberry Pi
 
 BAT85
@@ -109,7 +109,11 @@ The Klipper Configuration file from VoronDesign/Voron-1/Voron1.8 GitHub Repo for
 
 ## URL Resources Links for the SKR V1.3 (PIN Diagrams and Repo)
 
-* see [The SKR V1.3 Resource Section](./skr_v13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}
+* see [The SKR V1.3 Resource Section](./skrv13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}
+
+## Advanced Setup - Resource Link for SPI setup (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+
+* see [The SKR V1.3 SPI Setup Section](../../community/electronics/GadgetAngel/v1_skr13_wiring#voron-v1---btt-skr-v13-wiring-for-both-uart-and-spi-modes){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
@@ -119,8 +123,17 @@ The Klipper Configuration file from VoronDesign/Voron-1/Voron1.8 GitHub Repo for
 
 3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron_1_SKR_13_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here](https://raw.githubusercontent.com/VoronDesign/Voron-1/Voron1.8/Firmware/klipper_configurations/SKR_1.3/Voron_1_SKR_13_Config.cfg){:target="_blank" rel="noopener"};
 
-    * Please use the Color PIN Diagrams, [displayed above](./skr_v13_Resources#SKRV13_Colored_PIN_Diagram){:target="_blank" rel="noopener"}, as a source of information;
+    * Please use the Color PIN Diagrams, [displayed above](././skrv13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 4. After **creating/editing** the Klipper Config file (Voron_1_SKR_13_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function v18_skrv13uart_enable_checkboxes(){
+    const v18_skrv13uart_checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(v18_skrv13uart_checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
