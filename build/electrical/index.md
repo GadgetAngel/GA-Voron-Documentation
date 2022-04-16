@@ -167,7 +167,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [Trident - SKR 2](./tri_skr2_wiring.md)
 * [Trident - SKR Pico](./tri_skr_pico_wiring.md)
 * [Trident - FLYboard FLYF407ZG](./tri_flyf407zg_wiring.md)
-* [Trident - Fysetc Spider V1.1](./tri_spider_wiring.md)
+* [Trident - Fysetc Spider V1.1](./tri_spiderv10_uart_wiring.md)
 * [Trident - Fysetc Spider V2.2](./tri_spiderv22_wiring.md)
 * [Trident - BigTreeTech Octopus](./tri_octopus_wiring.md)
 * [Trident - BigTreeTech Octopus Pro](./tri_octopus_pro_wiring.md)
