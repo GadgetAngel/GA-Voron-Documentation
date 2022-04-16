@@ -1,46 +1,42 @@
 ---
 layout: default
-title: "Trident - SKR V1.3: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO"
-parent: "Trident - BTT SKR V1.3 Wiring"
+title: "Trident - SKR V1.3 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring"
 nav_exclude: true
-nav_order: 2
 ---
 
-# Trident - SKR V1.3: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO
+# Trident - SKR V1.3 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring
 
 ## Initial Removal of Jumpers
 
-We have no idea what state your board is in when you start this process.  Someone could have moved jumpers around already.  But since we are here, on the SPI end of the site, then I assume that you might want to look at the next section **before** removing **all the jumpers** because if all the jumpers are already set for SPI mode then removing them and placing them right back in would be a waste of your valuable time.
-
-**If one does not understand what I mean by "if the jumpers are set for SPI" then I would recommend that removing all the jumpers would be the place to start.**
-
 Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below:
 
-###### ![](./images/SKR_V1.3_PREP-Removal_150.png) {#SKR_V13_PREP-Removal_SPI3_tri}
+###### ![](./images/SKR_V1.3_PREP-Removal_150.png) {#SKR_V13_PREP-Removal_UART2_triuart}
 
-## Initial Preparation for SPI Mode - Set Jumpers
+## Initial Preparation - Set Jumpers
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/SKR_V1.3_in_SPI_mode_PREP_150.png) {#SKR_V13_in_SPI_mode_for_Prep_150_tri}
+###### ![](./images/SKR_V1.3_in_UART_mode_PREP_150.png) {#SKR_V13_in_UART_mode_for_Prep_150_tri}
 
-* If you want to open the above picture, in a new tab of your web browser, then [click here](./images/SKR_V1.3_in_SPI_mode_PREP_150.png){:target="_blank" rel="noopener"}
+* If you want to open the above picture, in a new tab of your web browser, then [click here](./images/SKR_V1.3_in_UART_mode_PREP_150.png){:target="_blank" rel="noopener"}
 
 ## Voltage Selection Header and Other Headers
 
 * **Set the USB-PWR jumper to the INT position (as shown in the <span class="color-blind-purple">PURPLE box</span>)** to avoid the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard.
 
-* Ensure **all of "DIAG Jumpers" or "ST Jumper Block" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed**, since the Voron printer does not use sensorless homing.
+* Ensure **all of "DIAG Jumpers" or "ST Jumper Block" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
 
-###### ![](./images/SKR_V1.3_in_SPI_voltageselect.png) {#SKR_V1.3_in_SPI_voltageselect_vtri}
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
-* If you want to open the above picture, in a new tab of your web browser, then [click here](./images/SKR_V1.3_in_SPI_voltageselect.png){:target="_blank" rel="noopener"}
+###### ![](./images/SKR_V1.3_in_UART_voltageselect.png) {#SKR_V1.3_in_UART_voltageselect_vtri}
+
+* If you want to open the above picture, in a new tab of your web browser, then [click here](./images/SKR_V1.3_in_UART_voltageselect.png){:target="_blank" rel="noopener"}
 
 ## Stepper Motor Drivers
 * Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
 * Install heat sinks on all stepper motor drivers
 
-## MCU X/Y/E, Hot End in SPI Mode
+## MCU X/Y/E, Hot End
 
 * - [ ] Place stepper drivers for X in positions X (driver socket)
 * - [ ] Place stepper drivers for Y in positions Y (driver socket)
@@ -57,13 +53,13 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 * - [ ] Wire 24V and 0V from DC power supply to Power/DCIN
 * - [ ] Connect USB Cable to your SKR V1.3,&nbsp;**but do not connect it yet to your Raspberry Pi**
 
-### MCU X/Y/E, Hot End in SPI Mode Wiring Diagram
+### MCU X/Y/E, Hot End Wiring Diagram
 
-###### ![](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_XYE_in_SPI_mode_150.jpg) {#Trident_Wiring_Diagram_BTT_SKRV13_XYE_in_SPI_mode}
+###### ![](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_XYE_in_UART_mode_150.jpg) {#Trident_Wiring_Diagram_BTT_SKRV13_XYE_in_UART_mode}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_XYE_in_SPI_mode_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_XYE_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
 
-## MCU Z, Bed, Exhaust Fan in SPI Mode
+## MCU Z, Bed, Exhaust Fan
 
 * - [ ] Place stepper drivers for Z2 into positions X (driver socket)
 * - [ ] Place stepper drivers for Z1 into positions Z (driver socket)
@@ -84,11 +80,11 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 BAT85
 : a Schottky barrier diode. BAT85 is needed to protect the SKR board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](./index#bat85-diode){:target="_blank" rel="noopener"}
 
-### MCU Z, Bed, Exhaust Fan in SPI Mode Wiring Diagram
+### MCU Z, Bed, Exhaust Fan Wiring Diagram
 
-###### ![](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_Z_in_SPI_mode_150.jpg) {#Trident_Wiring_Diagram_BTT_SKRV13_Z_in_SPI_mode}
+###### ![](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_Z_in_UART_mode_150.jpg) {#Trident_Wiring_Diagram_BTT_SKRV13_Z_in_UART_mode}
 
-* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_Z_in_SPI_mode_150.jpg){:target="_blank" rel="noopener"}</span>
+* <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Trident_Wiring_Diagram_BTT_SKRV1.3_Z_in_UART_mode_150.jpg){:target="_blank" rel="noopener"}</span>
 
 ## Please Ensure the Heat Sinks are Installed Before Use
 
@@ -97,11 +93,11 @@ BAT85
 
 ### MCU X/Y/E, Hot End with Heat Sinks Installed
 
-###### ![](./images/SKR_V1.3_In_SPI_mode_Heatsinks1_150.png) {#SKR_V13_SPI_Heatsinks_2}
+###### ![](./images/SKR_V1.3_in_UART_mode_Heatsinks1_150.png) {#SKR_V13_UART_Heatsinks_2}
 
 ### MCU Z, Bed, Exhaust Fan with Heat Sinks Installed
 
-###### ![](./images/Trident_SKR_V13_in_SPI_mode_Heatsinks2_150.png) {#Trident_SKR_V13_SPI_Heatsinks2}
+###### ![](./images/Trident_SKR_V1.3_in_UART_Mode_Heatsinks2_150.png) {#Trident_SKR_V13_UART_Heatsinks2}
 
 ## Raspberry Pi
 
@@ -112,21 +108,25 @@ BAT85
 
 * see [the SKR V1.3 Raspberry Pi Section](./skrv13_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
-## SSR Wiring (Board Shown is in SPI mode)
+## SSR Wiring
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/btt-SKRV1.3inSPI-ssr-wiring.png) {#btt-SKRV13inSPI-ssr-wiring_2}
+###### ![](./images/Tri_btt-SKRV1.3inUART-ssr-wiring.png) {#Tri_btt-SKRV1.3inUART-ssr-wiring_2}
 
-* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/btt-SKRV1.3inSPI-ssr-wiring.png){:target="_blank" rel="noopener"}
+* If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/Tri_btt-SKRV1.3inUART-ssr-wiring.png){:target="_blank" rel="noopener"}
 
-### The Klipper Configuration file for SKR V1.3 board
+## The Klipper Configuration file for SKR V1.3 board
 
 The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for SKR V1.3 board is [located here](https://raw.githubusercontent.com/VoronDesign/Voron-Trident/main/Firmware/Voron_Trident_SKR_1.3.cfg){:target="_blank" rel="noopener"}
 
 ## URL Resources Links for the SKR V1.3 (PIN Diagrams and Repo)
 
-* see [The SKR V1.3 Resource Section](./skr_v13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}
+* see [The SKR V1.3 Resource Section](./skrv13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}
+
+## Advanced Setup - Resource Link for SPI setup (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+
+* see [The SKR V1.3 SPI Setup Section](../../community/electronics/GadgetAngel/tri_skr_v13_wiring#trident---btt-skr-v13-wiring-for-both-spi-and-uart-modes){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
@@ -136,8 +136,17 @@ The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for SK
 
 3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Voron_Trident_SKR_1.3.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here](https://raw.githubusercontent.com/VoronDesign/Voron-Trident/main/Firmware/Voron_Trident_SKR_1.3.cfg){:target="_blank" rel="noopener"};
 
-    * Please use the Color PIN Diagrams, [displayed here](./skr_v13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}, as a source of information;
+    * Please use the Color PIN Diagrams, [displayed here](./skrv13_Resources#color-pin-diagram-for-skr-v13){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 4. After **creating/editing** the Klipper Config file (Voron_Trident_SKR_1.3.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function tri_skrv13uart_enable_checkboxes(){
+    const tri_skrv13uart_checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(tri_skrv13uart_checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>

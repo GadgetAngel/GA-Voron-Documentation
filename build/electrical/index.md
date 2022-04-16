@@ -161,7 +161,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [V1 - SKR V1.4](./v1_skr14_wiring.md)
 
 ### Trident
-* [Trident - SKR V1.3](./tri_skr_v13_uart_wiring.md)
+* [Trident - SKR V1.3](./tri_skrv13_uart_wiring.md)
 * [Trident - SKR V1.4](./tri_2skrv14_wiring.md)
 * [Trident - SKR V1.4 and EXP-MOT](./tri_skrv14_exp-mot_wiring.md)
 * [Trident - SKR 2](./tri_skr2_wiring.md)
