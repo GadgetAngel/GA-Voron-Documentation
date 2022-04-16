@@ -1,12 +1,10 @@
 ---
 layout: default
-title: "Trident - Fysetc Spider V1.1: TMC2208, TMC2209, TMC2225, or TMC2226"
-parent: "Trident - Fysetc Spider V1.1 Wiring"
+title: "Trident - Fysetc Spider V1.1 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring"
 nav_exclude: true
-nav_order: 1
 ---
 
-# Trident - Fysetc Spider V1.1: TMC2208, TMC2209, TMC2225, or TMC2226
+# Trident - Fysetc Spider V1.1 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring
 
 ## Initial Removal of Jumpers
 
@@ -16,7 +14,7 @@ nav_order: 1
 
 ###### ![](./images/FYSETC_Spider_V1.0_PREP-Removal_150.png) {#FYSETC_Spider_V10_PREP-Removal_6}
 
-## Initial Preparation for UART Mode - Set Jumpers
+## Initial Preparation - Set Jumpers
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
@@ -29,6 +27,8 @@ nav_order: 1
 * **Set the USB-PWR jumper to the +5V position (as shown in the <span class="color-blind-purple">PURPLE box</span>)** to avoid the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard. The top pin on this header is labeled "U5V", and the middle and bottom pins do not have labels, but the Fysetc Spider V1.0 schematic diagram labels the bottom pin as "+5V".  Ensure the USB-PWR jumper is set as shown in the diagram below.
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
+
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
 ###### ![](./images/FYSETC_Spider_V1.0_in_UART_mode_PREP2.png) {#FYSETC_Spider_V10_in_UART_Mode_PREP2_tri}
 
@@ -44,7 +44,7 @@ nav_order: 1
 
     * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **If the voltage required by the PROBE device does not match the voltage selected by the "probe voltage selection Jumper" then the Fysetc Spider board could be damaged.**
 
-* __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers BEFORE the power supply is connected, to ensure these jumpers and wire jumper are set appropriately.**
+* __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers BEFORE the power supply is connected, to ensure these jumpers are set appropriately.**
 
 ### (FAN & PROBE) Voltage Selection Diagram
 
@@ -58,7 +58,7 @@ nav_order: 1
 * Install heat sinks on all step drivers
 * _**NOTE: if the board has been powered, ensure that motor power caps are fully drained before inserting stepper drivers: Temporarily connect a 100K resistor between VMOT+ and VMOT- to safely drain the capacitors**_ See [Fysetc Spider 3.3v issue](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/Spider%203.3v%20issue.md){:target="_blank" rel="noopener"}
 
-## MCU Wiring for UART Mode
+## MCU Wiring
 
 * - [ ] Connect 24V Power from the PSU to PWR IN and BED_POWER/DCIN
 * - [ ] Connect stepper driver for the B Motor (gantry left) into position X-MOT (driver socket).
@@ -92,10 +92,10 @@ nav_order: 1
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to the Spider board, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#powering-the-raspberry-pi--setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART serial communications with the Raspberry Pi](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/firmware/Klipper/Connect%20RPI%20uart.md){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to the Spider board, but do not connect it yet to your Raspberry Pi
 
-## MCU Wiring Diagram for UART Mode
+## MCU Wiring Diagram
 
 ###### ![](./images/Trident_Wiring_Diagram_FYSETC_Spider_V1.0_in_UART_mode_150.jpg) {#Trident_Wiring_Diagram_FYSETC_Spider_V10_in_UART_6}
 
@@ -106,7 +106,7 @@ nav_order: 1
 <span class="color-blind-red">Note on the Orientation of the Stepper Motor Driver's Heat Sinks</span>
 : Place the heat sinks for the stepper motor drivers so that the orientation of the fins on the heat sinks are parallel to the air flow from the controller fans once the MCU board is installed on the DIN rail. Ensure the heat sinks are **not touching** the solder joints located on the top of the step stick. Please note, that your placement of heat sinks may be different from the orientation shown below.
 
-### MCU in UART Mode with Heat Sinks Installed
+### MCU with Heat Sinks Installed
 
 ###### ![](./images/Trident_FYSETC_Spider_V1.0_in_UART_mode_with_Heatsinks_150.png) {#Trident_FYSETC_Spider_v10_UART_Heatsinks_6}
 
@@ -114,11 +114,11 @@ nav_order: 1
 
 * see [the Fystec Spider Probe port section](./Fysetc_Spider_ProbePort#fysetc-spider-probe-port){:target="_blank" rel="noopener"}
 
-## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
+## Powering the Raspberry Pi & Setting up UART Serial Communications with the Raspberry Pi
 
 * see [the Fysetc Spider Raspberry Pi Section](./Fysetc_Spider_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
-## SSR Wiring (Board Shown is in UART mode)
+## SSR Wiring
 
 * Wire colors will vary depending on your locale.
 
@@ -134,19 +134,17 @@ nav_order: 1
 * *BTT mini12864 only* remove components R1, and C6, and rotate the connectors 180 degrees
 * See [the mini12864 guide](./mini12864_klipper_guide#mini12864-klipper-guide){:target="_blank" rel="noopener"}
 
-<div>
+## The Klipper Configuration file for Fysetc Spider V1.1 Board by Majarspeed
 
-<!--
-### The Klipper Configuration file for Fysetc Spider V1.1 Board
-
-The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for Fysetc Spider V1.1 board is [located here; Select "V2 Spider"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"}
--->
-
-</div>
+The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
 * See [The Fysetc Spider V1.1 Resource Section](./Fysetc_Spider_Resources_v1#color-pin-diagram-for-fysetc-spider-v10){:target="_blank" rel="noopener"}
+
+## Advanced Setup - Resource Link for SPI setup (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+
+* see [The Fysetc Spider V1.1 SPI Setup Section](../../community/electronics/GadgetAngel/tri_spider_wiring#trident---fysetc-spider-v11-wiring-for-both-spi-and-uart-modes){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
@@ -154,10 +152,19 @@ The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for Fy
 
 2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> Fysetc Spider](../../build/software/spider_klipper#spider-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create** the Klipper Config file (create printer.cfg);
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (voron-trident-spider.cfg rename it to printer.cfg). Please see [the file located here](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
     * Please use the Color PIN Diagrams, [displayed here](./Fysetc_Spider_Resources_v1#color-pin-diagram-for-fysetc-spider-v10){:target="_blank" rel="noopener"}, as a source of information;
 
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-4. After **creating** the Klipper Config file (printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating/editing** the Klipper Config file (voron-trident-spider.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function enable_checkboxes(){
+    const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
