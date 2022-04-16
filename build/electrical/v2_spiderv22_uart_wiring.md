@@ -1,12 +1,10 @@
 ---
 layout: default
-title: "Voron V2 - Fysetc Spider V2.2: TMC2208, TMC2209, TMC2225, or TMC2226"
-parent: "Voron V2 - Fysetc Spider V2.2 Wiring"
+title: "Voron V2 - Fysetc Spider V2.2 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring"
 nav_exclude: true
-nav_order: 1
 ---
 
-# Voron V2 - Fysetc Spider V2.2: TMC2208, TMC2209, TMC2225, or TMC2226
+# Voron V2 - Fysetc Spider V2.2 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring
 
 ## Initial Removal of Jumpers
 
@@ -14,7 +12,7 @@ nav_order: 1
 
 ###### ![](./images/FYSETC_Spider_V2.2_PREP-Removal_150.png) {#FYSETC_Spider_V22_PREP-Removal}
 
-## Initial Preparation for UART Mode - Set Jumpers
+## Initial Preparation - Set Jumpers
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
@@ -27,6 +25,8 @@ nav_order: 1
 * **Set the USB-PWR jumper to the +5V position (as shown in the <span class="color-blind-purple">PURPLE box</span>)** to avoid the interaction between the USB 5V of Raspberry Pi and the DC-DC 5V of the motherboard. The top pin on this header is labeled "U5V", and the middle and bottom pins do not have labels, but the Fysetc Spider V2.2 schematic diagram labels the bottom pin as "+5V".  Ensure the USB-PWR jumper is set as shown in the diagram below.
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
+
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
 ###### ![](./images/FYSETC_Spider_V2.2_in_UART_Mode_PREP2.png) {#FYSETC_Spider_V22_in_UART_Mode_PREP2}
 
@@ -60,7 +60,7 @@ nav_order: 1
 * Install heat sinks on all step drivers
 * _**NOTE: if the board has been powered, ensure that motor power caps are fully drained before inserting stepper drivers: Temporarily connect a 100K resistor between VMOT+ and VMOT- to safely drain the capacitors**_ See [Fysetc Spider 3.3v issue](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/Spider%203.3v%20issue.md){:target="_blank" rel="noopener"}
 
-## MCU Wiring for UART Mode
+## MCU Wiring
 
 * - [ ] Connect 24V Power from the PSU to PWR IN and BED_POWER/DCIN
 * - [ ] Connect stepper driver for the B Motor (gantry left) into position X-MOT (driver socket)
@@ -95,10 +95,10 @@ nav_order: 1
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to the Spider board, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#powering-the-raspberry-pi--setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART serial communications with the Raspberry Pi](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/firmware/Klipper/Connect%20RPI%20uart.md){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to the Spider board, but do not connect it yet to your Raspberry Pi
 
-## MCU Wiring Diagram for UART Mode
+## MCU Wiring Diagram
 
 ###### ![](./images/Voron2.4r2_Wiring_Diagram_FYSETC_Spider_V2.2_in_UART_mode_150.jpg) {#Voron2_Wiring_Diagram_FYSETC_Spider_V22_in_UART}
 
@@ -109,7 +109,7 @@ nav_order: 1
 <span class="color-blind-red">Note on the Orientation of the Stepper Motor Driver's Heat Sinks</span>
 : Place the heat sinks for the stepper motor drivers so that the orientation of the fins on the heat sinks are parallel to the air flow from the controller fans once the MCU board is installed on the DIN rail. Ensure the heat sinks are **not touching** the solder joints located on the top of the step stick. Please note, that your placement of heat sinks may be different from the orientation shown below.
 
-### MCU in UART Mode with Heat Sinks Installed
+### MCU with Heat Sinks Installed
 
 ###### ![](./images/FYSETC_Spider_v2.2_UARTmodeHeatsinks_150.png) {#FYSETC_Spider_v22_UART_Heatsinks}
 
@@ -117,11 +117,11 @@ nav_order: 1
 
 * see [the Fystec Spider Probe port section](./Fysetc_Spider_ProbePort#fysetc-spider-probe-port){:target="_blank" rel="noopener"}
 
-## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
+## Powering the Raspberry Pi & Setting up UART Serial Communications with the Raspberry Pi
 
 * see [the Fysetc Spider Raspberry Pi Section](./Fysetc_Spider_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
-## SSR Wiring (Board Shown is in UART mode)
+## SSR Wiring
 
 * Wire colors will vary depending on your locale.
 
@@ -137,13 +137,17 @@ nav_order: 1
 * *BTT mini12864 only* remove components R1, and C6, and rotate the connectors 180 degrees
 * See [the mini12864 guide](./mini12864_klipper_guide#mini12864-klipper-guide){:target="_blank" rel="noopener"}
 
-### The Klipper Configuration file for Fysetc Spider V2.2 Board
+## The Klipper Configuration file for Fysetc Spider V2.2 Board
 
 The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for Fysetc Spider V2.2 board is [located here](https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Spider/Voron2_Spider_Config.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
 * See [The Fysetc Spider V2.2 Resource Section](./Fysetc_Spider_Resources_v2#color-pin-diagram-for-fysetc-spider-v22){:target="_blank" rel="noopener"}
+
+## Advanced Setup - Resource Link for SPI setup (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+
+* see [The Fysetc Spider V2.2 SPI Setup Section](../../community/electronics/GadgetAngel/v2_spiderv22_wiring#voron-v2---fysetc-spider-v22-wiring-for-both-spi-and-uart-modes){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
@@ -158,3 +162,12 @@ The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for Fysetc S
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 4. After **creating/editing** the Klipper Config file (Voron2_Spider_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function enable_checkboxes(){
+    const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
