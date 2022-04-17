@@ -182,7 +182,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 * [V2 - FLYboard FLYF407ZG](./v2_flyf407zg_wiring.md)
 * [V2 - Fysetc Spider V1.1](./v2_spiderv10_uart_wiring.md)
 * [V2 - Fysetc Spider V2.2](./v2_spiderv22_uart_wiring.md)
-* [V2 - BigTreeTech Octopus](./v2_octopus_wiring.md)
+* [V2 - BigTreeTech Octopus](./v2_octopus11_uart_wiring.md)
 * [V2 - BigTreeTech Octopus Pro](./v2_octopus_pro_wiring.md)
 * [V2 - MKS Makerbase Monster8](./v2_monster8_wiring.md)
 
