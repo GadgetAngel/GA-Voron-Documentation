@@ -159,6 +159,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 ### Voron 1
 * [V1 - SKR V1.3](./v1_skr13_uart_wiring.md)
 * [V1 - SKR V1.4](./v1_skr14_wiring.md)
+* [V1 - Fysetc Spider V1.1](./v1_spiderv10_uart_wiring.md)
 
 ### Trident
 * [Trident - SKR V1.3](./tri_skrv13_uart_wiring.md)
