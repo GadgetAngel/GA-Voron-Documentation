@@ -17,6 +17,7 @@ Community-generated documentation for alternate (non-spec) electronics and relat
 | [PT100 MAX31865 Setup](./xbst_/PT100.md) | xbst_ |
 | [MKS Makerbase Monster8 v1.0](./Deuce/Voron2_Monster8_v1.0_Config.md) | Deuce |
 | [Voron V1 - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/v1_skr13_wiring.md) | GadgetAngel |
+| [Voron V1 - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/v1_spider_wiring.md) | GadgetAngel |
 | [Voron V2 - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/v2_skr13_wiring.md) | GadgetAngel |
 | [Voron V2 - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/v2_spider_wiring.md) | GadgetAngel |
 | [Voron V2 - Fysetc Spider V2.2 Wiring for both SPI and UART modes](./GadgetAngel/v2_spiderv22_wiring.md) | GadgetAngel |
