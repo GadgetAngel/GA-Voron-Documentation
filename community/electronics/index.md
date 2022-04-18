@@ -25,6 +25,7 @@ Community-generated documentation for alternate (non-spec) electronics and relat
 | [Trident - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/tri_skr_v13_wiring.md) | GadgetAngel |
 | [Trident - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/tri_spider_wiring.md) | GadgetAngel |
 | [Trident - Fysetc Spider V2.2 Wiring for both SPI and UART modes](./GadgetAngel/tri_spiderv22_wiring.md) | GadgetAngel |
+| [Trident - BTT Octopus V1.0/V1.1 Wiring for both SPI and UART modes](./GadgetAngel/tri_octopus_wiring.md) | GadgetAngel |
 
 
 ### External Links

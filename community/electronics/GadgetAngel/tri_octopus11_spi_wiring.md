@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Trident - BTT Octopus V1.0/V1.1: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO"
-parent: "Trident - BTT Octopus V1.0/V1.1 Wiring"
+title: "Trident - BTT Octopus V1.0/V1.1 (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO) Wiring"
+parent: "Trident - BTT Octopus V1.0/V1.1 Wiring for both SPI and UART modes"
 nav_exclude: true
-nav_order: 2
+nav_order: 1
 ---
 
-# Trident - BTT Octopus V1.0/V1.1: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO
+# Trident - BTT Octopus V1.0/V1.1 (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO) Wiring
 
 ## Initial Removal of Jumpers for SPI Mode
 
@@ -16,7 +16,7 @@ We have no idea what state your board is in when you start this process.  Someon
 
 * Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below.
 
-###### ![](./images/Octopus11_PREP-Removal.png) {#Octopus11_PREP-Removal_SPI}
+###### ![](../../../build/electrical/images/Octopus11_PREP-Removal.png) {#Octopus11_PREP-Removal_SPI_tri}
 
 ## Initial Preparation for SPI Mode - Set Jumpers
 
@@ -54,7 +54,7 @@ We have no idea what state your board is in when you start this process.  Someon
 * Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
 * Install heat sinks on all stepper motor drivers
 
-## MCU Wiring for UART Mode
+## MCU Wiring for SPI Mode
 
 * - [ ] Connect 24V and GND (V+ and V-) from the PSU to PWR and MOTOR_POWER
 * - [ ] Connect stepper driver for the B Motor (gantry left) into position DRIVER0 (driver socket)
@@ -88,13 +88,13 @@ We have no idea what state your board is in when you start this process.  Someon
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to your Octopus board, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#powering-the-raspberry-pi--setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART Serial communications with the Raspberry Pi](../../../build/electrical/Octopus11_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to your Octopus board, but do not connect it yet to your Raspberry Pi
 
 * <span> </span>
 
 BAT85
-: a Schottky barrier diode. BAT85 is needed to protect the Octopus board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](./index#bat85-diode){:target="_blank" rel="noopener"}
+: a Schottky barrier diode. BAT85 is needed to protect the Octopus board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](../../../build/electrical/index#bat85-diode){:target="_blank" rel="noopener"}
 
 ## MCU Wiring Diagram for SPI Mode
 
@@ -113,11 +113,11 @@ BAT85
 
 ## Further Information about the PROBE port:
 
-* see [the Octopus V1.0/V1.1 Probe port section](./Octopus11_ProbePort#btt-octopus-v10v11-probe-port){:target="_blank" rel="noopener"}
+* see [the Octopus V1.0/V1.1 Probe port section](../../../build/electrical/Octopus11_ProbePort#btt-octopus-v10v11-probe-port){:target="_blank" rel="noopener"}
 
-## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
+## Powering the Raspberry Pi & Setting up UART Serail Communications with the Raspberry Pi
 
-* see [the Octopus V1.0/V1.1 Raspberry Pi Section](./Octopus11_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
+* see [the Octopus V1.0/V1.1 Raspberry Pi Section](../../../build/electrical/Octopus11_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
 ## SSR Wiring (Board Shown is in SPI mode)
 
@@ -129,26 +129,35 @@ BAT85
 
 ## mini 12864 Display
 
-* See [the mini12864 guide](./mini12864_klipper_guide.md){:target="_blank" rel="noopener"}
+* See [the mini12864 guide](../../../build/electrical/mini12864_klipper_guide.md){:target="_blank" rel="noopener"}
 
-## The Klipper Configuration file for BTT Octopus V1.0/V1.1 Board
+## The Klipper Configuration file for BTT Octopus V1.0/V1.1 Board (UART mode - SPI mode needs to be added to this)
 
 * The Klipper Configuration file from VoronDesign/Voron-Trident GitHub Repo for BTT Octopus 1.0/V1.1 board is [located here](https://raw.githubusercontent.com/VoronDesign/Voron-Trident/main/Firmware/Octopus/Trident_Octopus_Config.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the Octopus V1.0/V1.1 (PIN Diagrams and Repo)
 
-* see [The Octopus V1.0/V1.1 Resource Section](./Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}
+* see [The Octopus V1.0/V1.1 Resource Section](../../../build/electrical/Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
-1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../build/software/index#software-installation){:target="_blank" rel="noopener"}
+1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../../build/software/index#software-installation){:target="_blank" rel="noopener"}
 
-2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> BTT Octopus](../../build/software/octopus_klipper#octopuspro-klipper-firmware){:target="_blank" rel="noopener"}
+2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> BTT Octopus](../../../build/software/octopus_klipper#octopuspro-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Trident_Octopus_Config.cfg rename it to printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here; Select "Trident Octopus"](../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (Trident_Octopus_Config.cfg rename it to printer.cfg and replace UART with SPI). Please see [the file located here; Select "Trident Octopus"](../../../build/software/configuration#initial-voron-printer-configuration){:target="_blank" rel="noopener"} as a good starting point;
 
-    * Please use the Color PIN Diagrams, [displayed here](./Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}, as a source of information;
+    * Please use the Color PIN Diagrams, [displayed here](../../../build/electrical/Octopus11_Resources#color-pin-diagram-for-btt-octopus-v10v11){:target="_blank" rel="noopener"}, as a source of information;
 
-    * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
+    * Please consult [The Build ═► Software Configuration](../../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-4. After **creating/editing** the Klipper Config file (Trident_Octopus_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating/editing** the Klipper Config file (Trident_Octopus_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function enable_checkboxes(){
+    const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
