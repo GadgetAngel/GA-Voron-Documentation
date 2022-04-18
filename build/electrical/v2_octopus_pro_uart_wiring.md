@@ -1,24 +1,22 @@
 ---
 layout: default
-title: "Voron V2 - BTT Octopus Pro V1.0: TMC2208, TMC2209, TMC2225, or TMC2226"
-parent: "Voron V2 - BTT Octopus Pro V1.0 Wiring"
+title: "Voron V2 - BTT Octopus Pro V1.0 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring"
 nav_exclude: true
-nav_order: 1
 ---
 
-# Voron V2 - BTT Octopus Pro V1.0: TMC2208, TMC2209, TMC2225, or TMC2226
+# Voron V2 - BTT Octopus Pro V1.0 (TMC2208, TMC2209, TMC2225, TMC2226) Wiring
 
-## Initial Removal of Jumpers for UART Mode
+## Initial Removal of Jumpers
 
 * Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below.
 
-###### ![](./images/Octopus_Pro_PREP-Removal_150.png) {#Octopus_Pro_PREP-Removal_UART}
+###### ![](./images/Octopus_Pro_PREP-Removal_150.png) {#Octopus_Pro_PREP-Removal_UART_v2}
 
-## Initial Preparation for UART Mode - Set Jumpers
+## Initial Preparation - Set Jumpers
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/Octopus_Pro_F446_UART_Mode_for_Prep1.png) {#Octopus_Pro_F446_UART_Mode_for_Prep1}
+###### ![](./images/Octopus_Pro_F446_UART_Mode_for_Prep1.png) {#Octopus_Pro_F446_UART_Mode_for_Prep1_v2}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/Octopus_Pro_F446_UART_Mode_for_Prep1.png){:target="_blank" rel="noopener"}
 
@@ -28,7 +26,9 @@ nav_order: 1
 
 * Ensure **all of "DIAG Jumpers" (shown in the <span class="color-blind-blue">BLUE box</span>) are removed** to avoid the influence of TMC2209 DIAG on the endstop.
 
-###### ![](./images/Octopus_Pro_F446_UART_Mode_for_Prep_150.png) {#Octopus_Pro_F446_UART_Mode_for_Prep_150}
+__<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
+
+###### ![](./images/Octopus_Pro_F446_UART_Mode_for_Prep_150.png) {#Octopus_Pro_F446_UART_Mode_for_Prep_150_v2}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/Octopus_Pro_F446_UART_Mode_for_Prep_150.png){:target="_blank" rel="noopener"}
 
@@ -52,7 +52,7 @@ nav_order: 1
 
 ### (FAN & MOTOR POWER & PROBE) Voltage Selection Diagram
 
-###### ![](./images/Octopus_Pro_F446_UART_VoltageSelect_150.png) {#Octopus_Pro_F446_UART_VoltageSelect}
+###### ![](./images/Octopus_Pro_F446_UART_VoltageSelect_150.png) {#Octopus_Pro_F446_UART_VoltageSelect_v2}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/Octopus_Pro_F446_UART_VoltageSelect_150.png){:target="_blank" rel="noopener"}
 
@@ -60,7 +60,7 @@ nav_order: 1
 * Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
 * Install heat sinks on all stepper motor drivers
 
-## MCU Wiring for UART Mode
+## MCU Wiring
 
 * - [ ] Connect 24V and GND (V+ and V-) from the PSU to PWR and MOTOR_POWER
 * - [ ] Connect stepper driver for the B Motor (gantry left) into position DRIVER0 (driver socket)
@@ -96,7 +96,7 @@ nav_order: 1
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to your Octopus Pro board, but do not connect it yet to your Raspberry Pi
 * if using UART (3-wire communication) with Pi:
-    1. - [ ] [complete the steps for setting up UART communications with the Raspberry Pi](#powering-the-raspberry-pi--setting-up-uart-communications-with-the-raspberry-pi)
+    1. - [ ] [complete the steps for setting up UART Serial communications with the Raspberry Pi](./OctopusPro_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
     2. - [ ] Connect UART cable to your Octopus Pro board, but do not connect it yet to your Raspberry Pi
 
 * <span> </span>
@@ -104,9 +104,9 @@ nav_order: 1
 BAT85
 : a Schottky barrier diode. BAT85 is needed to protect the Octopus Pro board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](./index#bat85-diode){:target="_blank" rel="noopener"}
 
-## MCU Wiring Diagram for UART Mode
+## MCU Wiring Diagram
 
-###### ![](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_UART_150.jpg) {#Voron2_Wiring_Diagram_Octopus_ProF446_V1_UART}
+###### ![](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_UART_150.jpg) {#Voron2_Wiring_Diagram_Octopus_ProF446_V1_UART_v2}
 
 * <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/Voron2_Wiring_Diagram_Octopus_ProF446_V1_UART_150.jpg){:target="_blank" rel="noopener"}</span>
 
@@ -115,23 +115,23 @@ BAT85
 <span class="color-blind-red">Note on the Orientation of the Stepper Motor Driver's Heat Sinks</span>
 : Place the heat sinks for the stepper motor drivers so that the orientation of the fins on the heat sinks are parallel to the air flow from the controller fans once the MCU board is installed on the DIN rail. Ensure the heat sinks are **not touching** the solder joints located on the top of the step stick. Please note, that your placement of heat sinks may be different from the orientation shown below.
 
-### MCU in UART Mode with Heat Sinks Installed
+### MCU with Heat Sinks Installed
 
-###### ![](./images/Octopus_Pro_UART_Heatsinks_150.png) {#Octopus_Pro_UART_Heatsinks}
+###### ![](./images/Octopus_Pro_UART_Heatsinks_150.png) {#Octopus_Pro_UART_Heatsinks_v2}
 
 ## Further Information about the PROBE port:
 
 * see [the Octopus Pro Probe port section](./OctopusPro_ProbePort#btt-octopus-pro-probe-port){:target="_blank" rel="noopener"}
 
-## Powering the Raspberry Pi & Setting up UART Communications with the Raspberry Pi
+## Powering the Raspberry Pi & Setting up UART Serial Communications with the Raspberry Pi
 
 * see [the Octopus Pro Raspberry Pi Section](./OctopusPro_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
-## SSR Wiring (Board Shown is in UART mode)
+## SSR Wiring
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/BTTOctopus_Pro-ssr-UART-wiring.png) {#BTTOctopus_Pro-ssr-UART-wiring}
+###### ![](./images/BTTOctopus_Pro-ssr-UART-wiring.png) {#BTTOctopus_Pro-ssr-UART-wiring_v2}
 
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/BTTOctopus_Pro-ssr-UART-wiring.png){:target="_blank" rel="noopener"}
 
@@ -147,6 +147,10 @@ BAT85
 
 * see [The Octopus Pro Resource Section](./OctopusPro_Resources#color-pin-diagram-for-btt-octopus-pro-v10){:target="_blank" rel="noopener"}
 
+## Advanced Setup - Resource Link for SPI setup (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+
+* see [The Octopus Pro SPI Setup Section](../../community/electronics/GadgetAngel/v2_octopus_pro_wiring#voron-v2---btt-octopus-pro-v10-wiring-for-both-spi-and-uart-modes){:target="_blank" rel="noopener"}
+
 ## After I have Wired up the MCU Board, What Comes Next?
 
 1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../build/software/index#software-installation){:target="_blank" rel="noopener"}
@@ -160,3 +164,12 @@ BAT85
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 4. After **creating/editing** the Klipper Config file (Voron2_Octopus_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function enable_checkboxes(){
+    const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
