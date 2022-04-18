@@ -19,6 +19,7 @@ Community-generated documentation for alternate (non-spec) electronics and relat
 | [Voron V1 - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/v1_skr13_wiring.md) | GadgetAngel |
 | [Voron V1 - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/v1_spider_wiring.md) | GadgetAngel |
 | [Voron V2 - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/v2_skr13_wiring.md) | GadgetAngel |
+| [Voron V2 - Mellow FLYF407ZG Wiring for both SPI and UART modes](./GadgetAngel/v2_flyf407zg_wiring.md) | GadgetAngel |
 | [Voron V2 - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/v2_spider_wiring.md) | GadgetAngel |
 | [Voron V2 - Fysetc Spider V2.2 Wiring for both SPI and UART modes](./GadgetAngel/v2_spiderv22_wiring.md) | GadgetAngel |
 | [Voron V2 - BTT Octopus V1.0/V1.1 Wiring for both SPI and UART modes](./GadgetAngel/v2_octopus_wiring.md) | GadgetAngel |
