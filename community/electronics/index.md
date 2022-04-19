@@ -24,6 +24,7 @@ Community-generated documentation for alternate (non-spec) electronics and relat
 | [Voron V2 - Fysetc Spider V2.2 Wiring for both SPI and UART modes](./GadgetAngel/v2_spiderv22_wiring.md) | GadgetAngel |
 | [Voron V2 - BTT Octopus V1.0/V1.1 Wiring for both SPI and UART modes](./GadgetAngel/v2_octopus_wiring.md) | GadgetAngel |
 | [Voron V2 - BTT Octopus Pro V1.0 Wiring for both SPI and UART modes](./GadgetAngel/v2_octopus_pro_wiring.md) | GadgetAngel |
+| [Voron V2 - MKS Monster 8 V1.0 Wiring for both SPI and UART modes](./GadgetAngel/v2_monster8_wiring.md) | GadgetAngel |
 | [Trident - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/tri_skr_v13_wiring.md) | GadgetAngel |
 | [Trident - Mellow FLYF407ZG Wiring for both SPI and UART modes](./GadgetAngel/tri_flyf407zg_wiring.md) | GadgetAngel |
 | [Trident - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/tri_spider_wiring.md) | GadgetAngel |
