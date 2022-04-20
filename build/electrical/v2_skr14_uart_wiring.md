@@ -1,29 +1,27 @@
 ---
 layout: default
-title: "Voron V2 - SKR V1.4/Turbo: TMC2208, TMC2209, TMC2225, or TMC2226"
-parent: "Voron V2 - BTT SKR V1.4/Turbo Wiring"
+title: "Voron V2 - SKR V1.4/Turbo (TMC2208, TMC2209, TMC2225, TMC2226) Wiring"
 nav_exclude: true
-nav_order: 1
 ---
 
-# Voron V2 - SKR V1.4/Turbo: TMC2208, TMC2209, TMC2225, or TMC2226
+# Voron V2 - SKR V1.4/Turbo (TMC2208, TMC2209, TMC2225, TMC2226) Wiring
 
-## Initial Preparation Needed for TMC2209 or TMC2226 UART Stepper Motor Drivers
+## Initial Preparation Needed for TMC2209 or TMC2226 Stepper Motor Drivers
 <span> <br> </span>
 
 * <span style="font-size: 150%;">See [the Initial Preparation for TMC2209 or TMC2226 Drivers](./skrv14init_prep_tmc_drvs_uart#preparation-of-tmc2209-and-tmc2226-uart-stepper-motor-drivers){:target="_blank" rel="noopener"}</span>
 
-## Initial Removal of Jumpers for UART Mode
+## Initial Removal of Jumpers
 
 Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below:
 
-###### ![](./images/v2_skrv14_PREP-removal.png) {#v2_skrv14_PREP-removal_uart}
+###### ![](./images/v2_skrv14_PREP-removal.png) {#v2_skrv14_PREP-removal_uart_v2}
 
-## Initial Preparation for UART Mode - Set Jumpers
+## Initial Preparation - Set Jumpers
 
 * Set the on-board jumpers, located at the positions as shown by the **<span class="color-blind-green">GREEN</span>** jumpers in the diagram below:
 
-###### ![](./images/v2_skr14T_UART_PREP.png) {#v2_skr14T_UART_PREP_1}
+###### ![](./images/v2_skr14T_UART_PREP.png) {#v2_skr14T_UART_PREP_v2}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/v2_skr14T_UART_PREP.png){:target="_blank" rel="noopener"}
 
@@ -35,15 +33,16 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
-###### ![](./images/v2_skr14T_UART_voltageselect.png) {#v2_skr14T_UART_voltageselect}
+###### ![](./images/v2_skr14T_UART_voltageselect.png) {#v2_skr14T_UART_voltageselect_v2}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/v2_skr14T_UART_voltageselect.png){:target="_blank" rel="noopener"}
 
 ## Stepper Motor Drivers
-* Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
-* Install heat sinks on all stepper motor drivers
+* - [ ] Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
+* - [ ] Before installing heat sinks on to the stepper motor drivers,&nbsp;[please read this](#please-ensure-the-heat-sinks-are-installed-before-use)
+* - [ ] Install heat sinks on all stepper motor drivers
 
-## MCU X/Y/E, Hot End in UART Mode
+## MCU X/Y/E, Hot End
 
 * - [ ] Connect 24V and GND (V+ and V-) from the PSU to Power In
 * - [ ] Connect stepper driver for the B Motor (gantry left) into position X (driver socket)
@@ -60,13 +59,13 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 * - [ ] Connect the Y endstop to Y-STOP (P1.28)
 * - [ ] Connect USB Cable to your SKR 1.4/Turbo,&nbsp; **but do not connect it yet to your Raspberry Pi**
 
-### MCU X/Y/E, Hot End in UART Mode Wiring Diagram
+### MCU X/Y/E, Hot End Wiring Diagram
 
-###### ![](./images/v2tri_Wiring_Diagram_skrv14T_XYE_UART.jpg) {#v2tri_Wiring_Diagram_skrv14T_XYE_UART}
+###### ![](./images/v2tri_Wiring_Diagram_skrv14T_XYE_UART.jpg) {#v2tri_Wiring_Diagram_skrv14T_XYE_UART_v2}
 
 * <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/v2tri_Wiring_Diagram_skrv14T_XYE_UART.jpg){:target="_blank" rel="noopener"}</span>
 
-## MCU Z, Bed, Exhaust Fan in UART Mode
+## MCU Z, Bed, Exhaust Fan
 
 * - [ ] Connect 24V and GND (V+ and V-) from the PSU to Power In
 * - [ ] Connect stepper driver for the Z into positions X (driver socket)
@@ -89,9 +88,9 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 BAT85
 : a Schottky barrier diode. BAT85 is needed to protect the SKR board (MCU board) from being fried.  An Inductive Probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](./index#bat85-diode){:target="_blank" rel="noopener"}
 
-### MCU Z, Bed, Exhaust Fan in UART Mode Wiring Diagram
+### MCU Z, Bed, Exhaust Fan Wiring Diagram
 
-###### ![](./images/v2_Wiring_Diagram_skrv14T_Z_UART.jpg) {#v2_Wiring_Diagram_skrv14T_Z_UART}
+###### ![](./images/v2_Wiring_Diagram_skrv14T_Z_UART.jpg) {#v2_Wiring_Diagram_skrv14T_Z_UART_v2}
 
 * <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/v2_Wiring_Diagram_skrv14T_Z_UART.jpg){:target="_blank" rel="noopener"}</span>
 
@@ -102,26 +101,26 @@ BAT85
 
 ### MCU X/Y/E, Hot End with Heat Sinks Installed
 
-###### ![](./images/v2_skr14T_XYE_UART_heatsinks.png) {#v2_skr14T_XYE_UART_heatsinks1}
+###### ![](./images/v2_skr14T_XYE_UART_heatsinks.png) {#v2_skr14T_XYE_UART_heatsinks1_v2}
 
 ### MCU Z, Bed, Exhaust Fan with Heat Sinks Installed
 
-###### ![](./images/v2_skr14T_Z_UART_heatsinks2.png) {#v2_skr14T_Z_UART_heatsinks2}
+###### ![](./images/v2_skr14T_Z_UART_heatsinks2.png) {#v2_skr14T_Z_UART_heatsinks2_v2}
 
 ## Raspberry Pi
 
 ### Power
 * The BTT SKR V1.4/Turbo board is **NOT capable of providing 5V power** to run your Raspberry Pi.
 
-## Setting up UART Communications with the Raspberry Pi
+## Setting up UART Serial Communications with the Raspberry Pi
 
 * see [the SKR V1.4/Turbo Raspberry Pi Section](./skrv14_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
-## SSR Wiring (Board Shown is in UART mode)
+## SSR Wiring
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/two_skrv1.4inUART-ssr-wiring.png) {#two_skrv1.4inUART-ssr-wiring_uart}
+###### ![](./images/two_skrv1.4inUART-ssr-wiring.png) {#two_skrv1.4inUART-ssr-wiring_uart_v2}
 
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/two_skrv1.4inUART-ssr-wiring.png){:target="_blank" rel="noopener"}
 
@@ -132,6 +131,10 @@ The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for SKR V1.4
 ## URL Resources Links for the SKR V1.4/Turbo (PIN Diagrams and Repo)
 
 * see [The SKR V1.4/Turbo Resource Section](./skrv14_Resources#color-pin-diagram-for-skr-v14v14turbo){:target="_blank" rel="noopener"}
+
+## Advanced Setup - Resource Link for SPI setup (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO)
+
+* see [The SKR V1.4/Turbo SPI Setup Section](../../community/electronics/GadgetAngel/v2_skr14_wiring#voron-v2---btt-skr-v14turbo-wiring-for-both-spi-and-uart-modes){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
@@ -146,3 +149,12 @@ The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for SKR V1.4
     * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
 4. After **creating/editing** the Klipper Config file (Voron2_SKR_14_Config.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function enable_checkboxes(){
+    const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
