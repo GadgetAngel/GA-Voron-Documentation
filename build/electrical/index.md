@@ -176,7 +176,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 
 ### Voron 2
 * [V2 - SKR V1.3](./v2_skr13_uart_wiring.md)
-* [V2 - SKR V1.4](./v2_skr14_wiring.md)
+* [V2 - SKR V1.4](./v2_skr14_uart_wiring.md)
 * [V2 - SKR 2](./v2_skr2_wiring.md)
 * [V2 - SKR Pico](./v2_skr_pico_wiring.md)
 * [V2 - FLYboard FLYF407ZG](./v2_flyf407zg_uart_wiring.md)
