@@ -164,7 +164,7 @@ Follow the links to the wiring configuration guides specific to your printer and
 ### Trident
 * [Trident - SKR V1.3](./tri_skrv13_uart_wiring.md)
 * [Trident - SKR V1.4](./tri_2skrv14_uart_wiring.md)
-* [Trident - SKR V1.4 and EXP-MOT](./tri_skrv14_exp-mot_wiring.md)
+* [Trident - SKR V1.4 and EXP-MOT](./tri_skrv14_exp-mot_uart_wiring.md)
 * [Trident - SKR 2](./tri_skr2_wiring.md)
 * [Trident - SKR Pico](./tri_skr_pico_wiring.md)
 * [Trident - FLYboard FLYF407ZG](./tri_flyf407zg_uart_wiring.md)

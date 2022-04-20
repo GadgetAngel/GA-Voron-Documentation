@@ -23,7 +23,7 @@ nav_exclude: true
 
 * By not adding the stackable header pin under the DIAG PIN location, the DIAG PIN will not make an electrical connection to the board. The added benefit with stackable header pins is the driver socket will also have more room for air flow to help with dissipation of heat. See the diagram below:
 
-###### ![](../../../build/electrical/images/disable_sensor-less_homing_TMC2209_TMC2226.jpg) {#disable_sensor-less_homing_spi_tri2skr_tri}
+###### ![](../../../build/electrical/images/disable_sensor-less_homing_TMC2209_TMC2226.jpg) {#disable_sensor-less_homing_spi_tri2skr}
 
 * Here is the URL from the above diagram.  You can purchase the [Stackable Header PINS from Amazon](https://www.amazon.com/Glarks-Connector-Assortment-Stackable-Breakaway/dp/B07CWSXY7P){:target="_blank" rel="noopener"}.
 
