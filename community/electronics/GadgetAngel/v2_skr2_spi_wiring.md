@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Voron V2 - SKR 2: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO"
-parent: "Voron V2 - BTT SKR 2 Wiring"
+title: "Voron V2 - SKR 2 (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO) Wiring"
+parent: "Voron V2 - BTT SKR 2 Wiring for both SPI and UART modes"
 nav_exclude: true
-nav_order: 2
+nav_order: 1
 ---
 
-# Voron V2 - SKR 2: TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO
+# Voron V2 - SKR 2 (TMC2100, TMC2130, TMC5160, TMC5161, TMC5160HV, TMC5160_PRO) Wiring
 
 ## Initial Removal of Jumpers
 
@@ -16,7 +16,7 @@ We have no idea what state your board is in when you start this process.  Someon
 
 Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, located at the positions shown below:
 
-###### ![](./images/SKR2_in_PREP-removal.png) {#SKR2_in_PREP-removal_spi}
+###### ![](../../../build/electrical/images/SKR2_in_PREP-removal.png) {#SKR2_in_PREP-removal_spi_v2}
 
 ## Initial Preparation for SPI Mode - Set Jumpers
 
@@ -36,13 +36,14 @@ Remove **all <span class="color-blind-yellow">YELLOW</span>** on-board jumpers, 
 
 __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers are set appropriately, especially the jumpers called out by the _COLORED BOXES_, BEFORE the power supply is connected.**
 
-###### ![](./images/SKR2_in_SPI_voltageselect.png) {#SKR2_in_SPI_voltageselect}
+###### ![](./images/SKR2_in_SPI_voltageselect.png) {#SKR2_in_SPI_voltageselect_v2}
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/SKR2_in_SPI_voltageselect.png){:target="_blank" rel="noopener"}
 
 ## Stepper Motor Drivers
-* Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
-* Install heat sinks on all stepper motor drivers
+* - [ ] Inspect the stepper motor drivers for left over rosin, and clean with IPA, if needed
+* - [ ] Before installing heat sinks on to the stepper motor drivers,&nbsp;[please read this](#please-ensure-the-heat-sinks-are-installed-before-use)
+* - [ ] Install heat sinks on all stepper motor drivers
 
 ## MCU X/Y/E, Hot End in SPI Mode
 
@@ -64,7 +65,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 ### MCU X/Y/E, Hot End in SPI Mode Wiring Diagram
 
-###### ![](./images/V2tri_Wiring_Diagram_BTT_SKR2_XYE_SPI.jpg) {#V2tri_Wiring_Diagram_BTT_SKR2_XYE_SPI}
+###### ![](./images/V2tri_Wiring_Diagram_BTT_SKR2_XYE_SPI.jpg) {#V2tri_Wiring_Diagram_BTT_SKR2_XYE_SPI_v2}
 
 * <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/V2tri_Wiring_Diagram_BTT_SKR2_XYE_SPI.jpg){:target="_blank" rel="noopener"}</span>
 
@@ -89,11 +90,11 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 * - [ ] Connect USB Cable to your SKR 2,&nbsp; **but do not connect it yet to your Raspberry Pi**
 
 BAT85
-: a Schottky barrier diode. BAT85 is needed to protect the SKR board (MCU board) from being fried.  An inductive probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](./index#bat85-diode){:target="_blank" rel="noopener"}
+: a Schottky barrier diode. BAT85 is needed to protect the SKR board (MCU board) from being fried.  An inductive probe device (Omron TL-Q5MC2; Omron TL-Q5MC2-Z or Panasonic GX-HL15BI-P) communicates at a much higher voltage level (10V - 30V) then the MCU board.  The BAT85 is used to protect the input signal PIN of the MCU board; without the BAT85 the MCU board will be damaged.  If two BAT85s are used in series, the circuit will protect the MCU board and still allow the inductive probe to function properly. [For more information, click here](../../../build/electrical/index#bat85-diode){:target="_blank" rel="noopener"}
 
 ### MCU Z, Bed, Exhaust Fan in SPI Mode Wiring Diagram
 
-###### ![](./images/V2_Wiring_Diagram_BTT_SKR2_Z_SPI.jpg) {#V2_Wiring_Diagram_BTT_SKR2_Z_SPI}
+###### ![](./images/V2_Wiring_Diagram_BTT_SKR2_Z_SPI.jpg) {#V2_Wiring_Diagram_BTT_SKR2_Z_SPI_v2}
 
 * <span class="fs_percent_110">If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in JPG format then [click here](./images/V2_Wiring_Diagram_BTT_SKR2_Z_SPI.jpg){:target="_blank" rel="noopener"}</span>
 
@@ -104,47 +105,56 @@ BAT85
 
 ### MCU X/Y/E, Hot End with Heat Sinks Installed
 
-###### ![](./images/v2tri_SKR2_SPI_heatsinks1.jpg) {#v2tri_SKR2_SPI_heatsinks1}
+###### ![](./images/v2tri_SKR2_SPI_heatsinks1.jpg) {#v2tri_SKR2_SPI_heatsinks1_v2}
 
 ### MCU Z, Bed, Exhaust Fan with Heat Sinks Installed
 
-###### ![](./images/v2_SKR2_SPI_heatsinks2.jpg) {#v2_SKR2_SPI_heatsinks2}
+###### ![](./images/v2_SKR2_SPI_heatsinks2.jpg) {#v2_SKR2_SPI_heatsinks2_v2}
 
 ## Raspberry Pi
 
 ### Power
 * The BTT SKR 2 board is **NOT capable of providing 5V power** to run your Raspberry Pi.
 
-## Setting up UART Communications with the Raspberry Pi
+## Setting up UART Serial Communications with the Raspberry Pi
 
-* see [the SKR 2 Raspberry Pi Section](./skr2_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
+* see [the SKR 2 Raspberry Pi Section](../../../build/electrical/skr2_RaspberryPi#raspberry-pi){:target="_blank" rel="noopener"}
 
 ## SSR Wiring (Boards Shown is in SPI mode)
 
 * Wire colors will vary depending on your locale.
 
-###### ![](./images/SKRV2inSPI-ssr-wiring.png) {#SKRV2inSPI-ssr-wiring}
+###### ![](./images/SKRV2inSPI-ssr-wiring.png) {#SKRV2inSPI-ssr-wiring_v2}
 
 * If you want to open the above diagram, in a new tab of your web browser, and have the ability to zoom and download the diagram in PNG format then [click here](./images/SKRV2inSPI-ssr-wiring.png){:target="_blank" rel="noopener"}
 
-### The Klipper Configuration file for SKR 2 board
+### The Klipper Configuration file by TechnoPhreak for SKR 2 board (UART mode - SPI mode needs to be added to this)
 
 The Klipper Configuration file from VoronDesign/VoronUsers TechnoPhreak's GitHub Repo for SKR 2 board is [located here](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/firmware_configurations/klipper/TechnoPhreak/BTT_SKR_v2/printer.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the SKR 2 (PIN Diagrams and Repo)
 
-* see [The SKR 2 Resource Section](./skr2_Resources#color-pin-diagram-for-skr-2){:target="_blank" rel="noopener"}
+* see [The SKR 2 Resource Section](../../../build/electrical/skr2_Resources#color-pin-diagram-for-skr-2){:target="_blank" rel="noopener"}
 
 ## After I have Wired up the MCU Board, What Comes Next?
 
-1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../build/software/index#software-installation){:target="_blank" rel="noopener"}
+1. Once the MCU board is wired up and wire management has been performed, the next step is to install Mainsail/Fluidd or Octoprint, please see [The Build ═► Software Installation](../../../build/software/index#software-installation){:target="_blank" rel="noopener"}
 
-2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please use the [Color Pin Diagram displayed here, look for "Klipper Building Options"](./skr2_Resources#color-pin-diagram-for-skr-2){:target="_blank" rel="noopener"}; an alternative source of information on "how to build and install the Klipper firmware for the SKR 2" is at [TechnoPhreak's README file](https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/TechnoPhreak/BTT_SKR_v2#compiler-instructions){:target="_blank" rel="noopener"}
+2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please use the Color Pin Diagram displayed here, look for ["Klipper Building Options"](../../../build/electrical/skr2_Resources#color-pin-diagram-for-skr-2){:target="_blank" rel="noopener"}; an alternative source of information on "how to build and install the Klipper firmware for the SKR 2" is at [TechnoPhreak's README file](https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/TechnoPhreak/BTT_SKR_v2#compiler-instructions){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (TechnoPhreak's printer.cfg file is already named printer.cfg) to ensure your Voron build matches your Klipper Config file, please see [the file located here](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/firmware_configurations/klipper/TechnoPhreak/BTT_SKR_v2/printer.cfg){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (TechnoPhreak's printer.cfg file is already named printer.cfg, but you will need to replace UART with SPI). Please see [the file located here](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/firmware_configurations/klipper/TechnoPhreak/BTT_SKR_v2/printer.cfg){:target="_blank" rel="noopener"} as a good starting point;
 
-    * Please use the Color PIN Diagrams, [displayed here](./skr2_Resources#color-pin-diagram-for-skr-2){:target="_blank" rel="noopener"}, as a source of information;
+    * Please use the Color PIN Diagrams, [displayed here](../../../build/electrical/skr2_Resources#color-pin-diagram-for-skr-2){:target="_blank" rel="noopener"}, as a source of information;
 
-    * Please consult [The Build ═► Software Configuration](../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
+    * Please consult [The Build ═► Software Configuration](../../../build/software/configuration#software-configuration){:target="_blank" rel="noopener"} on how to edit the Klipper Config file.
 
-4. After **creating/editing** the Klipper Config file (printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+4. After **creating/editing** the Klipper Config file (printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
+
+<script>
+    window.onload = function enable_checkboxes(){
+    const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
+    Array.prototype.forEach.call(checkboxes, function (e) {
+        e.removeAttribute('disabled');
+    });
+    }
+</script>
