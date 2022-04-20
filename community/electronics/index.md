@@ -30,6 +30,7 @@ Community-generated documentation for alternate (non-spec) electronics and relat
 | [Trident - BTT SKR V1.3 Wiring for both SPI and UART modes](./GadgetAngel/tri_skr_v13_wiring.md) | GadgetAngel |
 | [Trident - BTT SKR V1.4/Turbo Wiring for both SPI and UART modes](./GadgetAngel/tri_2skrv14_wiring.md) | GadgetAngel |
 | [Trident - BTT SKR V1.4/Turbo and EXP-MOT Wiring for both SPI and UART modes](./GadgetAngel/tri_skrv14_exp-mot_wiring.md) | GadgetAngel |
+| [Trident - BTT SKR 2 Wiring for both SPI and UART modes](./GadgetAngel/tri_skr2_wiring.md) | GadgetAngel |
 | [Trident - Mellow FLYF407ZG Wiring for both SPI and UART modes](./GadgetAngel/tri_flyf407zg_wiring.md) | GadgetAngel |
 | [Trident - Fysetc Spider V1.1 Wiring for both SPI and UART modes](./GadgetAngel/tri_spider_wiring.md) | GadgetAngel |
 | [Trident - Fysetc Spider V2.2 Wiring for both SPI and UART modes](./GadgetAngel/tri_spiderv22_wiring.md) | GadgetAngel |
