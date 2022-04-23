@@ -43,7 +43,6 @@ uart_pin: P1.21
 The following table shows the mappings for SKR 1.3 and 1.4 boards (The pin designations are the same for both boards)
 
 ### Expansion M1
-<span> <br /> </span>
 
 | Designation | Pin |
 |:-----------: | :---: |
@@ -53,7 +52,6 @@ The following table shows the mappings for SKR 1.3 and 1.4 boards (The pin desig
 |uart_pin    | P1.21 |
 
 ### Expansion M2
-<span> <br /> </span>
 
 | Designation | Pin |
 | :-----------: | :---: |
@@ -63,7 +61,6 @@ The following table shows the mappings for SKR 1.3 and 1.4 boards (The pin desig
 | uart_pin    | P1.19 |
 
 ### Expansion M3
-<span> <br /> </span>
 
 | Designation | Pin |
 | :-----------: | :---: |
