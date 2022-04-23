@@ -45,12 +45,12 @@ The following table shows the mappings for SKR 1.3 and 1.4 boards (The pin desig
  ### Expansion M1
 <span> <br /> </span>
 
-| Designation | Pin |
+| :Designation: | :Pin: |
 |:-----------: | :---: |
-|step_pin    | P3.25 |
-|dir_pin     | P0.18 |
-|enable_pin  | P1.31 |
-|uart_pin    | P1.21 |
+|:step_pin:    | :P3.25: |
+|:dir_pin:     | :P0.18: |
+|:enable_pin:  | :P1.31: |
+|:uart_pin:    | :P1.21: |
 
  ### Expansion M2
 <span> <br /> </span>
