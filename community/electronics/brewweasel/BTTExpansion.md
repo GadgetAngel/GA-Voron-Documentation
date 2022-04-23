@@ -44,8 +44,6 @@ The following table shows the mappings for SKR 1.3 and 1.4 boards (The pin desig
 
 ### Expansion M1
 
-The following is a pin-out table for Expansion M1 socket:
-
 | Designation | Pin |
 |:-----------: | :---: |
 |step_pin    | P3.25 |
@@ -55,8 +53,6 @@ The following is a pin-out table for Expansion M1 socket:
 
 ### Expansion M2
 
-The following is a pin-out table for Expansion M2 socket:
-
 | Designation | Pin |
 | :-----------: | :---: |
 | step_pin    | P3.26 |
@@ -65,8 +61,6 @@ The following is a pin-out table for Expansion M2 socket:
 | uart_pin    | P1.19 |
 
 ### Expansion M3
-
-The following is a pin-out table for Expansion M3 socket:
 
 | Designation | Pin |
 | :-----------: | :---: |
