@@ -137,9 +137,15 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 ## The Klipper Configuration file for Fysetc Spider V1.1 Board by Majarspeed
 
-{% capture config_file_exits %}{% file_exists {{ https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg }} %}{% endcapture %}
+{% assign tri_conigfile_exits = false %}
+{% for static_file in site.static_files %}
+    {% if static_file.path == 'https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg' %}
+        {% assign tri_conigfile_exits = true %}
+    {% endif %}
+{% endfor %}
 
-{% if config_file_exits == "true" %}
+
+{% if tri_conigfile_exits == true %}
 
 * The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
