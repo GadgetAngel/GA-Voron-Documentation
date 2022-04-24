@@ -137,25 +137,28 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 ## The Klipper Configuration file for Fysetc Spider V1.1 Board by Majarspeed
 
-{% assign tri_conigfile_exits = false %}
-{% for static_file in site.static_files %}
-    {{ static_file.path }}
-    {% if static_file.path == 'https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg' %}
-        {% assign tri_conigfile_exits = true %}
-    {% endif %}
-{% endfor %}
+<script>
+window.onload = function(){
+    const urlToFile = "https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg";
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
 
-
-{% if tri_conigfile_exits == true %}
-
-* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
-
-{% else %}
-
-* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
-
-{% endif %}
-
+    if (xhr.status == "404") {
+    <ul>
+        <li>
+            <p>* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called <a href="https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg" target="_blank" rel="noopener noreferrer">voron-trident-spider.cfg</a>;</p>
+        </li>
+    </ul>
+    } else {
+    <ul>
+        <li>
+            <p>* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called <a href="https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg" target="_blank" rel="noopener noreferrer">voron-trident-spider.cfg</a>;</p>
+        </li>
+    </ul>
+    }
+}
+</script>
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
@@ -180,10 +183,21 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 4. After **creating/editing** the Klipper Config file (voron-trident-spider.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
 
 <script>
-    window.onload = function enable_checkboxes(){
+window.onload = function enable_checkboxes(){
     const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
     Array.prototype.forEach.call(checkboxes, function (e) {
         e.removeAttribute('disabled');
     });
+
+    const urlToFile = "https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg";
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
+
+    if (xhr.status == "404") {
+        document.documentElement.setAttribute('tri-conigfile-exists', 'false');
+    } else {
+        document.documentElement.setAttribute('tri-conigfile-exists', 'true');
     }
+}
 </script>
