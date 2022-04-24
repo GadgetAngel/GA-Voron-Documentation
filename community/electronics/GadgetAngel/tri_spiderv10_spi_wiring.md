@@ -143,7 +143,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 ## The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 Board (UART mode - SPI mode needs to be added to this)
 
-The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is [located here](https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
+The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is [located here](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
@@ -155,7 +155,7 @@ The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is [lo
 
 2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> Fysetc Spider](../../../build/software/spider_klipper#spider-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (voron-trident-spider.cfg rename it to printer.cfg and replace UART with SPI). Please see [voron-trident-spider.cfg by Majarspeed](https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"} as a good starting point;
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file (voron-trident-spider.cfg rename it to printer.cfg and replace UART with SPI). Please see [voron-trident-spider.cfg by Majarspeed](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"} as a good starting point;
 
     * Please use the Color PIN Diagrams, [displayed here](../../../build/electrical/Fysetc_Spider_Resources_v1#color-pin-diagram-for-fysetc-spider-v10){:target="_blank" rel="noopener"}, as a source of information;
 

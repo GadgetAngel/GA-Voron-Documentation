@@ -137,28 +137,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 ## The Klipper Configuration file for Fysetc Spider V1.1 Board by Majarspeed
 
-<script>
-window.onload = function(){
-    const urlToFile = "https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg";
-    var xhr = new XMLHttpRequest();
-    xhr.open('HEAD', urlToFile, false);
-    xhr.send();
-
-    if (xhr.status == "404") {
-    <ul>
-        <li>
-            <p>* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called <a href="https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg" target="_blank" rel="noopener noreferrer">voron-trident-spider.cfg</a>;</p>
-        </li>
-    </ul>
-    } else {
-    <ul>
-        <li>
-            <p>* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called <a href="https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg" target="_blank" rel="noopener noreferrer">voron-trident-spider.cfg</a>;</p>
-        </li>
-    </ul>
-    }
-}
-</script>
+* The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
@@ -174,7 +153,7 @@ window.onload = function(){
 
 2. Once Mainsail/Fluidd or Octoprint has been installed, the next step is to **compile and install** the Klipper Firmware, please see [The Build ═► Software Installation -> Firmware Flashing(Header) -> Fysetc Spider](../../build/software/spider_klipper#spider-klipper-firmware){:target="_blank" rel="noopener"}
 
-3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file by Majarspeed (voron-trident-spider.cfg rename it to printer.cfg). Please see [the file located here](https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
+3. Once the MCU board has the Klipper Firmware Installed, the next step is to **create/edit** the Klipper Config file by Majarspeed (voron-trident-spider.cfg rename it to printer.cfg). Please see [the file located here](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
     * Please use the Color PIN Diagrams, [displayed here](./Fysetc_Spider_Resources_v1#color-pin-diagram-for-fysetc-spider-v10){:target="_blank" rel="noopener"}, as a source of information;
 
@@ -183,21 +162,10 @@ window.onload = function(){
 4. After **creating/editing** the Klipper Config file (voron-trident-spider.cfg renamed to printer.cfg), the next step is to check all the Motors and the mechanics of the Voron printer, please see [The Build ═► Initial Startup Checks](../../build/startup/index#initial-startup-checks){:target="_blank" rel="noopener"}
 
 <script>
-window.onload = function enable_checkboxes(){
+    window.onload = function enable_checkboxes(){
     const checkboxes = document.getElementsByClassName('task-list-item-checkbox');
     Array.prototype.forEach.call(checkboxes, function (e) {
         e.removeAttribute('disabled');
     });
-
-    const urlToFile = "https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg";
-    var xhr = new XMLHttpRequest();
-    xhr.open('HEAD', urlToFile, false);
-    xhr.send();
-
-    if (xhr.status == "404") {
-        document.documentElement.setAttribute('tri-conigfile-exists', 'false');
-    } else {
-        document.documentElement.setAttribute('tri-conigfile-exists', 'true');
     }
-}
 </script>
