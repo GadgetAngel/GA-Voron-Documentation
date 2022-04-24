@@ -53,10 +53,11 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/FYSETC_Spider_V1.0_inUARTMode_VoltageSelect_150.png){:target="_blank" rel="noopener"}
 
 ## Stepper Drivers
-* If using Fysetc drivers, inspect for left over rosin, and clean with IPA if need
-* Install step drivers in all slots except E3-MOT and E4-MOT
-* Install heat sinks on all step drivers
+* - [ ] If using Fysetc drivers, inspect for left over rosin, and clean with IPA if need
 * _**NOTE: if the board has been powered, ensure that motor power caps are fully drained before inserting stepper drivers: Temporarily connect a 100K resistor between VMOT+ and VMOT- to safely drain the capacitors**_ See [Fysetc Spider 3.3v issue](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/Spider%203.3v%20issue.md){:target="_blank" rel="noopener"}
+* - [ ] Install step drivers in all slots except Z-MOT, E2-MOT and E3-MOT
+* - [ ] Before installing heat sinks on to the stepper motor drivers,&nbsp;[please read this](#please-ensure-the-heat-sinks-are-installed-before-use)
+* - [ ] Install heat sinks on all stepper motor drivers
 
 ## MCU Wiring
 
@@ -89,9 +90,9 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
     2. - [ ] connect to EXP1 & EXP2
 * if using USB to communicate with Pi:
     1. - [ ] Connect USB Cable to the Spider board, but do not connect it yet to your Raspberry Pi
-* if using UART (3-wire communication) with Pi:
+* if using UART (3-wire serial communication) with Pi:
     1. - [ ] [complete the steps for setting up UART serial communications with the Raspberry Pi](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/firmware/Klipper/Connect%20RPI%20uart.md){:target="_blank" rel="noopener"}
-    2. - [ ] Connect UART cable to the Spider board, but do not connect it yet to your Raspberry Pi
+    2. - [ ] Connect UART serial cable to the Spider board, but do not connect it yet to your Raspberry Pi
 
 ## MCU Wiring Diagram
 
