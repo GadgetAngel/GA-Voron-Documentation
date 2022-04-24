@@ -40,7 +40,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 * If you want to open the above picture, in a new tab of your web browser, then [click here](./images/FYSETC_Spider_V1.0_in_SPI_mode_PREP2.png){:target="_blank" rel="noopener"}
 
-### (FAN & PROBE) Voltage Selection Headers
+## (FAN & PROBE) Voltage Selection Headers
 
 * In the diagram below, the **<span class="color-blind-yellow">YELLOW box</span>** indicates the RGB Block header's Jumper is not present, but this header can be used to run fans. Other headers that can be used with fans (as shown by a **<span class="color-blind-orange">ORANGE box</span>**) have their Fan Voltage Selections headers which are located below the FAN0, FAN1 and FAN2 connectors. The **<span class="color-blind-green">GREEN</span>** jumpers are set for a fan voltage of 24VDC.
 
@@ -52,7 +52,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 * __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **Double check all the** __<span class="color-blind-green">GREEN</span>__ **jumpers BEFORE the power supply is connected, to ensure these jumpers and wire jumper are set appropriately.**
 
-### (FAN & PROBE) Voltage Selection Diagram
+## (FAN & PROBE) Voltage Selection Diagram
 
 ###### ![](./images/FYSETC_Spider_V1.0_inSPIMode_VoltageSelect_150.png) {#FYSETC_Spider_V10_inSPIMode_VoltageSelect}
 
@@ -115,7 +115,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 <span class="color-blind-red">Note on the Orientation of the Stepper Motor Driver's Heat Sinks</span>
 : Place the heat sinks for the stepper motor drivers so that the orientation of the fins on the heat sinks are parallel to the air flow from the controller fans once the MCU board is installed on the DIN rail. Ensure the heat sinks are **not touching** the solder joints located on the top of the step stick. Please note, that your placement of heat sinks may be different from the orientation shown below.
 
-### MCU in SPI Mode with Heat Sinks Installed
+## MCU in SPI Mode with Heat Sinks Installed
 
 ###### ![](./images/FYSETC_Spider_V1.0_in_SPI_mode_Heatsinks_150.png) {#FYSETC_Spider_v10_SPI_Heatsinks}
 
@@ -143,7 +143,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 * *BTT mini12864 only* remove components R1, and C6, and rotate the connectors 180 degrees
 * See [the mini12864 guide](../../../build/electrical/mini12864_klipper_guide#mini12864-klipper-guide){:target="_blank" rel="noopener"}
 
-### The Klipper Configuration file for Fysetc Spider V1.0 Board (UART mode - SPI mode needs to be added to this)
+## The Klipper Configuration file for Fysetc Spider V1.0 Board (UART mode - SPI mode needs to be added to this)
 
 The Klipper Configuration file from VoronDesign/Voron-2 GitHub Repo for Fysetc Spider V1.0 board is [located here](https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Spider/Voron2_Spider_Config.cfg){:target="_blank" rel="noopener"};
 
