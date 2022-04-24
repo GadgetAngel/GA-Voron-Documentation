@@ -2,7 +2,7 @@
 nav_exclude: true
 ---
 
-# Fysetc Spider Probe Port
+## Fysetc Spider Probe Port
 
 * For reference, here is a small discussion on Reddit about how to determine your style of inductive probe, [click here](https://www.reddit.com/r/AskElectronics/comments/5zdlmm/help_me_identify_which_inductive_sensor_i_need/){:target="_blank" rel="noopener"}
 
@@ -23,17 +23,12 @@ nav_exclude: true
 
 From Digikey website for Omron TL-Q5MC2:
 ###### ![](./images/Dikey_OmronTLQ5MC2_probeinfo.png) {#Dikey_OmronTLQ5MC2_probeinfo}
-<span> <br /> </span>
-<span> <br /> </span>
 
 From Aliexpress website for Omron TL-Q5MC2-Z:
 ###### ![](./images/Aliexpress_OmronTL-Q5MC2-Z_probeinfo.png) {#Aliexpress_OmronTL-Q5MC2-Z_probeinfo}
-<span> <br /> </span>
-<span> <br /> </span>
 
 Form Digikey website for Panasonic GX-HL15BI-P:
 ###### ![](./images/Digikey_PanasonicGX-HL15BI-P_probeinfo.png) {#Digikey_PanasonicGX-HL15BI-P_probeinfo}
-<span> <br /> </span>
 
 * Now, you have the information on the style of probe you own (i.e. NPN or PNP) and its default state (NO-normally open or NC-normally closed).
 * Also, the operating voltage (supply voltage) of the inductive probe is now known.
