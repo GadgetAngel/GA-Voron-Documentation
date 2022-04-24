@@ -139,6 +139,7 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 {% assign tri_conigfile_exits = false %}
 {% for static_file in site.static_files %}
+    {{ static_file.path }}
     {% if static_file.path == 'https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg' %}
         {% assign tri_conigfile_exits = true %}
     {% endif %}
