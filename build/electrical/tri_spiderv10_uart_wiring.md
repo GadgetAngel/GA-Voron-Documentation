@@ -137,16 +137,18 @@ __<span class="underline-double-trouble color-blind-red">IMPORTANT:</span>__ **D
 
 ## The Klipper Configuration file for Fysetc Spider V1.1 Board by Majarspeed
 
-{% for static_file in site.static_files %}
-    {% if static_file.path == 'https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg' %}
+{% capture config_file_exits %}{% file_exists {{ https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg }} %}{% endcapture %}
+
+{% if config_file_exits == "true" %}
 
 * The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/VoronDesign/Voron-Trident/tree/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
-    {% else %}
+
+{% else %}
 
 * The Klipper Configuration file by Majarspeed for Fysetc Spider V1.1 board is called [voron-trident-spider.cfg](https://github.com/majarspeed/Voron-Trident/blob/main/Firmware/voron-trident-spider.cfg){:target="_blank" rel="noopener"};
 
-    {% endif %}
-{% endfor %}
+{% endif %}
+
 
 ## URL Resources Links for the Fystec Spider (PIN Diagrams and Repo)
 
