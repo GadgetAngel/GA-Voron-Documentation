@@ -27,6 +27,10 @@ This value equals ~2lb of tension on XY, which is on the lower end of the range 
 
 ### Watch this video
 
+https://user-images.githubusercontent.com/54855101/163674612-930d737d-0ab3-4056-a2b9-def2939db61f.mp4
+
+---
+
 {% raw %}
 https://user-images.githubusercontent.com/54855101/163674612-930d737d-0ab3-4056-a2b9-def2939db61f.mp4
 {% endraw %}
