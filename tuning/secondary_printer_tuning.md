@@ -31,18 +31,8 @@ https://user-images.githubusercontent.com/54855101/163674612-930d737d-0ab3-4056-
 
 ---
 
-{% raw %}
-https://user-images.githubusercontent.com/54855101/163674612-930d737d-0ab3-4056-a2b9-def2939db61f.mp4
-{% endraw %}
-
----
-
 <iframe src="https://user-images.githubusercontent.com/54855101/163674612-930d737d-0ab3-4056-a2b9-def2939db61f.mp4" width="100%" height="420ppx">
 </iframe>
-
----
-
-<iframe width="700" height="400" src="https://user-images.githubusercontent.com/54855101/163674612-930d737d-0ab3-4056-a2b9-def2939db61f.mp4" frameborder="0" allowfullscreen="allowfullscreen">&nbsp;</iframe>
 
 ---
 
