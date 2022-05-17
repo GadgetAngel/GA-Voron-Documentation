@@ -36,3 +36,4 @@ Community-generated documentation for the many items that the official guide may
 * [Printed 80t pulley assembly](https://www.youtube.com/watch?v=W-mwJ2gfe9c)
 * [RAMPS 24V Conversion](https://www.youtube.com/watch?v=3eRuHNw-Uz)
 * [HOW TO: Boot Raspberry Pi 4 from USB SSD Drive](https://raspberrystreet.com/learn/how-to-boot-raspberrypi-from-usb-ssd)
+* [Raspberry Pi 2, 3, 4 USB SSD or USB drive boot](https://pysselilivet.blogspot.com/2020/10/raspberry-pi-1-2-3-4-usb-ssd-boot.html)
