@@ -26,7 +26,6 @@ Community-generated documentation for the many items that the official guide may
 | [Klicky Probe as Endstop with constant Z Offset ](./Takuya/Klicky_Probe_AutoZ_Alternative.md) | Takuya & Clee |
 | [Setting Up and Calibrating Sensorless XY Homing](./clee/sensorless_xy_homing.md) | clee |
 | [Transferring Device History (Moonraker DB)](./kyleisah/transferring_machine_history.md) | kyleisah |
-| [Installing Mainsail or Fluidd on an SSD](./Takuya/Installing_on_an_SSD.md) | Takuya |
 
 ### External Links
 
@@ -36,3 +35,4 @@ Community-generated documentation for the many items that the official guide may
 * [Drill and Counterbore Voron Bed](https://www.youtube.com/watch?v=N6EgYW_W3Js)
 * [Printed 80t pulley assembly](https://www.youtube.com/watch?v=W-mwJ2gfe9c)
 * [RAMPS 24V Conversion](https://www.youtube.com/watch?v=3eRuHNw-Uz)
+* [HOW TO: Boot Raspberry Pi 4 from USB SSD Drive](https://raspberrystreet.com/learn/how-to-boot-raspberrypi-from-usb-ssd)
