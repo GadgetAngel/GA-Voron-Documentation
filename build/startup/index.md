@@ -338,7 +338,7 @@ The Z offset can be adjusted during a print using the Tune menu on the display, 
 The "babystepping" controls may be used to fine tune the z offset.
 
 #### Without LCD Screen
-If you're running your printer headless, the Z height can still be adjusted on-the-fly using the web interface.  This is built into Mailsail and Fluidd, but requires some additional work for Octoprint.
+If you're running your printer headless, the Z height can still be adjusted on-the-fly using the web interface.  This is built into Mainsail and Fluidd, but requires some additional work for Octoprint.
 
 1) (Optional) Create macros in your printer.cfg file so that the commands are easier to remember/run:
 
